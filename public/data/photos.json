@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "photos": [
+    {
+      "site_id": "moon_shackleton",
+      "file": "photos/moon_shackleton.jpg",
+      "kind": "orbital",
+      "caption": {
+        "en": "Shackleton crater rim area, LRO Narrow Angle Camera mosaic (SHKLTNPKLO1).",
+        "ru": "Район вала кратера Шеклтон, мозаика узкоугольной камеры LRO (SHKLTNPKLO1)."
+      },
+      "credit": "NASA/GSFC/Arizona State University",
+      "license": "Public domain",
+      "source_url": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_ROI_SHKLTNPKLO1_P888S1247"
+    },
+    {
+      "site_id": "mars_arcadia",
+      "file": "photos/mars_arcadia.jpg",
+      "kind": "orbital",
+      "caption": {
+        "en": "Fresh impact crater in Arcadia Planitia (43.9° N, 204.3° E), about 800 km from our target point; the bright spot at its centre is likely exposed ground ice. HiRISE ESP_025840_2240.",
+        "ru": "Свежий ударный кратер в Аркадии (43,9° с. ш., 204,3° в. д.), около 800 км от нашей точки; яркое пятно в центре, вероятно, вскрытый подземный лёд. HiRISE ESP_025840_2240."
+      },
+      "credit": "NASA/JPL-Caltech/UArizona",
+      "license": "Public domain",
+      "source_url": "https://www.uahirise.org/ESP_025840_2240"
+    },
+    {
+      "site_id": "mars_jezero",
+      "file": "photos/mars_jezero.jpg",
+      "kind": "orbital",
+      "caption": {
+        "en": "Jezero crater floor near the Perseverance landing site, 2 March 2021; the front of the delta is on the left. HiRISE ESP_068426_1985.",
+        "ru": "Дно кратера Езеро у места посадки Perseverance, 2 марта 2021 г.; слева фронт дельты. HiRISE ESP_068426_1985."
+      },
+      "credit": "NASA/JPL-Caltech/UArizona",
+      "license": "Public domain",
+      "source_url": "https://www.uahirise.org/ESP_068426_1985"
+    }
+  ]
+}

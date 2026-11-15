@@ -86,6 +86,19 @@ for (const f of features) {
   if (!labels.feature[f.feature]) errors.push(`feature ${f.feature}: no label`);
 }
 
+// Photos (optional file): known site, file present, credit and licence filled in
+if (existsSync(join(root, 'data', 'photos.json'))) {
+  const photos = load('photos.json').photos || [];
+  for (const ph of photos) {
+    if (!siteIds.has(ph.site_id)) errors.push(`photo: unknown site_id ${ph.site_id}`);
+    if (!ph.file || !existsSync(join(root, ph.file))) errors.push(`photo ${ph.site_id}: file missing (${ph.file})`);
+    if (!ph.credit || !ph.license) errors.push(`photo ${ph.site_id}: credit and license are required`);
+  }
+  const withPhoto = new Set(photos.map((p) => p.site_id));
+  const without = sites.filter((s) => !withPhoto.has(s.id)).map((s) => s.id);
+  if (without.length) warnings.push(`no photo yet: ${without.join(', ')}`);
+}
+
 if (warnings.length) {
   console.log(`Warnings (${warnings.length}):`);
   for (const w of warnings) console.log('  - ' + w);

@@ -15,6 +15,15 @@ async function loadJson(name) {
   return res.json();
 }
 
+/** Optional files (photos) may be missing in older data packages: return a fallback instead of failing. */
+async function loadOptionalJson(name, fallback) {
+  try {
+    return await loadJson(name);
+  } catch {
+    return fallback;
+  }
+}
+
 export async function loadData() {
   const [sitesFile, scoresFile, featuresFile, missions, labels, materialMatrix] = await Promise.all([
     loadJson('sites.json'),
@@ -24,6 +33,12 @@ export async function loadData() {
     loadJson('labels.json'),
     loadJson('material_matrix.json'),
   ]);
+  const photosFile = await loadOptionalJson('photos.json', { photos: [] });
+  const photosBySite = new Map();
+  for (const ph of photosFile.photos || []) {
+    if (!photosBySite.has(ph.site_id)) photosBySite.set(ph.site_id, []);
+    photosBySite.get(ph.site_id).push(ph);
+  }
 
   const sites = sitesFile.sites;
   const siteById = new Map(sites.map((s) => [s.id, s]));
@@ -54,6 +69,7 @@ export async function loadData() {
     sites,
     siteById,
     featuresBySite,
+    photosFor: (siteId) => photosBySite.get(siteId) || [],
     missions,
     labels,
     materialMatrix,

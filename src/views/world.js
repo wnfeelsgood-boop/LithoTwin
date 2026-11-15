@@ -4,6 +4,7 @@ import { ui } from '../i18n.js';
 import { esc } from '../format.js';
 import { targetTaskPickerHtml, pairForTarget } from '../components/pairPicker.js';
 import { targetNumbersHtml } from '../components/featureTable.js';
+import { photoFigureHtml } from '../components/photos.js';
 import { rankingHtml, methodCheckHtml, visibleScores } from './ranking.js';
 import { navigate } from '../router.js';
 import { state } from '../state.js';
@@ -19,6 +20,7 @@ export function renderWorld(root, data, route) {
     <main class="world${state.globeFailed ? ' no-globe' : ''}">
       <aside class="world__left">
         ${targetTaskPickerHtml(data, pair)}
+        ${data.photosFor(target.id).slice(0, 1).map((p) => photoFigureHtml(p, { compact: true })).join('')}
         ${targetNumbersHtml(data, target)}
         ${methodCheckHtml(data, pair)}
       </aside>

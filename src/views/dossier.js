@@ -9,6 +9,7 @@ import { groupBadge } from './ranking.js';
 import { pairLabel, bodyDot, shortTargetName } from '../components/pairPicker.js';
 import { pentagonSvg } from '../components/pentagon.js';
 import { contribBarsHtml } from '../components/contribBars.js';
+import { photosSectionHtml } from '../components/photos.js';
 import { rulesListHtml, worstRuleNames } from '../components/rulesList.js';
 import { featureText, featureName, RELIEF_KEYS, capitalize } from '../components/featureTable.js';
 
@@ -208,6 +209,7 @@ export function renderDossier(root, data, route) {
         ${compareTableHtml(data, site, site.kind === 'site' ? target : null)}
         ${score ? rulesListHtml(data, site, score) : ''}
       </div>
+      ${photosSectionHtml(data, site, site.kind === 'site' ? target : null)}
       <div class="dossier__cards">
         ${textCard('what', 'whatItIs', [d.summary].filter(Boolean))}
         ${textCard('similar', 'howSimilar', d.similar || [])}

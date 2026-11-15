@@ -29,9 +29,9 @@ const files = readdirSync(assetsDir);
 const js = readFileSync(join(assetsDir, files.find((f) => f.endsWith('.js'))), 'utf8').replace(/<\/script/gi, '<\\/script');
 const css = readFileSync(join(assetsDir, files.find((f) => f.endsWith('.css'))), 'utf8');
 
-const MIME = { '.json': 'application/json', '.png': 'image/png' };
+const MIME = { '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg' };
 const embedded = {};
-for (const dir of ['data', 'maps', 'geo']) {
+for (const dir of ['data', 'maps', 'geo', 'photos']) {
   for (const f of readdirSync(join(root, 'public', dir))) {
     const buf = readFileSync(join(root, 'public', dir, f));
     embedded[`${dir}/${f}`] = `data:${MIME[extname(f)]};base64,${buf.toString('base64')}`;
