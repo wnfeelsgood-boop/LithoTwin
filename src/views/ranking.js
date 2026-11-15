@@ -62,12 +62,11 @@ export function rankingHtml(data, pair, filter, selectedId, { hideHint = false }
         <h2 class="ranking__title">${esc(ui('rankingTitle'))}</h2>
         <span class="muted mono">${rows.length} / ${all.length}</span>
       </header>
-      ${
-        hideHint
-          ? ''
-          : `<p class="click-hint"><span aria-hidden="true">👆</span> ${esc(ui('clickHint'))}
-        <button type="button" class="click-hint__close" data-hide-hint title="${esc(ui('hideHint'))}" aria-label="${esc(ui('hideHint'))}">×</button></p>`
-      }
+      <div class="click-hint${hideHint ? ' is-collapsed' : ''}">
+        <p class="click-hint__text"><span aria-hidden="true">👆</span> ${esc(ui('clickHint'))}</p>
+        <button type="button" class="click-hint__close" data-hint-toggle aria-expanded="${!hideHint}"
+          title="${esc(ui(hideHint ? 'showHint' : 'hideHint'))}" aria-label="${esc(ui(hideHint ? 'showHint' : 'hideHint'))}">${hideHint ? `👆 ${esc(ui('hintLabel'))}` : '×'}</button>
+      </div>
       ${filterBarHtml(filter)}
       ${
         rows.length

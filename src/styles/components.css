@@ -1274,6 +1274,29 @@
   font-size: 14px;
   color: var(--text-2);
 }
+.click-hint__text {
+  margin: 0;
+}
+.click-hint.is-collapsed {
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.click-hint.is-collapsed .click-hint__text {
+  display: none;
+}
+.click-hint.is-collapsed .click-hint__close {
+  position: static;
+  width: auto;
+  height: 28px;
+  padding: 0 12px;
+  border: 1px dashed color-mix(in srgb, var(--ice) 40%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ice) 8%, transparent);
+  color: var(--text-2);
+  font-size: 13px;
+}
 .click-hint {
   position: relative;
   margin: 0;

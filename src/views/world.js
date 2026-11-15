@@ -61,9 +61,16 @@ function bindControls(root, data, route, pair) {
 
   const right = root.querySelector('#ranking-mount');
   right.addEventListener('click', (e) => {
-    if (e.target.closest('[data-hide-hint]')) {
-      state.setHintHidden(true);
-      e.target.closest('.click-hint')?.remove();
+    const toggle = e.target.closest('[data-hint-toggle]');
+    if (toggle) {
+      const collapsed = !state.hintHidden;
+      state.setHintHidden(collapsed);
+      toggle.closest('.click-hint')?.classList.toggle('is-collapsed', collapsed);
+      toggle.setAttribute('aria-expanded', String(!collapsed));
+      const tip = ui(collapsed ? 'showHint' : 'hideHint');
+      toggle.title = tip;
+      toggle.setAttribute('aria-label', tip);
+      toggle.textContent = collapsed ? `👆 ${ui('hintLabel')}` : '×';
       return;
     }
     const f = e.target.closest('[data-filter]');
