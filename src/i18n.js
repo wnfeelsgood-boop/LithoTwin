@@ -68,6 +68,31 @@ const UI = {
     ru: 'Для этой задачи нет площадок под этот фильтр. Попробуйте «Все».',
   },
   similarity: { en: 'Similarity', ru: 'Сходство' },
+  openDossier: { en: 'Open dossier', ru: 'Открыть досье' },
+  currentTarget: { en: 'Target', ru: 'Цель' },
+  task: { en: 'Task', ru: 'Задача' },
+  exposure_high: { en: 'High', ru: 'Высокая' },
+  exposure_medium: { en: 'Medium', ru: 'Средняя' },
+  exposure_low: { en: 'Low', ru: 'Низкая' },
+  rankingTitle: { en: 'Analog ranking', ru: 'Рейтинг аналогов' },
+  targetNumbers: { en: 'Target in numbers · 3 km circle', ru: 'Цель в цифрах · круг 3 км' },
+  globeHint: {
+    en: 'Drag the globe to see Russia, Antarctica and Hawaii. Click a pentagon to select a site, click again to open its dossier.',
+    ru: 'Перетащите глобус, чтобы увидеть Россию, Антарктиду и Гавайи. Клик по пентагону выбирает площадку, повторный открывает досье.',
+  },
+  legend: { en: 'Size = similarity · Colour = suitability · Dashed = negative control', ru: 'Размер = сходство · Цвет = пригодность · Пунктир = негатив' },
+  moon: { en: 'Moon', ru: 'Луна' },
+  mars: { en: 'Mars', ru: 'Марс' },
+  sitesShown: { en: 'sites shown', ru: 'площадок показано' },
+  methodCheck: { en: 'Method check', ru: 'Проверка метода' },
+  methodCheckText: {
+    en: 'best negative control {neg} < analog median {med} · stable in {runs}/{total} weight perturbations',
+    ru: 'лучший негатив {neg} < медиана аналогов {med} · устойчиво в {runs}/{total} прогонах со сдвигом весов',
+  },
+  methodCheckFail: {
+    en: 'best negative control {neg} ≥ analog median {med}: the method does not separate this pair',
+    ru: 'лучший негатив {neg} ≥ медиана аналогов {med}: метод не разделяет эту пару',
+  },
   loading: { en: 'Loading data…', ru: 'Загружаем данные…' },
   loadError: { en: 'Could not load the data package.', ru: 'Не удалось загрузить данные.' },
   footer: {
@@ -76,5 +101,9 @@ const UI = {
   },
 };
 
-export const ui = (key) => t(UI[key]) ?? key;
+export const ui = (key, vars) => {
+  let text = t(UI[key]) ?? key;
+  if (vars) for (const [k, v] of Object.entries(vars)) text = text.replaceAll(`{${k}}`, v);
+  return text;
+};
 export const UI_STRINGS = UI;
