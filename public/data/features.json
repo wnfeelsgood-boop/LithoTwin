@@ -341,7 +341,7 @@
   {
    "site_id": "e_mcmurdo",
    "feature": "slope_p50",
-   "value": 3.962,
+   "value": 4.218,
    "unit": "deg",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
@@ -351,13 +351,13 @@
     "lat": -77.6264,
     "lon": 163.0569
    },
-   "valid_fraction": 0.286,
+   "valid_fraction": 1.0,
    "status": "direct"
   },
   {
    "site_id": "e_mcmurdo",
    "feature": "slope_p90",
-   "value": 6.551,
+   "value": 7.411,
    "unit": "deg",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
@@ -367,13 +367,13 @@
     "lat": -77.6264,
     "lon": 163.0569
    },
-   "valid_fraction": 0.286,
+   "valid_fraction": 1.0,
    "status": "direct"
   },
   {
    "site_id": "e_mcmurdo",
    "feature": "flat_frac",
-   "value": 0.955,
+   "value": 0.902,
    "unit": "fraction",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
@@ -383,13 +383,13 @@
     "lat": -77.6264,
     "lon": 163.0569
    },
-   "valid_fraction": 0.286,
+   "valid_fraction": 1.0,
    "status": "direct"
   },
   {
    "site_id": "e_mcmurdo",
    "feature": "roughness_rms",
-   "value": 84.621,
+   "value": 36.504,
    "unit": "m",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
@@ -399,13 +399,13 @@
     "lat": -77.6264,
     "lon": 163.0569
    },
-   "valid_fraction": 0.286,
+   "valid_fraction": 1.0,
    "status": "direct"
   },
   {
    "site_id": "e_mcmurdo",
    "feature": "local_relief",
-   "value": 150.694,
+   "value": 238.168,
    "unit": "m",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
@@ -415,13 +415,13 @@
     "lat": -77.6264,
     "lon": 163.0569
    },
-   "valid_fraction": 0.286,
+   "valid_fraction": 1.0,
    "status": "direct"
   },
   {
    "site_id": "e_mcmurdo",
    "feature": "elev_median",
-   "value": 179.27,
+   "value": 127.372,
    "unit": "m",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
@@ -431,7 +431,7 @@
     "lat": -77.6264,
     "lon": 163.0569
    },
-   "valid_fraction": 0.286,
+   "valid_fraction": 1.0,
    "status": "direct"
   },
   {
@@ -1125,15 +1125,15 @@
   {
    "site_id": "e_neg_amazon",
    "feature": "slope_p50",
-   "value": 1.274,
+   "value": 1.413,
    "unit": "deg",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
    "analysis_resolution_m": 500,
    "aoi_radius_m": 3000,
    "center": {
-    "lat": -3,
-    "lon": -60
+    "lat": -2.609,
+    "lon": -60.209
    },
    "valid_fraction": 1.0,
    "status": "direct"
@@ -1141,15 +1141,15 @@
   {
    "site_id": "e_neg_amazon",
    "feature": "slope_p90",
-   "value": 1.959,
+   "value": 2.348,
    "unit": "deg",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
    "analysis_resolution_m": 500,
    "aoi_radius_m": 3000,
    "center": {
-    "lat": -3,
-    "lon": -60
+    "lat": -2.609,
+    "lon": -60.209
    },
    "valid_fraction": 1.0,
    "status": "direct"
@@ -1164,8 +1164,8 @@
    "analysis_resolution_m": 500,
    "aoi_radius_m": 3000,
    "center": {
-    "lat": -3,
-    "lon": -60
+    "lat": -2.609,
+    "lon": -60.209
    },
    "valid_fraction": 1.0,
    "status": "direct"
@@ -1173,15 +1173,15 @@
   {
    "site_id": "e_neg_amazon",
    "feature": "roughness_rms",
-   "value": 11.414,
+   "value": 12.718,
    "unit": "m",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
    "analysis_resolution_m": 500,
    "aoi_radius_m": 3000,
    "center": {
-    "lat": -3,
-    "lon": -60
+    "lat": -2.609,
+    "lon": -60.209
    },
    "valid_fraction": 1.0,
    "status": "direct"
@@ -1189,15 +1189,15 @@
   {
    "site_id": "e_neg_amazon",
    "feature": "local_relief",
-   "value": 44.809,
+   "value": 47.462,
    "unit": "m",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
    "analysis_resolution_m": 500,
    "aoi_radius_m": 3000,
    "center": {
-    "lat": -3,
-    "lon": -60
+    "lat": -2.609,
+    "lon": -60.209
    },
    "valid_fraction": 1.0,
    "status": "direct"
@@ -1205,15 +1205,15 @@
   {
    "site_id": "e_neg_amazon",
    "feature": "elev_median",
-   "value": 57.023,
+   "value": 95.687,
    "unit": "m",
    "source": "Copernicus GLO-90",
    "native_resolution_m": 90,
    "analysis_resolution_m": 500,
    "aoi_radius_m": 3000,
    "center": {
-    "lat": -3,
-    "lon": -60
+    "lat": -2.609,
+    "lon": -60.209
    },
    "valid_fraction": 1.0,
    "status": "direct"
@@ -1228,8 +1228,8 @@
    "analysis_resolution_m": null,
    "aoi_radius_m": 3000,
    "center": {
-    "lat": -3,
-    "lon": -60
+    "lat": -2.609,
+    "lon": -60.209
    },
    "valid_fraction": 1.0,
    "status": "qualitative"

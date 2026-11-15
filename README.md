@@ -72,7 +72,7 @@ Open-source libraries: [globe.gl](https://github.com/vasturiano/globe.gl) (MIT),
 
 ## Limitations
 
-Dossier texts, class assignments and the rock matrix are hackathon drafts. McMurdo Dry Valleys relief covers only part of its circle; the Tolbachik centre awaits an imagery check. See `docs/DATA_GAPS.md`.
+Dossier texts, class assignments and the rock matrix are hackathon drafts. The Tolbachik centre awaits an imagery check. See `docs/DATA_GAPS.md`.
 
 ## Team
 

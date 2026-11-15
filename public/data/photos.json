@@ -2,6 +2,110 @@
   "schema_version": 1,
   "photos": [
     {
+      "site_id": "e_neg_farmland",
+      "file": "photos/e_neg_farmland_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Kansas farmland, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: пашня Канзаса, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_sarykum",
+      "file": "photos/ru_sarykum_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Sarykum Dune, 2026-11-11.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: бархан Сарыкум, 2026-11-11."
+      },
+      "date": "2026-11-11",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_batagaika",
+      "file": "photos/ru_batagaika_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Batagaika megaslump, 2026-09-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: Батагайский провал, 2026-09-12."
+      },
+      "date": "2026-09-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_chara",
+      "file": "photos/ru_chara_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Chara Sands, 2026-08-07.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: Чарские пески, 2026-08-07."
+      },
+      "date": "2026-08-07",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_uzon",
+      "file": "photos/ru_uzon_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Uzon caldera, 2026-08-04.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кальдера Узон, 2026-08-04."
+      },
+      "date": "2026-08-04",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_tolbachik",
+      "file": "photos/ru_tolbachik_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Tolbachik Dol lava plateau, 2026-08-04.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: лавовое плато Толбачинского дола, 2026-08-04."
+      },
+      "date": "2026-08-04",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_baskunchak",
+      "file": "photos/ru_baskunchak_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Lake Baskunchak salt flat, 2026-08-03.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: соляное озеро Баскунчак, 2026-08-03."
+      },
+      "date": "2026-08-03",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_elgygytgyn",
+      "file": "photos/ru_elgygytgyn_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Elgygytgyn crater lake shore, 2026-06-24.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: берег озера в кратере Эльгыгытгын, 2026-06-24."
+      },
+      "date": "2026-06-24",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
       "site_id": "e_lanzarote",
       "file": "photos/e_lanzarote_sat.jpg",
       "kind": "satellite",

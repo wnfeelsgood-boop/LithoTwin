@@ -15,7 +15,7 @@
   {
    "target_id": "mars_arcadia",
    "task": "mars_rover_eva",
-   "analog_median": 72.7,
+   "analog_median": 65.7,
    "best_negative": 55.2,
    "pass": true,
    "robust_runs": 50,
@@ -25,15 +25,15 @@
    "target_id": "mars_jezero",
    "task": "mars_rover_eva",
    "analog_median": 61.4,
-   "best_negative": 58.6,
+   "best_negative": 57.3,
    "pass": true,
-   "robust_runs": 41,
+   "robust_runs": 49,
    "runs": 50
   },
   {
    "target_id": "mars_arcadia",
    "task": "mars_drill",
-   "analog_median": 75.5,
+   "analog_median": 72.2,
    "best_negative": 42.8,
    "pass": true,
    "robust_runs": 50,
@@ -43,7 +43,7 @@
    "target_id": "mars_jezero",
    "task": "mars_drill",
    "analog_median": 62.9,
-   "best_negative": 49.3,
+   "best_negative": 49.2,
    "pass": true,
    "robust_runs": 50,
    "runs": 50
@@ -141,8 +141,8 @@
    "site_id": "e_mcmurdo",
    "target_id": "moon_shackleton",
    "task": "moon_base",
-   "similarity": 61.4,
-   "completeness": 0.54,
+   "similarity": 62.0,
+   "completeness": 1.0,
    "rank": 2,
    "suitability": "warn",
    "suitability_rules": {
@@ -156,13 +156,13 @@
     2
    ],
    "contrib": {
-    "slope_p50": 4.3,
-    "slope_p90": 3.1,
-    "flat_frac": 0.0,
-    "roughness_rms": 4.2,
-    "local_relief": 0.0,
-    "material": 14.9,
-    "ice": 14.9,
+    "slope_p50": 8.3,
+    "slope_p90": 6.3,
+    "flat_frac": 1.6,
+    "roughness_rms": 7.0,
+    "local_relief": 2.7,
+    "material": 8.0,
+    "ice": 8.0,
     "exposure": 20.0
    }
   },
@@ -344,7 +344,7 @@
    "site_id": "e_neg_amazon",
    "target_id": "moon_shackleton",
    "task": "moon_base",
-   "similarity": 9.8,
+   "similarity": 10.1,
    "completeness": 1.0,
    "rank": 19,
    "suitability": "fail",
@@ -359,8 +359,8 @@
     19
    ],
    "contrib": {
-    "slope_p50": 4.7,
-    "slope_p90": 3.4,
+    "slope_p50": 4.9,
+    "slope_p90": 3.6,
     "flat_frac": 0.0,
     "roughness_rms": 0.0,
     "local_relief": 0.0,
@@ -607,7 +607,7 @@
    "task": "mars_rover_eva",
    "similarity": 68.3,
    "completeness": 1.0,
-   "rank": 3,
+   "rank": 2,
    "suitability": "warn",
    "suitability_rules": {
     "bare_ground": "pass",
@@ -616,8 +616,8 @@
    },
    "rank_stability": "high",
    "rank_range": [
-    2,
-    4
+    1,
+    3
    ],
    "contrib": {
     "slope_p50": 14.6,
@@ -692,9 +692,9 @@
    "site_id": "e_mcmurdo",
    "target_id": "mars_arcadia",
    "task": "mars_rover_eva",
-   "similarity": 77.2,
-   "completeness": 0.46,
-   "rank": 1,
+   "similarity": 63.1,
+   "completeness": 1.0,
+   "rank": 4,
    "suitability": "warn",
    "suitability_rules": {
     "bare_ground": "pass",
@@ -703,17 +703,17 @@
    },
    "rank_stability": "high",
    "rank_range": [
-    1,
-    1
+    3,
+    5
    ],
    "contrib": {
-    "slope_p50": 6.3,
-    "slope_p90": 4.4,
-    "flat_frac": 6.3,
+    "slope_p50": 9.8,
+    "slope_p90": 6.5,
+    "flat_frac": 8.1,
     "roughness_rms": 0.0,
     "local_relief": 0.0,
-    "material": 34.4,
-    "ice": 5.7,
+    "material": 16.0,
+    "ice": 2.7,
     "exposure": 20.0
    }
   },
@@ -730,9 +730,9 @@
     "access": "pass",
     "slope_p90": "pass"
    },
-   "rank_stability": "high",
+   "rank_stability": "medium",
    "rank_range": [
-    4,
+    3,
     6
    ],
    "contrib": {
@@ -868,7 +868,7 @@
    "task": "mars_rover_eva",
    "similarity": 64.2,
    "completeness": 1.0,
-   "rank": 4,
+   "rank": 3,
    "suitability": "fail",
    "suitability_rules": {
     "bare_ground": "fail",
@@ -877,7 +877,7 @@
    },
    "rank_stability": "low",
    "rank_range": [
-    3,
+    2,
     8
    ],
    "contrib": {
@@ -895,7 +895,7 @@
    "site_id": "e_neg_amazon",
    "target_id": "mars_arcadia",
    "task": "mars_rover_eva",
-   "similarity": 48.6,
+   "similarity": 47.9,
    "completeness": 1.0,
    "rank": 14,
    "suitability": "fail",
@@ -910,11 +910,11 @@
     14
    ],
    "contrib": {
-    "slope_p50": 14.5,
-    "slope_p90": 10.9,
+    "slope_p50": 14.3,
+    "slope_p90": 10.6,
     "flat_frac": 12.0,
     "roughness_rms": 0.0,
-    "local_relief": 1.6,
+    "local_relief": 1.4,
     "material": 9.6,
     "ice": 0.0,
     "exposure": 0.0
@@ -984,7 +984,7 @@
    "task": "mars_rover_eva",
    "similarity": 69.8,
    "completeness": 1.0,
-   "rank": 2,
+   "rank": 1,
    "suitability": "warn",
    "suitability_rules": {
     "bare_ground": "warn",
@@ -993,8 +993,8 @@
    },
    "rank_stability": "high",
    "rank_range": [
-    2,
-    3
+    1,
+    2
    ],
    "contrib": {
     "slope_p50": 15.1,
@@ -1081,7 +1081,7 @@
    "rank_stability": "high",
    "rank_range": [
     12,
-    14
+    13
    ],
    "contrib": {
     "slope_p50": 13.7,
@@ -1187,7 +1187,7 @@
    "task": "mars_rover_eva",
    "similarity": 58.3,
    "completeness": 1.0,
-   "rank": 11,
+   "rank": 10,
    "suitability": "pass",
    "suitability_rules": {
     "bare_ground": "pass",
@@ -1243,9 +1243,9 @@
    "site_id": "e_mcmurdo",
    "target_id": "mars_jezero",
    "task": "mars_rover_eva",
-   "similarity": 64.6,
-   "completeness": 0.46,
-   "rank": 7,
+   "similarity": 60.3,
+   "completeness": 1.0,
+   "rank": 9,
    "suitability": "warn",
    "suitability_rules": {
     "bare_ground": "pass",
@@ -1254,17 +1254,17 @@
    },
    "rank_stability": "high",
    "rank_range": [
-    7,
-    8
+    8,
+    10
    ],
    "contrib": {
-    "slope_p50": 7.1,
-    "slope_p90": 5.7,
-    "flat_frac": 6.3,
+    "slope_p50": 11.1,
+    "slope_p90": 8.5,
+    "flat_frac": 8.1,
     "roughness_rms": 0.0,
-    "local_relief": 2.1,
-    "material": 20.7,
-    "ice": 2.9,
+    "local_relief": 1.7,
+    "material": 9.6,
+    "ice": 1.3,
     "exposure": 20.0
    }
   },
@@ -1274,7 +1274,7 @@
    "task": "mars_rover_eva",
    "similarity": 61.4,
    "completeness": 1.0,
-   "rank": 9,
+   "rank": 8,
    "suitability": "pass",
    "suitability_rules": {
     "bare_ground": "pass",
@@ -1283,8 +1283,8 @@
    },
    "rank_stability": "high",
    "rank_range": [
-    8,
-    10
+    7,
+    9
    ],
    "contrib": {
     "slope_p50": 14.2,
@@ -1446,9 +1446,9 @@
    "site_id": "e_neg_amazon",
    "target_id": "mars_jezero",
    "task": "mars_rover_eva",
-   "similarity": 58.6,
+   "similarity": 57.3,
    "completeness": 1.0,
-   "rank": 10,
+   "rank": 11,
    "suitability": "fail",
    "suitability_rules": {
     "bare_ground": "fail",
@@ -1457,15 +1457,15 @@
    },
    "rank_stability": "medium",
    "rank_range": [
-    9,
+    8,
     12
    ],
    "contrib": {
-    "slope_p50": 15.8,
-    "slope_p90": 11.1,
+    "slope_p50": 15.6,
+    "slope_p90": 11.4,
     "flat_frac": 12.0,
-    "roughness_rms": 12.3,
-    "local_relief": 0.2,
+    "roughness_rms": 10.7,
+    "local_relief": 0.4,
     "material": 3.2,
     "ice": 4.0,
     "exposure": 0.0
@@ -1622,7 +1622,7 @@
    "task": "mars_rover_eva",
    "similarity": 63.5,
    "completeness": 1.0,
-   "rank": 8,
+   "rank": 7,
    "suitability": "warn",
    "suitability_rules": {
     "bare_ground": "warn",
@@ -1632,7 +1632,7 @@
    "rank_stability": "high",
    "rank_range": [
     7,
-    9
+    8
    ],
    "contrib": {
     "slope_p50": 15.0,
@@ -1794,8 +1794,8 @@
    "site_id": "e_mcmurdo",
    "target_id": "mars_arcadia",
    "task": "mars_drill",
-   "similarity": 84.6,
-   "completeness": 0.82,
+   "similarity": 78.0,
+   "completeness": 1.0,
    "rank": 1,
    "suitability": "warn",
    "suitability_rules": {
@@ -1809,13 +1809,13 @@
     1
    ],
    "contrib": {
-    "slope_p50": 0.9,
-    "slope_p90": 0.8,
-    "flat_frac": 1.2,
+    "slope_p50": 2.5,
+    "slope_p90": 2.2,
+    "flat_frac": 2.7,
     "roughness_rms": 0.0,
     "local_relief": 0.0,
-    "material": 39.0,
-    "ice": 22.7,
+    "material": 32.0,
+    "ice": 18.7,
     "exposure": 20.0
    }
   },
@@ -1997,7 +1997,7 @@
    "site_id": "e_neg_amazon",
    "target_id": "mars_arcadia",
    "task": "mars_drill",
-   "similarity": 32.0,
+   "similarity": 31.7,
    "completeness": 1.0,
    "rank": 17,
    "suitability": "warn",
@@ -2008,15 +2008,15 @@
    },
    "rank_stability": "high",
    "rank_range": [
-    15,
+    16,
     17
    ],
    "contrib": {
     "slope_p50": 3.6,
-    "slope_p90": 3.6,
+    "slope_p90": 3.5,
     "flat_frac": 4.0,
     "roughness_rms": 0.0,
-    "local_relief": 1.6,
+    "local_relief": 1.4,
     "material": 19.2,
     "ice": 0.0,
     "exposure": 0.0
@@ -2345,8 +2345,8 @@
    "site_id": "e_mcmurdo",
    "target_id": "mars_jezero",
    "task": "mars_drill",
-   "similarity": 59.2,
-   "completeness": 0.82,
+   "similarity": 58.5,
+   "completeness": 1.0,
    "rank": 12,
    "suitability": "warn",
    "suitability_rules": {
@@ -2356,17 +2356,17 @@
    },
    "rank_stability": "low",
    "rank_range": [
-    8,
+    9,
     14
    ],
    "contrib": {
-    "slope_p50": 1.0,
-    "slope_p90": 1.1,
-    "flat_frac": 1.2,
+    "slope_p50": 2.8,
+    "slope_p90": 2.8,
+    "flat_frac": 2.7,
     "roughness_rms": 0.0,
-    "local_relief": 1.2,
-    "material": 23.4,
-    "ice": 11.4,
+    "local_relief": 1.7,
+    "material": 19.2,
+    "ice": 9.3,
     "exposure": 20.0
    }
   },
@@ -2548,7 +2548,7 @@
    "site_id": "e_neg_amazon",
    "target_id": "mars_jezero",
    "task": "mars_drill",
-   "similarity": 49.3,
+   "similarity": 49.2,
    "completeness": 1.0,
    "rank": 15,
    "suitability": "warn",
@@ -2564,10 +2564,10 @@
    ],
    "contrib": {
     "slope_p50": 3.9,
-    "slope_p90": 3.7,
+    "slope_p90": 3.8,
     "flat_frac": 4.0,
-    "roughness_rms": 3.1,
-    "local_relief": 0.2,
+    "roughness_rms": 2.7,
+    "local_relief": 0.4,
     "material": 6.4,
     "ice": 28.0,
     "exposure": 0.0

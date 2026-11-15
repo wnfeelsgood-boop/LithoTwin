@@ -181,7 +181,7 @@ Static page, EN, built partly from `missions.json`:
 4. Validation: table from `method_check` (pair, analog median, best negative, pass, robust runs/50).
 5. Rock similarity matrix (heatmap table from `material_matrix.json`).
 6. Data sources & attribution (copy exactly from the data README: Copernicus DEM GLO-90 attribution, LRO LOLA LDEM_80S_80M, MGS MOLA MEGDR 128 ppd, Natural Earth via world-atlas).
-7. Limitations: draft dossier texts; McMurdo relief covers 29% of the circle; Tolbachik centre awaits imagery check; rock matrix is expert judgement.
+7. Limitations: draft dossier texts; Tolbachik centre awaits imagery check; rock matrix is expert judgement.
 8. Team and AI disclosure (link to `docs/AI_DISCLOSURE.md`).
 
 ## 5. Visual language (from `_reference/design/*`)
@@ -229,7 +229,7 @@ Feature freeze 20:00 MSK: after that only bug fixes, texts, data v2 swap, deploy
 
 Data and logic
 - [ ] `npm test` passes; 95 scores, 5 pairs × 19.
-- [ ] For each pair, list order equals `rank`; top-3 matches: Moon base: Mauna Kea 66.5, McMurdo 61.4, Tolbachik 57.6 (data v1).
+- [ ] For each pair, list order equals `rank`; top-3 matches: Moon base: Mauna Kea 66.5, McMurdo 62.0, Tolbachik 57.6 (data v3).
 - [ ] Filter "No red" hides exactly the `fail` rows; "Green only" shows only `pass`; the globe hides the same sites.
 - [ ] Contribution bars sum to the big number (±0.4, rounding of parts); bar maxima follow §3.
 - [ ] Negatives are grey/dashed everywhere and labelled "Negative control".
@@ -268,6 +268,6 @@ State plainly: code was written with Claude Code (Anthropic) under the team's di
 
 ## 11. Known data caveats (do not "fix" them in code)
 - Most dossier texts are RU only and some `intro` are `null` in v1. Data v2 will add EN.
-- `e_mcmurdo` completeness 0.29 (DEM tile missing) → shows "data covers 29% of the circle".
+- `e_mcmurdo`: full relief coverage since data v3 (missing DEM tile added). The coverage warning code stays for future gaps.
 - `ru_tolbachik` centre moved to a lava plateau, pending imagery check.
 - Rock matrix and statuses are drafts.

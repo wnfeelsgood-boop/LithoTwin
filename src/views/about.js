@@ -175,7 +175,6 @@ export function renderAbout(root, data) {
         <h2 class="section-title">6. Limitations</h2>
         <ul>
           <li>Dossier texts, class assignments and the rock matrix are drafts from a 48-hour hackathon and have not been peer-reviewed.</li>
-          <li>McMurdo Dry Valleys: relief covers only part of the 3 km circle (one DEM tile is missing), so its score is uncertain.</li>
           <li>Tolbachik: the circle centre was moved to the lava plateau and still needs a check against satellite imagery.</li>
           <li>Mars relief (MOLA, about 463 m per pixel) is much coarser than Earth's (90 m), which smooths Martian roughness.</li>
           <li>Similarity says nothing about logistics, permits or cost; that is what the suitability rules only begin to cover.</li>

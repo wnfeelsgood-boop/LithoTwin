@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "status": "draft",
- "exported_from": "Google Sheet, 2026-11-15 14:30 MSK",
+ "exported_from": "Google Sheet, 2026-11-15 17:40 MSK",
  "sites": [
   {
    "id": "e_haughton",
@@ -653,11 +653,11 @@
    "body": "earth",
    "group": "negative",
    "center": {
-    "lat": -3.0,
-    "lon": -60.0
+    "lat": -2.609,
+    "lon": -60.209
    },
    "aoi_radius_km": 3,
-   "object_at_center_ru": "Тропический лес (негатив)",
+   "object_at_center_ru": "Тропический лес, заповедник Уиэйрас (башня K34 проекта LBA), негатив",
    "material_class": "clastic_sediment",
    "ice_class": 0,
    "bare_class": "low",
