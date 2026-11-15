@@ -1,0 +1,6 @@
+_reference/
+_incoming/
+node_modules/
+dist/
+.DS_Store
+*.log
