@@ -46,10 +46,16 @@ function textCard(kind, titleKey, items) {
     </section>`;
 }
 
+/** Geologists start the intro with the mission ("For Mars exploration: …"); show that lead-in in accent colour. */
+function introHtml(text) {
+  const m = /^([^:]{3,45}):\s*(.+)$/s.exec(text);
+  if (!m) return esc(text);
+  return `<span class="accent-ice">${esc(m[1])}:</span> ${esc(m[2])}`;
+}
+
 function headerHtml(data, site, pair) {
   const d = site.dossier || {};
   const intro = d.intro;
-  const introPrefix = pair.task === 'moon_base' ? ui('introMoon') : ui('introMars');
   const status = d.status ? ui('dossierStatus', { status: ui(`status_${d.status}`) }) : '';
   const novelty = d.novelty ? ui(`novelty_${d.novelty}`) : '';
   return `
@@ -62,17 +68,14 @@ function headerHtml(data, site, pair) {
       </div>
       <h1 class="dossier__name">${esc(t(site.name))}</h1>
       ${
-        t(intro)
-          ? `<p class="dossier__intro">${site.kind === 'site' ? `<span class="accent-ice">${esc(introPrefix)}</span> ` : ''}${esc(
-              t(intro)
-            )}${langTag(intro)}</p>`
-          : ''
+        t(intro) ? `<p class="dossier__intro">${introHtml(t(intro))}${langTag(intro)}</p>` : ''
       }
       ${
-        site.object_at_center_ru
+        // This field exists only in Russian, so it is shown in the RU interface only.
+        site.object_at_center_ru && getLang() === 'ru'
           ? `<p class="dossier__centre muted"><span class="step-label">${esc(ui('objectAtCentre'))}</span> ${esc(
               site.object_at_center_ru
-            )}${getLang() === 'en' ? ' <span class="lang-tag">RU</span>' : ''}</p>`
+            )}</p>`
           : ''
       }
     </div>`;

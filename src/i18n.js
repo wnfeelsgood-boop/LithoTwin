@@ -102,8 +102,6 @@ const UI = {
   novelty_published: { en: 'Published analog', ru: 'Описан как аналог' },
   novelty_related: { en: 'Related studies exist', ru: 'Есть близкие работы' },
   novelty_none: { en: 'New candidate', ru: 'Новый кандидат' },
-  introMoon: { en: 'For a Moon base:', ru: 'Для лунной базы:' },
-  introMars: { en: 'For Mars exploration:', ru: 'Для исследования Марса:' },
   similarityTo: { en: 'Similarity to {target} · task “{task}”', ru: 'Сходство с целью «{target}» · задача «{task}»' },
   of100: { en: 'of 100', ru: 'из 100' },
   rank: { en: 'Rank', ru: 'Место' },
