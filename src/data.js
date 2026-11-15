@@ -3,7 +3,11 @@
 
 const BASE = import.meta.env.BASE_URL;
 
-export const asset = (path) => `${BASE}${path}`.replace(/\/{2,}/g, '/');
+// The single-file build (npm run build:single) embeds every data file and map as a data: URI
+// in window.__LT_ASSETS__, so the page also works when opened straight from disk.
+const EMBEDDED = typeof window !== 'undefined' ? window.__LT_ASSETS__ : null;
+
+export const asset = (path) => EMBEDDED?.[path] ?? `${BASE}${path}`.replace(/\/{2,}/g, '/');
 
 async function loadJson(name) {
   const res = await fetch(asset(`data/${name}`));

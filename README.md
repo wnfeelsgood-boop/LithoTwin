@@ -40,6 +40,7 @@ npm test          # data integrity check
 npm run dev       # http://localhost:5173
 npm run build     # static site in dist/
 npm run shots     # screenshots into docs/screenshots (after build)
+npm run build:single  # one self-contained HTML file (dist-single/LithoTwin.html, ~10 MB) that opens from disk
 ```
 
 The app is a static site: all numbers are precomputed in `public/data/*.json`; the browser only reads, filters and draws them. To update the data, replace the files in `public/data/` and `public/maps/` with a new data package of the same schema; no code changes are needed.
