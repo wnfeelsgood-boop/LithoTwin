@@ -875,3 +875,67 @@
     font-size: 15px;
   }
 }
+
+/* ---------- Globe ---------- */
+.globe__host {
+  position: absolute;
+  inset: 0;
+  cursor: grab;
+}
+.globe__host:active {
+  cursor: grabbing;
+}
+.marker {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+}
+.marker svg {
+  display: block;
+}
+.marker:hover,
+.marker:focus-visible {
+  z-index: 5;
+}
+.marker.is-selected svg {
+  filter: drop-shadow(0 0 0 var(--ice)) drop-shadow(0 0 6px var(--ice));
+}
+.marker.is-selected::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 2px solid var(--ice);
+  border-radius: 50%;
+}
+.marker__tip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  display: none;
+  white-space: nowrap;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--panel);
+  border: 1px solid var(--border-2);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: left;
+  pointer-events: none;
+}
+.marker__tip strong {
+  display: block;
+  font-size: 13px;
+}
+.marker:hover .marker__tip,
+.marker:focus-visible .marker__tip,
+.marker.is-selected .marker__tip {
+  display: block;
+}
