@@ -2,6 +2,19 @@
   "schema_version": 1,
   "photos": [
     {
+      "site_id": "e_haughton",
+      "file": "photos/e_haughton_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Haughton crater, Devon Island, 2026-07-17.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кратер Хотон, остров Девон, 2026-07-17."
+      },
+      "date": "2026-07-17",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
       "site_id": "e_neg_farmland",
       "file": "photos/e_neg_farmland_sat.jpg",
       "kind": "satellite",
