@@ -15,7 +15,7 @@ LithoTwin was built during NASA Space Apps Challenge 2026 (14–15 November 2026
 - **German Rajkov** (team lead): problem framing, choice of targets and tasks, method decisions, direction of all AI work.
 - **Nikolai Shveshkeev, Murat Arifullin** (geology): choice of Earth sites, rock, ice, bare-ground and access classes, site coordinates, dossier texts and literature sources, review of the rock similarity matrix.
 - **Damir Kudyakov** (code review): review of every pull request against the acceptance checklist in `CLAUDE.md`.
-- **Andrey Sat**: team member.
+- **Andrey Sat**: geology.
 
 ## Limits
 

@@ -1562,8 +1562,25 @@
   gap: 28px;
   max-width: 1100px;
 }
-.project__about p {
+.project__logo {
+  margin: 8px 0 0;
+  line-height: 0;
+}
+.project__logo img {
+  display: block;
+  width: min(100%, 460px);
+  height: auto;
+}
+.project__text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.project__text p {
+  margin: 0;
   max-width: 75ch;
+  font-size: 17px;
+  line-height: 1.6;
   color: var(--text-2);
 }
 .in30 {

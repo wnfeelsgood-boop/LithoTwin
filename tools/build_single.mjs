@@ -31,7 +31,7 @@ const css = readFileSync(join(assetsDir, files.find((f) => f.endsWith('.css'))),
 
 const MIME = { '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg' };
 const embedded = {};
-for (const dir of ['data', 'maps', 'geo', 'photos']) {
+for (const dir of ['data', 'maps', 'geo', 'photos', 'brand']) {
   for (const f of readdirSync(join(root, 'public', dir))) {
     const buf = readFileSync(join(root, 'public', dir, f));
     embedded[`${dir}/${f}`] = `data:${MIME[extname(f)]};base64,${buf.toString('base64')}`;
