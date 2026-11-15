@@ -5,7 +5,7 @@ import { num, esc } from '../format.js';
 import { pairLabel } from '../components/pairPicker.js';
 import { capitalize } from '../components/featureTable.js';
 
-const REPO = 'https://github.com/wnfeelsgood-boop/LithoTwin44';
+const REPO = 'https://github.com/wnfeelsgood-boop/LithoTwin';
 
 function weightsTable(data) {
   const tasks = Object.keys(data.missions.weights);

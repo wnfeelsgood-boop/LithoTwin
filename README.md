@@ -5,7 +5,7 @@
 LithoTwin answers one question: **where on Earth should we rehearse this specific Moon or Mars mission?**
 Pick a target and a task: a Moon base on the Shackleton crater rim, or rover/EVA and drilling at Arcadia Planitia or Jezero crater on Mars. LithoTwin ranks 19 Earth sites by how closely their relief, rock and ice match the target, and shows a separate traffic light for whether a team can actually work there.
 
-**Live demo:** https://wnfeelsgood-boop.github.io/LithoTwin44/
+**Live demo:** https://wnfeelsgood-boop.github.io/LithoTwin/
 
 ![World screen](docs/screenshots/world-desktop.png)
 
