@@ -58,11 +58,20 @@ export async function loadData() {
     scoreOf: (siteId, pair) =>
       (scoresByPair.get(pairKey(pair.targetId, pair.task)) || []).find((s) => s.site_id === siteId) || null,
     methodCheckFor: (pair) => methodCheck.get(pairKey(pair.targetId, pair.task)) || null,
-    // Maximum points a contribution bar can reach for this task (see CLAUDE.md §3).
-    contribMax: (task, key) => {
-      const w = missions.exposure?.weight ?? 0.2;
-      if (key === 'exposure') return w * 100;
-      return (1 - w) * 100 * (missions.weights[task]?.[key] ?? 0);
+    // Maximum points a contribution bar can reach for this task and site (CLAUDE.md §3).
+    // Relief features are weighted by the share of the circle with valid data; when part of the
+    // circle has no data, the weights are renormalised, so material and ice can reach more points.
+    contribMax: (task, key, siteId = null) => {
+      const ew = missions.exposure?.weight ?? 0.2;
+      if (key === 'exposure') return ew * 100;
+      const weights = missions.weights[task] || {};
+      const q = (k) => {
+        if (k === 'material' || k === 'ice' || !siteId) return 1;
+        return featuresBySite.get(siteId)?.[k]?.valid_fraction ?? 1;
+      };
+      const wsum = Object.values(weights).reduce((a, b) => a + b, 0) || 1;
+      const den = Object.entries(weights).reduce((a, [k, w]) => a + w * q(k), 0) || wsum;
+      return ((1 - ew) * 100 * (weights[key] ?? 0) * q(key)) / den;
     },
   };
 }

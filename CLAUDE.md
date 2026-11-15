@@ -85,7 +85,7 @@ Score = {
 }
 method_check[] = { target_id, task, analog_median, best_negative, pass, robust_runs, runs }
 ```
-Maximum of each contribution bar: `0.8 × 100 × weights[task][feature]`, and `20` for `exposure`. Example: drill material max 32, ice max 28.
+Maximum of each contribution bar: `0.8 × 100 × w_k·q_k / Σ(w·q)`, where `q` = relief `valid_fraction` for relief features and 1 for material/ice; `20` for `exposure`. With full coverage this is `0.8 × 100 × weight` (drill: material 32, ice 28). Implemented in `data.contribMax`.
 
 ### `features.json` → `{ features: Feature[] }` (22 × 7)
 `{ site_id, feature, value, unit, source, native_resolution_m, analysis_resolution_m, valid_fraction, status }`.
