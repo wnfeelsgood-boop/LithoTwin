@@ -87,7 +87,8 @@ def read_plo(path):
             "ice_class": ice,
             "bare_class": None if is_target else enum(BARE, g(r, "Голый грунт (круг 3 км)"), "bare_class", sid),
             "access": None if is_target else enum(ACCESS, g(r, "Доступ"), "access", sid),
-            "class_sources": [s.strip() for s in g(r, "Источник (статья или ссылка)").splitlines() if s.strip()],
+            # one source per line; three or more spaces also separate sources (line breaks get lost on paste)
+            "class_sources": [s.strip() for s in re.split(r"\n|\s{3,}", g(r, "Источник (статья или ссылка)")) if s.strip()],
             "review_status": enum(STATUS, g(r, "Статус"), "status", sid),
         }
     return out
@@ -143,6 +144,7 @@ def main():
     ap.add_argument("plo")
     ap.add_argument("dossier")
     ap.add_argument("-o", "--out", default="sites.json")
+    ap.add_argument("--exported", default="", help='e.g. "Google Sheet, 2026-11-15 14:30 MSK"')
     a = ap.parse_args()
 
     sites, dos = read_plo(a.plo), read_dossier(a.dossier)
@@ -153,11 +155,12 @@ def main():
             d = dos[sid]
             sites[sid]["name"] = d.pop("name")
             sites[sid]["dossier"] = d
+        sites[sid]["map"] = f"maps/{sid}.png"
     for sid in dos:
         if sid not in sites:
             errors.append(f"{sid}: есть в «Досье», но нет в «Площадках»")
 
-    json.dump({"schema_version": 1, "sites": list(sites.values())},
+    json.dump({"schema_version": 1, "status": "draft", "exported_from": a.exported or None, "sites": list(sites.values())},
               open(a.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     for w in warnings:
         print("WARN ", w)

@@ -3,12 +3,25 @@
 
 const BASE = import.meta.env.BASE_URL;
 
-export const asset = (path) => `${BASE}${path}`.replace(/\/{2,}/g, '/');
+// The single-file build (npm run build:single) embeds every data file and map as a data: URI
+// in window.__LT_ASSETS__, so the page also works when opened straight from disk.
+const EMBEDDED = typeof window !== 'undefined' ? window.__LT_ASSETS__ : null;
+
+export const asset = (path) => EMBEDDED?.[path] ?? `${BASE}${path}`.replace(/\/{2,}/g, '/');
 
 async function loadJson(name) {
   const res = await fetch(asset(`data/${name}`));
   if (!res.ok) throw new Error(`Cannot load data/${name}: HTTP ${res.status}`);
   return res.json();
+}
+
+/** Optional files (photos) may be missing in older data packages: return a fallback instead of failing. */
+async function loadOptionalJson(name, fallback) {
+  try {
+    return await loadJson(name);
+  } catch {
+    return fallback;
+  }
 }
 
 export async function loadData() {
@@ -20,6 +33,12 @@ export async function loadData() {
     loadJson('labels.json'),
     loadJson('material_matrix.json'),
   ]);
+  const photosFile = await loadOptionalJson('photos.json', { photos: [] });
+  const photosBySite = new Map();
+  for (const ph of photosFile.photos || []) {
+    if (!photosBySite.has(ph.site_id)) photosBySite.set(ph.site_id, []);
+    photosBySite.get(ph.site_id).push(ph);
+  }
 
   const sites = sitesFile.sites;
   const siteById = new Map(sites.map((s) => [s.id, s]));
@@ -50,6 +69,7 @@ export async function loadData() {
     sites,
     siteById,
     featuresBySite,
+    photosFor: (siteId) => photosBySite.get(siteId) || [],
     missions,
     labels,
     materialMatrix,
@@ -58,11 +78,20 @@ export async function loadData() {
     scoreOf: (siteId, pair) =>
       (scoresByPair.get(pairKey(pair.targetId, pair.task)) || []).find((s) => s.site_id === siteId) || null,
     methodCheckFor: (pair) => methodCheck.get(pairKey(pair.targetId, pair.task)) || null,
-    // Maximum points a contribution bar can reach for this task (see CLAUDE.md §3).
-    contribMax: (task, key) => {
-      const w = missions.exposure?.weight ?? 0.2;
-      if (key === 'exposure') return w * 100;
-      return (1 - w) * 100 * (missions.weights[task]?.[key] ?? 0);
+    // Maximum points a contribution bar can reach for this task and site (CLAUDE.md §3).
+    // Relief features are weighted by the share of the circle with valid data; when part of the
+    // circle has no data, the weights are renormalised, so material and ice can reach more points.
+    contribMax: (task, key, siteId = null) => {
+      const ew = missions.exposure?.weight ?? 0.2;
+      if (key === 'exposure') return ew * 100;
+      const weights = missions.weights[task] || {};
+      const q = (k) => {
+        if (k === 'material' || k === 'ice' || !siteId) return 1;
+        return featuresBySite.get(siteId)?.[k]?.valid_fraction ?? 1;
+      };
+      const wsum = Object.values(weights).reduce((a, b) => a + b, 0) || 1;
+      const den = Object.entries(weights).reduce((a, [k, w]) => a + w * q(k), 0) || wsum;
+      return ((1 - ew) * 100 * (weights[key] ?? 0) * q(key)) / den;
     },
   };
 }

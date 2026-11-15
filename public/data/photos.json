@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "photos": [
+    {
+      "site_id": "e_neg_amazon",
+      "file": "photos/e_neg_amazon_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of undisturbed rainforest near the LBA K34 tower, north of Manaus, 2025-08-24. Thin lines are research tracks.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: нетронутый тропический лес у башни K34 (проект LBA), к северу от Манауса, 2025-08-24. Тонкие линии — исследовательские просеки."
+      },
+      "date": "2025-08-24",
+      "credit": "Contains modified Copernicus Sentinel data (2025), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_haughton",
+      "file": "photos/e_haughton_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Haughton crater, Devon Island, 2026-07-17.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кратер Хотон, остров Девон, 2026-07-17."
+      },
+      "date": "2026-07-17",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_neg_farmland",
+      "file": "photos/e_neg_farmland_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Kansas farmland, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: пашня Канзаса, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_sarykum",
+      "file": "photos/ru_sarykum_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Sarykum Dune, 2026-11-11.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: бархан Сарыкум, 2026-11-11."
+      },
+      "date": "2026-11-11",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_batagaika",
+      "file": "photos/ru_batagaika_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Batagaika megaslump, 2026-09-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: Батагайский провал, 2026-09-12."
+      },
+      "date": "2026-09-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_chara",
+      "file": "photos/ru_chara_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Chara Sands, 2026-08-07.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: Чарские пески, 2026-08-07."
+      },
+      "date": "2026-08-07",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_uzon",
+      "file": "photos/ru_uzon_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Uzon caldera, 2026-08-04.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кальдера Узон, 2026-08-04."
+      },
+      "date": "2026-08-04",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_tolbachik",
+      "file": "photos/ru_tolbachik_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Tolbachik Dol lava plateau, 2026-08-04.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: лавовое плато Толбачинского дола, 2026-08-04."
+      },
+      "date": "2026-08-04",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_baskunchak",
+      "file": "photos/ru_baskunchak_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Lake Baskunchak salt flat, 2026-08-03.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: соляное озеро Баскунчак, 2026-08-03."
+      },
+      "date": "2026-08-03",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "ru_elgygytgyn",
+      "file": "photos/ru_elgygytgyn_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Elgygytgyn crater lake shore, 2026-06-24.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: берег озера в кратере Эльгыгытгын, 2026-06-24."
+      },
+      "date": "2026-06-24",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_lanzarote",
+      "file": "photos/e_lanzarote_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Timanfaya lava fields, Lanzarote, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: лавовые поля Тиманфайя, Лансароте, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_maunakea",
+      "file": "photos/e_maunakea_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of the summit of Mauna Kea with cinder cones, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: вершина Мауна-Кеа со шлаковыми конусами, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_meteor",
+      "file": "photos/e_meteor_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Barringer Meteor Crater, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кратер Бэрринджер, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_deathvalley",
+      "file": "photos/e_deathvalley_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Badwater salt flat, Death Valley, 2026-11-08.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: солончак Бэдуотер, Долина Смерти, 2026-11-08."
+      },
+      "date": "2026-11-08",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_askja",
+      "file": "photos/e_askja_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Askja caldera and Lake Öskjuvatn, 2026-08-25.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кальдера Аскья и озеро Эскьюватн, 2026-08-25."
+      },
+      "date": "2026-08-25",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_ries",
+      "file": "photos/e_ries_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of the Nördlinger Ries basin, 2025-03-06.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: котловина Рис, 2025-03-06."
+      },
+      "date": "2025-03-06",
+      "credit": "Contains modified Copernicus Sentinel data (2025), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_riotinto",
+      "file": "photos/e_riotinto_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 true-colour image of the Río Tinto valley, centred on the analysis circle.",
+        "ru": "Снимок Sentinel-2 в естественных цветах: долина Рио-Тинто, в центре круг анализа."
+      },
+      "credit": "Contains modified Copernicus Sentinel data, processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_atacama",
+      "file": "photos/e_atacama_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 true-colour image of the Atacama Desert near Yungay, centred on the analysis circle.",
+        "ru": "Снимок Sentinel-2 в естественных цветах: пустыня Атакама у Юнгая, в центре круг анализа."
+      },
+      "credit": "Contains modified Copernicus Sentinel data, processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_mcmurdo",
+      "file": "photos/e_mcmurdo_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 true-colour image of the Taylor Valley, McMurdo Dry Valleys, centred on the analysis circle.",
+        "ru": "Снимок Sentinel-2 в естественных цветах: долина Тейлор, Сухие долины Мак-Мёрдо, в центре круг анализа."
+      },
+      "credit": "Contains modified Copernicus Sentinel data, processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "moon_shackleton",
+      "file": "photos/moon_shackleton.jpg",
+      "kind": "orbital",
+      "caption": {
+        "en": "Shackleton crater rim area, LRO Narrow Angle Camera mosaic (SHKLTNPKLO1).",
+        "ru": "Район вала кратера Шеклтон, мозаика узкоугольной камеры LRO (SHKLTNPKLO1)."
+      },
+      "credit": "NASA/GSFC/Arizona State University",
+      "license": "Public domain",
+      "source_url": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_ROI_SHKLTNPKLO1_P888S1247"
+    },
+    {
+      "site_id": "mars_arcadia",
+      "file": "photos/mars_arcadia.jpg",
+      "kind": "orbital",
+      "caption": {
+        "en": "Fresh impact crater in Arcadia Planitia (43.9° N, 204.3° E), about 800 km from our target point; the bright spot at its centre is likely exposed ground ice. HiRISE ESP_025840_2240.",
+        "ru": "Свежий ударный кратер в Аркадии (43,9° с. ш., 204,3° в. д.), около 800 км от нашей точки; яркое пятно в центре, вероятно, вскрытый подземный лёд. HiRISE ESP_025840_2240."
+      },
+      "credit": "NASA/JPL-Caltech/UArizona",
+      "license": "Public domain",
+      "source_url": "https://www.uahirise.org/ESP_025840_2240"
+    },
+    {
+      "site_id": "mars_jezero",
+      "file": "photos/mars_jezero.jpg",
+      "kind": "orbital",
+      "caption": {
+        "en": "Jezero crater floor near the Perseverance landing site, 2 March 2021; the front of the delta is on the left. HiRISE ESP_068426_1985.",
+        "ru": "Дно кратера Езеро у места посадки Perseverance, 2 марта 2021 г.; слева фронт дельты. HiRISE ESP_068426_1985."
+      },
+      "credit": "NASA/JPL-Caltech/UArizona",
+      "license": "Public domain",
+      "source_url": "https://www.uahirise.org/ESP_068426_1985"
+    }
+  ]
+}

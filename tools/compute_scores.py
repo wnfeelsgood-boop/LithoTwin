@@ -8,7 +8,8 @@ Pure Python 3, no dependencies. Deterministic (fixed random seed for the sensiti
 import json, math, os, random, statistics as st, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-D = lambda name: os.path.join(ROOT, "data", name)
+DATA = os.path.join(ROOT, "public", "data") if os.path.isdir(os.path.join(ROOT, "public", "data")) else os.path.join(ROOT, "data")
+D = lambda name: os.path.join(DATA, name)
 load = lambda name: json.load(open(D(name), encoding="utf-8"))
 
 sites = {s["id"]: s for s in load("sites.json")["sites"]}

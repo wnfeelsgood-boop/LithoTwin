@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "status": "draft",
- "exported_from": "Google Sheet, 2026-11-15 13:20 MSK",
+ "exported_from": "Google Sheet, 2026-11-15 19:00 MSK",
  "sites": [
   {
    "id": "e_haughton",
@@ -29,41 +29,41 @@
    },
    "dossier": {
     "intro": {
-     "ru": "Для исследования Марса: холодная каменистая плоярная пустыня. Благоадря суровому климату и рельефу идеально подходит для подготовки астронавтов и техники.",
-     "en": null
+     "ru": "Для исследования Марса: холодная каменистая полярная пустыня. Благодаря суровому климату и рельефу идеально подходит для подготовки астронавтов и техники.",
+     "en": "For Mars exploration: a cold, rocky polar desert. Its harsh climate and relief make it ideal for training astronauts and testing equipment."
     },
     "summary": {
      "ru": "Ударный кратер диаметром около 23 км в полярной пустыне острова Девон, база проекта Haughton-Mars.",
-     "en": null
+     "en": "A 23 km impact crater in the polar desert of Devon Island, home of the Haughton-Mars Project."
     },
     "similar": [
      {
       "ru": "Ударные брекчии и признанный аналог Луны и Марса с готовой картографической базой.",
-      "en": null
+      "en": "Impact breccias and a recognised Moon and Mars analog with ready-made base maps."
      },
      {
       "ru": "Полярная пустыня с мерзлотой.",
-      "en": null
+      "en": "Polar desert with permafrost."
      }
     ],
     "differs": [
      {
       "ru": "Мишень карбонатно-ангидритовая, а на Луне анортозит и базальт.",
-      "en": null
+      "en": "The target rocks are carbonate and anhydrite, while the Moon has anorthosite and basalt."
      },
      {
       "ru": "Нет вечной тени и холодных ловушек, как у Шеклтона.",
-      "en": null
+      "en": "No permanent shadow or cold traps like those at Shackleton."
      }
     ],
     "use": [
      {
       "ru": "Испытания ровера и выходов (EVA) на готовой инфраструктуре.",
-      "en": null
+      "en": "Rover and EVA tests using existing infrastructure."
      },
      {
       "ru": "Работа с мерзлым грунтом.",
-      "en": null
+      "en": "Work with frozen ground."
      }
     ],
     "novelty": "published",
@@ -97,41 +97,41 @@
    },
    "dossier": {
     "intro": {
-     "ru": "Для исследования Марса: экстремально засушливая территория, высокий уровень ультрафиолетового излучения и практическое полное отсутствие жизни на поверхности.",
-     "en": null
+     "ru": "Для исследования Марса: экстремально засушливая территория, высокий уровень ультрафиолетового излучения и практически полное отсутствие жизни на поверхности.",
+     "en": "For Mars exploration: extremely dry ground, strong ultraviolet radiation and almost no life at the surface."
     },
     "summary": {
      "ru": "Гипераридное ядро пустыни Атакама у станции Юнгай.",
-     "en": null
+     "en": "The hyperarid core of the Atacama Desert near the Yungay station."
     },
     "similar": [
      {
       "ru": "Гипераридные почвы с окислителями, похожие на результаты Viking (Navarro-González et al., 2003).",
-      "en": null
+      "en": "Hyperarid soils with oxidants, similar to the Viking results (Navarro-González et al., 2003)."
      },
      {
       "ru": "Пологая местность, удобная для ровера и бурения.",
-      "en": null
+      "en": "Gentle terrain, convenient for rovers and drilling."
      }
     ],
     "differs": [
      {
       "ru": "Льда и мерзлоты нет.",
-      "en": null
+      "en": "No ice or permafrost."
      },
      {
       "ru": "Земные атмосфера, радиация и гравитация.",
-      "en": null
+      "en": "Earth's atmosphere, radiation and gravity."
      }
     ],
     "use": [
      {
       "ru": "Испытание приборов поиска жизни и бурения.",
-      "en": null
+      "en": "Tests of life-detection instruments and drills."
      },
      {
       "ru": "Сухой контроль для класса льда 0.",
-      "en": null
+      "en": "Dry control for ice class 0."
      }
     ],
     "novelty": "published",
@@ -168,40 +168,40 @@
    "dossier": {
     "intro": {
      "ru": "Цель - Марс: вода в реке сильно обогащена железом и тяжелыми металлами. А хемолитотрофные микроорганизмы в ней выделяют окисленное железо и серную кислоту.",
-     "en": null
+     "en": "For Mars exploration: the river water is rich in iron and heavy metals, and chemolithotrophic microbes in it release oxidised iron and sulfuric acid."
     },
     "summary": {
      "ru": "Кислая река в Иберийском пиритовом поясе с отложениями сульфатов и оксидов железа.",
-     "en": null
+     "en": "An acidic river in the Iberian Pyrite Belt with sulfate and iron-oxide deposits."
     },
     "similar": [
      {
       "ru": "Ярозит, гематит и гётит, как на плато Меридиани (Fernández-Remolar et al., 2005; Amils & Fernández-Remolar, 2014).",
-      "en": null
+      "en": "Jarosite, hematite and goethite, as on Meridiani Planum (Fernández-Remolar et al., 2005; Amils & Fernández-Remolar, 2014)."
      },
      {
       "ru": "Спектры глин и кислых сульфатов сопоставлены с долинами Маринер (Milliken et al., 2016).",
-      "en": null
+      "en": "Spectra of clays and acid sulfates have been compared with Valles Marineris (Milliken et al., 2016)."
      }
     ],
     "differs": [
      {
       "ru": "Влажный климат, растительность и кислая вода, не современный Марс.",
-      "en": null
+      "en": "Wet climate, vegetation and acidic water, unlike present-day Mars."
      },
      {
       "ru": "Карьеры и отвалы создают техногенный рельеф.",
-      "en": null
+      "en": "Open pits and spoil heaps add man-made relief."
      }
     ],
     "use": [
      {
       "ru": "Полигон для спектрометров и пробоотбора в железо-серных системах.",
-      "en": null
+      "en": "Test ground for spectrometers and sampling in iron–sulfur systems."
      },
      {
       "ru": "Проверка спутниковых минералогических продуктов на известной минералогии.",
-      "en": null
+      "en": "Checking satellite mineral maps against a well-known mineralogy."
      }
     ],
     "novelty": "published",
@@ -230,8 +230,9 @@
    "bare_class": "high",
    "access": "restricted",
    "class_sources": [
-    "Antarctic Treaty Secretariat — Taylor Valley: https://www.ats.aq/devAS/e/Ats/Guideline/d17178ba-8e2b-4fa5-9528-6b8807dc0eb4",
-    "Wiley, 2007 — распространение мерзлоты: https://onlinelibrary.wiley.com/doi/10.1002/ppp.588"
+    "Antarctic Treaty Secretariat — координаты и описание Taylor Valley: https://www.ats.aq/devAS/e/Ats/Guideline/d17178ba-8e2b-4fa5-9528-6b8807dc0eb4",
+    "Wiley, 2007 — распространение мерзлоты: https://onlinelibrary.wiley.com/doi/10.1002/ppp.588",
+    "Antarctic Treaty — условия доступа в охраняемые районы: https://assets.publishing.service.gov.uk/media/65fae80c9316f5001d64c409/The_Antarctic_Treaty_45th_Meeting_2023.pdf"
    ],
    "review_status": "draft",
    "name": {
@@ -239,35 +240,38 @@
     "en": "McMurdo Dry Valleys, Taylor Valley (Antarctica)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Цель - Марс: сверхсухие катабатические ветры мгновенно испаряют и сублимируют влагу с поверхности долины. Поиск биосигнатур в схожих условиях.",
+     "en": "For Mars exploration: very dry katabatic winds instantly evaporate and sublimate moisture from the valley floor. A place to search for biosignatures in similar conditions."
+    },
     "summary": {
      "ru": "Сухие долины Антарктиды (долина Тейлор), самая холодная и сухая пустыня Земли.",
-     "en": null
+     "en": "The Antarctic Dry Valleys (Taylor Valley), the coldest and driest desert on Earth."
     },
     "similar": [
      {
       "ru": "Ледяной цемент и погребённый лёд под сухим слоем.",
-      "en": null
+      "en": "Ice cement and buried ice under a dry layer."
      },
      {
       "ru": "Холодная пустыня с сублимацией вместо таяния.",
-      "en": null
+      "en": "A cold desert where ice sublimates instead of melting."
      }
     ],
     "differs": [
      {
       "ru": "Охранный режим и сложная логистика Антарктиды.",
-      "en": null
+      "en": "Protected status and difficult Antarctic logistics."
      },
      {
       "ru": "Расчленённый рельеф, не равнина Аркадии.",
-      "en": null
+      "en": "Dissected relief, not a plain like Arcadia."
      }
     ],
     "use": [
      {
       "ru": "Отработка бурения льдистого грунта и поиска льда под сухим слоем.",
-      "en": null
+      "en": "Practising drilling of ice-rich ground and searching for ice under a dry layer."
      }
     ],
     "novelty": "published",
@@ -300,35 +304,38 @@
     "en": "Death Valley, Badwater Basin (USA)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Цель - Марс: экстремальная температура, сухость и соленость позволяют изучать эвапориты и следы жизнедеятельности микроорганизмов.",
+     "en": "For Mars exploration: extreme heat, dryness and salinity make it a place to study evaporites and traces of microbial life."
+    },
     "summary": {
      "ru": "Солончак Бэдуотер, самая низкая точка Северной Америки.",
-     "en": null
+     "en": "Badwater salt flat, the lowest point in North America."
     },
     "similar": [
      {
       "ru": "Солёная равнина и аллювиальные веера, аналог озёрных и веерных отложений кратеров Гейл и Езеро.",
-      "en": null
+      "en": "A salt plain and alluvial fans, analogous to the lake and fan deposits of Gale and Jezero craters."
      },
      {
       "ru": "Очень ровная поверхность солончака.",
-      "en": null
+      "en": "A very flat salt-flat surface."
      }
     ],
     "differs": [
      {
       "ru": "Молодой тектонически активный бассейн.",
-      "en": null
+      "en": "A young, tectonically active basin."
      },
      {
       "ru": "Жаркий климат, льда нет.",
-      "en": null
+      "en": "Hot climate, no ice."
      }
     ],
     "use": [
      {
       "ru": "Отработка маршрутов ровера по солёным равнинам и веерам.",
-      "en": null
+      "en": "Practising rover routes across salt plains and fans."
      }
     ],
     "novelty": "published",
@@ -350,15 +357,15 @@
     "lon": -16.783
    },
    "aoi_radius_km": 3,
-   "object_at_center_ru": "Вулканическая кальдера Аскья; лавовые поля Одаудахрёйн в более широкой окрестности",
+   "object_at_center_ru": "Вулканическая кальдера Аскья; лавовые поля Одаудахрёйн находятся в более широкой окрестности",
    "material_class": "basalt_volcanic",
    "ice_class": 1,
    "bare_class": "high",
    "access": "restricted",
    "class_sources": [
-    "Smithsonian GVP: https://volcano.si.edu/volcano.cfm?vn=373060",
-    "Visit North Iceland: https://www.northiceland.is/en/place/askja",
-    "NAT: https://nat.is/mt-askja/"
+    "Smithsonian Global Volcanism Program — координаты и состав пород Аскьи: https://volcano.si.edu/volcano.cfm?vn=373060",
+    "Visit North Iceland — координаты и условия подъезда: https://www.northiceland.is/en/place/askja",
+    "NAT — описание лавовой пустыни Одаудахрёйн: https://nat.is/mt-askja/"
    ],
    "review_status": "draft",
    "name": {
@@ -366,39 +373,42 @@
     "en": "Askja (Iceland)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Цель - Земля и Марс: базальтовые и пемзовые поля, полное отсутствие растительности точно имитируют лунную поверхность.",
+     "en": "For the Moon and Mars: basalt and pumice fields with no vegetation closely imitate the lunar surface."
+    },
     "summary": {
      "ru": "Кальдера вулкана Аскья в базальтовой пустыне центральной Исландии.",
-     "en": null
+     "en": "The caldera of Askja volcano in the basalt desert of central Iceland."
     },
     "similar": [
      {
       "ru": "Базальтовый, почти безрастительный ландшафт.",
-      "en": null
+      "en": "A basaltic landscape with almost no vegetation."
      },
      {
       "ru": "Лёд под рыхлой тефрой.",
-      "en": null
+      "en": "Ice under loose tephra."
      }
     ],
     "differs": [
      {
       "ru": "Вулкан активен, а Луна и Марс в этих районах спокойны.",
-      "en": null
+      "en": "The volcano is active, while these areas of the Moon and Mars are quiet."
      },
      {
       "ru": "Влажный климат, снег, озеро в кальдере.",
-      "en": null
+      "en": "Wet climate, snow and a lake in the caldera."
      }
     ],
     "use": [
      {
       "ru": "Полигон для георадара и радарной разведки льда.",
-      "en": null
+      "en": "Test ground for ground-penetrating radar and radar ice surveys."
      },
      {
       "ru": "Подготовка EVA и ровера на лавовых полях.",
-      "en": null
+      "en": "EVA and rover training on lava fields."
      }
     ],
     "novelty": "published",
@@ -431,35 +441,38 @@
     "en": "Barringer Meteor Crater (USA)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы: ударный кратер, перепад высот 41 м, полигон подготовки астронавтов «Аполлона»; ударные брекчии, сухой климат, дорога до края кратера.",
+     "en": "For a Moon base: an impact crater with 41 m of local relief, a training ground for Apollo astronauts; impact breccias, a dry climate and a road to the crater rim."
+    },
     "summary": {
      "ru": "Простой ударный кратер диаметром 1,2 км в осадочных породах плато Колорадо.",
-     "en": null
+     "en": "A simple impact crater 1.2 km across in the sedimentary rocks of the Colorado Plateau."
     },
     "similar": [
      {
       "ru": "Хорошо сохранившийся кратер с выбросами, полигон подготовки астронавтов Apollo.",
-      "en": null
+      "en": "A well-preserved crater with ejecta, used to train Apollo astronauts."
      },
      {
       "ru": "Ударные брекчии.",
-      "en": null
+      "en": "Impact breccias."
      }
     ],
     "differs": [
      {
       "ru": "Кратер маленький, на сетке 500 м почти не виден.",
-      "en": null
+      "en": "The crater is small and barely visible on a 500 m grid."
      },
      {
       "ru": "Мишень осадочная (песчаники, известняки), а не базальт или анортозит.",
-      "en": null
+      "en": "The target rocks are sedimentary (sandstone, limestone), not basalt or anorthosite."
      }
     ],
     "use": [
      {
       "ru": "Тренировка геологических маршрутов и EVA в кратере.",
-      "en": null
+      "en": "Training geological traverses and EVA inside a crater."
      }
     ],
     "novelty": "published",
@@ -490,35 +503,38 @@
     "en": "Mauna Kea (Hawaii, USA)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы: базальтовая тефра на высоте 3877 м, близкая к лунному реголиту; здесь NASA испытывала добычу кислорода из грунта.",
+     "en": "For a Moon base: basaltic tephra at 3,877 m, close to lunar regolith; NASA tested oxygen extraction from the ground here."
+    },
     "summary": {
      "ru": "Вершина щитового вулкана на Гавайях с тефровыми конусами выше 4000 м.",
-     "en": null
+     "en": "The summit of a Hawaiian shield volcano with tephra cones above 4,000 m."
     },
     "similar": [
      {
       "ru": "Базальтовая тефра, по составу близкая к реголиту; здесь NASA испытывала технологии добычи ресурсов из грунта (ISRU).",
-      "en": null
+      "en": "Basaltic tephra close to lunar regolith in composition; NASA tested in-situ resource utilisation (ISRU) here."
      }
     ],
     "differs": [
      {
       "ru": "Есть атмосфера, на нижних склонах растительность.",
-      "en": null
+      "en": "There is an atmosphere, and vegetation on the lower slopes."
      },
      {
       "ru": "Доступ ограничен правилами священного места и обсерваторий.",
-      "en": null
+      "en": "Access is limited by rules for a sacred site and the observatories."
      }
     ],
     "use": [
      {
       "ru": "Испытания добычи кислорода из реголита.",
-      "en": null
+      "en": "Tests of oxygen extraction from regolith."
      },
      {
       "ru": "Мобильность на тефре.",
-      "en": null
+      "en": "Mobility on tephra."
      }
     ],
     "novelty": "published",
@@ -549,31 +565,34 @@
     "en": "Timanfaya, Lanzarote (Spain)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы и исследования Марса: молодые базальтовые лавы и лавовые трубки, без льда и с голым грунтом; уклон P50 3,0°, P90 6,1°.",
+     "en": "For a Moon base and Mars exploration: young basalt lavas and lava tubes, no ice and bare ground; median slope 3.0°, slope P90 6.1°."
+    },
     "summary": {
      "ru": "Молодые базальтовые лавовые поля национального парка Тиманфайя.",
-     "en": null
+     "en": "Young basalt lava fields of Timanfaya National Park."
     },
     "similar": [
      {
       "ru": "Свежие базальты и лавовые трубки; здесь проходят курсы ESA PANGAEA для астронавтов.",
-      "en": null
+      "en": "Fresh basalts and lava tubes; ESA runs its PANGAEA astronaut courses here."
      }
     ],
     "differs": [
      {
       "ru": "Национальный парк, движение по полям ограничено.",
-      "en": null
+      "en": "A national park: travel across the lava fields is restricted."
      },
      {
       "ru": "Влажный океанический воздух.",
-      "en": null
+      "en": "Humid ocean air."
      }
     ],
     "use": [
      {
       "ru": "Тренировка астронавтов-геологов и испытание приборов на базальтах.",
-      "en": null
+      "en": "Training astronaut geologists and testing instruments on basalt."
      }
     ],
     "novelty": "published",
@@ -604,31 +623,34 @@
     "en": "Nördlinger Ries (Germany)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы: зювиты и ударные брекчии, полигон для подготовки экипажа «Аполлон-14»; дно ровное (уклон P50 0,3°, P90 0,5°), но почти всё занято пашней.",
+     "en": "For a Moon base: suevite and impact breccias where the Apollo 14 crew trained; a flat floor (median slope 0.3°, P90 0.5°), but almost all of it is farmland."
+    },
     "summary": {
      "ru": "Ударная структура диаметром около 24 км с зювитами, дно занято сельхозугодьями.",
-     "en": null
+     "en": "An impact structure about 24 km across with suevite; the floor is farmland."
     },
     "similar": [
      {
       "ru": "Зювиты и ударные брекчии; здесь готовили экипаж Apollo 14.",
-      "en": null
+      "en": "Suevite and impact breccias; the Apollo 14 crew trained here."
      }
     ],
     "differs": [
      {
       "ru": "Котловина под пашнями и городами, обнажения только в карьерах.",
-      "en": null
+      "en": "The basin lies under fields and towns; rocks are exposed only in quarries."
      },
      {
       "ru": "Льда нет.",
-      "en": null
+      "en": "No ice."
      }
     ],
     "use": [
      {
       "ru": "Обучение распознаванию ударных пород.",
-      "en": null
+      "en": "Learning to recognise impact rocks."
      }
     ],
     "novelty": "published",
@@ -643,11 +665,11 @@
    "body": "earth",
    "group": "negative",
    "center": {
-    "lat": -3.0,
-    "lon": -60.0
+    "lat": -2.609,
+    "lon": -60.209
    },
    "aoi_radius_km": 3,
-   "object_at_center_ru": "Тропический лес (негатив)",
+   "object_at_center_ru": "Тропический лес, заповедник Уиэйрас (башня K34 проекта LBA), негатив",
    "material_class": "clastic_sediment",
    "ice_class": 0,
    "bare_class": "low",
@@ -659,22 +681,25 @@
     "en": "Amazon rainforest (negative control)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Отрицательный контроль: ровный рельеф (уклон P90 2°), перепад высот 47 м, но сплошной лес без обнажений.",
+     "en": "Negative control: flat relief (slope P90 2°) and 47 m of local relief, but continuous forest with no exposed rock."
+    },
     "summary": {
      "ru": "Влажный тропический лес, отрицательный контроль метода.",
-     "en": null
+     "en": "Tropical rainforest, a negative control for the method."
     },
     "similar": [],
     "differs": [
      {
       "ru": "Сплошная растительность и вода, обнажений нет.",
-      "en": null
+      "en": "Continuous vegetation and water, no exposed rock."
      }
     ],
     "use": [
      {
       "ru": "Проверка метода: площадка должна получить низкую оценку.",
-      "en": null
+      "en": "Method check: this site should get a low score."
      }
     ],
     "novelty": null,
@@ -705,27 +730,30 @@
     "en": "Kansas farmland (negative control)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Отрицательный контроль: рельеф почти как в Аркадии, перепад высот 12 м, но это пашня без льда и породы.",
+     "en": "Negative control: relief almost like Arcadia's, 12 m of local relief, but it is farmland with no ice and no rock."
+    },
     "summary": {
      "ru": "Распаханная равнина, отрицательный контроль метода.",
-     "en": null
+     "en": "Ploughed plain, a negative control for the method."
     },
     "similar": [
      {
       "ru": "Очень ровный рельеф, похожий на Аркадию.",
-      "en": null
+      "en": "Very flat relief, similar to Arcadia."
      }
     ],
     "differs": [
      {
       "ru": "Почва и посевы вместо породы, растительность.",
-      "en": null
+      "en": "Soil and crops instead of rock; vegetation."
      }
     ],
     "use": [
      {
       "ru": "Проверка метода: ровный рельеф не должен давать высокую оценку без материала и льда.",
-      "en": null
+      "en": "Method check: flat relief alone must not give a high score without matching rock and ice."
      }
     ],
     "novelty": null,
@@ -750,9 +778,9 @@
    "bare_class": "low",
    "access": "restricted",
    "class_sources": [
-    "https://onlinelibrary.wiley.com/doi/10.1002/edn3.336",
-    "https://onlinelibrary.wiley.com/doi/full/10.1002/ppp.2194",
-    "https://cp.copernicus.org/articles/15/1443/2019/"
+    "Wiley, 2022 — описание объекта и координаты: https://onlinelibrary.wiley.com/doi/10.1002/edn3.336",
+    "Wiley, 2023 — обзор мерзлотных отложений: https://onlinelibrary.wiley.com/doi/full/10.1002/ppp.2194",
+    "Copernicus, 2019 — мерзлота и ледяные жилы: https://cp.copernicus.org/articles/15/1443/2019/"
    ],
    "review_status": "draft",
    "name": {
@@ -760,39 +788,42 @@
     "en": "Batagaika crater (Yakutia, Russia)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Цель - Марс: крупная термокарстовая впадина, которая обнажает древнейшие слои вечной мерзлоты и позволяет находить останки древней фауны и флоры.",
+     "en": "For Mars exploration: a large thermokarst depression that exposes the oldest layers of permafrost and yields remains of ancient fauna and flora."
+    },
     "summary": {
      "ru": "Термокарстовый провал около 1 км в льдистых отложениях едомы, Якутия.",
-     "en": null
+     "en": "A thermokarst depression about 1 km across in ice-rich yedoma deposits, Yakutia."
     },
     "similar": [
      {
       "ru": "Обнажённые льдистые отложения и пласт массивного льда около 20 м, аналог ледовых толщ средних широт Марса.",
-      "en": null
+      "en": "Exposed ice-rich deposits and a massive ice layer about 20 m thick, analogous to ice sheets at Martian mid-latitudes."
      },
      {
       "ru": "Активная динамика, которую видно со спутников.",
-      "en": null
+      "en": "Active changes that can be seen from satellites."
      }
     ],
     "differs": [
      {
       "ru": "Провал мал, вокруг тайга.",
-      "en": null
+      "en": "The depression is small and surrounded by taiga."
      },
      {
       "ru": "Термокарст Земли нельзя переносить на марсианские впадины один к одному.",
-      "en": null
+      "en": "Earth's thermokarst cannot be transferred one-to-one to Martian depressions."
      }
     ],
     "use": [
      {
       "ru": "Отработка бурения и пробоотбора льдистого грунта.",
-      "en": null
+      "en": "Practising drilling and sampling of ice-rich ground."
      },
      {
       "ru": "Мониторинг потери льда по повторным DEM и радарной интерферометрии.",
-      "en": null
+      "en": "Monitoring ice loss with repeat DEMs and radar interferometry."
      }
     ],
     "novelty": "related",
@@ -821,8 +852,8 @@
    "bare_class": "medium",
    "access": "open",
    "class_sources": [
-    "https://priroda.aif.ru/heroes/natalya_butorina/",
-    "https://zapovednik-kodar.ru/"
+    "АиФ — координаты, размеры и описание памятника природы: https://priroda.aif.ru/heroes/natalya_butorina/",
+    "Национальный парк «Кодар» — территория и туристическая информация: https://zapovednik-kodar.ru/ (проверить актуальные маршруты перед посещением)"
    ],
    "review_status": "draft",
    "name": {
@@ -830,35 +861,38 @@
     "en": "Chara Sands (Transbaikalia, Russia)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Цель - Марс: сочетание эоловых форм рельефа, отрицательных температур и вечной мерзлоты позволяет понять процесс формирования барханов на Марсе.",
+     "en": "For Mars exploration: wind-built landforms, sub-zero temperatures and permafrost together help explain how dunes form on Mars."
+    },
     "summary": {
      "ru": "Массив дюн и барханов среди тайги у станции Новая Чара, Забайкалье.",
-     "en": null
+     "en": "A field of dunes and barchans in the taiga near Novaya Chara station, Transbaikalia."
     },
     "similar": [
      {
       "ru": "Открытое песчаное поле в холодном климате с мерзлотой рядом.",
-      "en": null
+      "en": "An open sand field in a cold climate with permafrost nearby."
      },
      {
       "ru": "Крутые подветренные склоны для испытаний ровера.",
-      "en": null
+      "en": "Steep lee slopes for rover tests."
      }
     ],
     "differs": [
      {
       "ru": "Малая площадь, вокруг тайга и болота.",
-      "en": null
+      "en": "Small area surrounded by taiga and bogs."
      },
      {
       "ru": "Кварцевый песок не похож на базальтовый реголит.",
-      "en": null
+      "en": "Quartz sand is unlike basaltic regolith."
      }
     ],
     "use": [
      {
       "ru": "Испытания мобильности на дюнах с простой логистикой по БАМ.",
-      "en": null
+      "en": "Mobility tests on dunes with simple logistics via the Baikal–Amur Railway."
      }
     ],
     "novelty": "none",
@@ -885,7 +919,7 @@
    "bare_class": "low",
    "access": "restricted",
    "class_sources": [
-    "Sakala J. et al. (2006). Dendrological characteristics of subrecent fossil plant remains from the Uzon caldera in Kamchatka"
+    "Sakala J., Košťák M., Mazuch M., Štěpánková J. (2006). Dendrological characteristics of subrecent fossil plant remains from the Uzon caldera in Kamchatka (Eastern Russia) - описание"
    ],
    "review_status": "corrected",
    "name": {
@@ -895,40 +929,40 @@
    "dossier": {
     "intro": {
      "ru": "Для исследования Марса: на горячих источниках с гипсом, глинами и опалом можно отработать поиск следов гидротермальных систем и ровных участков",
-     "en": null
+     "en": "For Mars exploration: hot springs with gypsum, clays and opal are a place to practise searching for traces of hydrothermal systems and for flat ground."
     },
     "summary": {
      "ru": "Кальдера на Камчатке с гидротермальными полями и кислотно-сульфатной проработкой пород.",
-     "en": null
+     "en": "A caldera in Kamchatka with hydrothermal fields and acid-sulfate alteration of rocks."
     },
     "similar": [
      {
       "ru": "Вулканиты с гидротермальными изменениями, аналог гидротермальных систем Марса.",
-      "en": null
+      "en": "Volcanic rocks with hydrothermal alteration, analogous to hydrothermal systems on Mars."
      },
      {
       "ru": "Ровное дно кальдеры внутри обрамления.",
-      "en": null
+      "en": "A flat caldera floor inside the rim."
      }
     ],
     "differs": [
      {
       "ru": "Влажный климат, лес и снег; модель рельефа включает кроны.",
-      "en": null
+      "en": "Wet climate, forest and snow; the elevation model includes tree canopy."
      },
      {
       "ru": "Заповедник, доступ вертолётом.",
-      "en": null
+      "en": "Nature reserve, access by helicopter."
      }
     ],
     "use": [
      {
       "ru": "Испытание приборов для выбора образцов в гидротермально изменённых породах (сульфаты, глины).",
-      "en": null
+      "en": "Testing instruments that choose samples in hydrothermally altered rocks (sulfates, clays)."
      },
      {
       "ru": "Эталон минералов горячих источников (гипс, каолинит, опал-A) для сравнения с марсианскими сульфатами",
-      "en": null
+      "en": "Reference hot-spring minerals (gypsum, kaolinite, opal-A) for comparison with Martian sulfates."
      }
     ],
     "novelty": "related",
@@ -956,7 +990,7 @@
    "bare_class": "high",
    "access": "restricted",
    "class_sources": [
-    "The Tolbachik volcanic massif: A review of the petrology, volcanology and eruption history prior to the 2012–2013 eruption (2015)"
+    "The Tolbachik volcanic massif: A review of the petrology, volcanology and eruption history prior to the 2012–2013 eruption (2015) - описание и информация"
    ],
    "review_status": "draft",
    "name": {
@@ -966,40 +1000,40 @@
    "dossier": {
     "intro": {
      "ru": "Для исследования Марса: свежие лавы извержения 2012–2013 годов, на которых проверяют модели течения лавы для Марса",
-     "en": null
+     "en": "For Mars exploration: fresh lavas of the 2012–2013 eruption, used to test lava-flow models for Mars."
     },
     "summary": {
      "ru": "Плоский Толбачик и базальтовые поля Толбачинского дола, место извержения 2012–2013 годов.",
-     "en": null
+     "en": "Plosky Tolbachik and the basalt fields of the Tolbachik Dol, site of the 2012–2013 eruption."
     },
     "similar": [
      {
       "ru": "Свежие базальтовые лавы и шлаковые поля почти без растительности.",
-      "en": null
+      "en": "Fresh basalt lavas and cinder fields with almost no vegetation."
      },
      {
       "ru": "На лавовых потоках 2012–2013 годов проверяют модели течения лавы для потоков Марса (поле Арсия Монс)",
-      "en": null
+      "en": "The 2012–2013 lava flows are used to test flow models for Martian lava flows (Arsia Mons field)."
      }
     ],
     "differs": [
      {
       "ru": "Активный вулканизм, снег и ледники на вершине.",
-      "en": null
+      "en": "Active volcanism, snow and glaciers on the summit."
      },
      {
       "ru": "Доступ по бездорожью.",
-      "en": null
+      "en": "Off-road access only."
      }
     ],
     "use": [
      {
       "ru": "Испытания мобильности на шлаках и приборов на свежих базальтах.",
-      "en": null
+      "en": "Mobility tests on cinders and instrument tests on fresh basalt."
      },
      {
       "ru": "Отработка картирования лавовых потоков по цифровым моделям рельефа до и после извержения",
-      "en": null
+      "en": "Practising lava-flow mapping from elevation models before and after an eruption."
      }
     ],
     "novelty": "related",
@@ -1026,7 +1060,7 @@
    "bare_class": "medium",
    "access": "restricted",
    "class_sources": [
-    "Gurov E.P. et al. (2004). Shocked rocks and impact glasses from the El'gygytgyn impact structure, Russia."
+    "Gurov E.P. et al. (2004). Shocked rocks and impact glasses from the El'gygytgyn impact structure, Russia. - информация про кратер"
    ],
    "review_status": "corrected",
    "name": {
@@ -1036,40 +1070,40 @@
    "dossier": {
     "intro": {
      "ru": "Для исследования Марса: ударный кратер в вулканитах с озером и мерзлотой, где изучают ударный метаморфизм и проводят бурение",
-     "en": null
+     "en": "For Mars exploration: an impact crater in volcanic rocks with a lake and permafrost, where impact metamorphism is studied and drilling is carried out."
     },
     "summary": {
      "ru": "Ударный кратер диаметром около 18 км в вулканитах Чукотки с озером в центре.",
-     "en": null
+     "en": "An impact crater about 18 km across in the volcanic rocks of Chukotka, with a lake in the centre."
     },
     "similar": [
      {
       "ru": "Ударная структура в вулканических породах, как многие кратеры Марса.",
-      "en": null
+      "en": "An impact structure in volcanic rocks, like many craters on Mars."
      },
      {
       "ru": "Многолетняя мерзлота: по моделям её мощность в кратере около 340 м",
-      "en": null
+      "en": "Permafrost: models put its thickness in the crater at about 340 m."
      }
     ],
     "differs": [
      {
       "ru": "Большую часть кратера занимает озеро.",
-      "en": null
+      "en": "A lake fills most of the crater."
      },
      {
       "ru": "Очень труднодоступен.",
-      "en": null
+      "en": "Very hard to reach."
      }
     ],
     "use": [
      {
       "ru": "Изучение ударного метаморфизма вулканитов и мерзлоты.",
-      "en": null
+      "en": "Studying impact metamorphism of volcanic rocks and permafrost."
      },
      {
       "ru": "Отработка бурения мёрзлого грунта и озёрных отложений: в проекте ICDP керны уже получены",
-      "en": null
+      "en": "Practising drilling of frozen ground and lake sediments: the ICDP project has already recovered cores."
      }
     ],
     "novelty": "related",
@@ -1096,7 +1130,7 @@
    "bare_class": "medium",
    "access": "open",
    "class_sources": [
-    "Garkusha D. et al. (2025). Hypersaline Lake Baskunchak (Russia)"
+    "Garkusha D., Fedorov Y., Ovsepyan A. et al. (2025). Carbon Dioxide and Methane Emission into the Atmosphere and Its Relationship with Chemogenic Sedimentation in the Hypersaline Lake Baskunchak (Russia)"
    ],
    "review_status": "corrected",
    "name": {
@@ -1106,40 +1140,40 @@
    "dossier": {
     "intro": {
      "ru": "Для исследования Марса: ровная соляная равнина вокруг озера, на которой можно отрабатывать навигацию роверов, перепад высот незначительный",
-     "en": null
+     "en": "For Mars exploration: a flat salt plain around the lake with very little relief, a place to practise rover navigation."
     },
     "summary": {
      "ru": "Самосадочное соляное озеро над соляным куполом Богдо, Астраханская область.",
-     "en": null
+     "en": "A self-precipitating salt lake above the Bogdo salt dome, Astrakhan Oblast."
     },
     "similar": [
      {
       "ru": "Очень ровная соляная равнина, по рельефу ближе всех к Аркадии.",
-      "en": null
+      "en": "A very flat salt plain, the closest match to Arcadia in relief."
      },
      {
       "ru": "Эвапориты, как в высохших палеоозёрах Марса.",
-      "en": null
+      "en": "Evaporites, as in the dried-up palaeolakes of Mars."
      }
     ],
     "differs": [
      {
       "ru": "Почти чистый галит, а на Марсе сульфаты и хлориды вперемешку.",
-      "en": null
+      "en": "Almost pure halite, while Mars has mixed sulfates and chlorides."
      },
      {
       "ru": "Льда нет.",
-      "en": null
+      "en": "No ice."
      }
     ],
     "use": [
      {
       "ru": "Испытания мобильности и навигации на ровной солёной равнине с доступом по дорогам.",
-      "en": null
+      "en": "Mobility and navigation tests on a flat salt plain reachable by road."
      },
      {
       "ru": "Проверка спутниковой классификации солей и гипса на озере и горе Большое Богдо (оценка)",
-      "en": null
+      "en": "Checking satellite classification of salts and gypsum at the lake and Mount Bolshoye Bogdo (estimate)."
      }
     ],
     "novelty": "none",
@@ -1166,7 +1200,7 @@
    "bare_class": "low",
    "access": "open",
    "class_sources": [
-    "Гусаров А.В. (2015). Эолово-аккумулятивный комплекс «Сарыкум»"
+    "Гусаров А.В. (2015). Эолово-аккумулятивный комплекс «Сарыкум» — уникальный геоморфологический объект России: история изучения, гипотезы происхождения"
    ],
    "review_status": "verified",
    "name": {
@@ -1176,40 +1210,40 @@
    "dossier": {
     "intro": {
      "ru": "Для исследования Марса: изолированный массив кварцевых дюн с сыпучими склонами, на котором можно испытать ровер, большой перепад высот",
-     "en": null
+     "en": "For Mars exploration: an isolated mass of quartz dunes with loose slopes and large relief, a place to test a rover."
     },
     "summary": {
      "ru": "Крупнейший бархан Европы у подножия гор Дагестана.",
-     "en": null
+     "en": "The largest barchan dune in Europe, at the foot of the Dagestan mountains."
     },
     "similar": [
      {
       "ru": "Изолированная эоловая форма, аналог марсианских дюн.",
-      "en": null
+      "en": "An isolated wind-built landform, analogous to Martian dunes."
      },
      {
       "ru": "Дюнные гребни до 175–185 м над поймой хорошо выражены в рельефе — удобно сравнивать с дюнами Марса (оценка)",
-      "en": null
+      "en": "Dune crests rise 175–185 m above the floodplain and stand out in the relief, easy to compare with Martian dunes (estimate)."
      }
     ],
     "differs": [
      {
       "ru": "Дюна около 25 км² с ксерофитной растительностью, окружён равниной и предгорьями",
-      "en": null
+      "en": "A dune of about 25 km² with drought-tolerant vegetation, surrounded by plain and foothills."
      },
      {
       "ru": "Песок кварцевый, а не базальтовый.",
-      "en": null
+      "en": "The sand is quartz, not basalt."
      }
     ],
     "use": [
      {
       "ru": "Испытания мобильности ровера на сыпучих склонах.",
-      "en": null
+      "en": "Rover mobility tests on loose slopes."
      },
      {
       "ru": "Проверка по снимкам, как ветры двух направлений переформируют гребни дюн",
-      "en": null
+      "en": "Using imagery to see how winds from two directions reshape the dune crests."
      }
     ],
     "novelty": "none",
@@ -1230,13 +1264,13 @@
     "lon": 203.5
    },
    "aoi_radius_km": 3,
-   "object_at_center_ru": "Возвышенность у вала Шеклтона, 14 км от полюса: самый ровный круг 3 км выше 1000 м в пределах 15 км от полюса (по LOLA)",
+   "object_at_center_ru": "Возвышенность у вала Шеклтона, 14 км от полюса: самый ровный круг 3 км выше 1000 м в пределах 15 км от полюса (выбрано по LOLA)",
    "material_class": "anorthosite",
    "ice_class": 3,
    "bare_class": null,
    "access": null,
    "class_sources": [
-    "Paige et al., 2010, Science"
+    "Лёд: Paige et al., 2010, Science (Diviner, холодные ловушки)"
    ],
    "review_status": "draft",
    "name": {
@@ -1245,12 +1279,12 @@
    },
    "dossier": {
     "intro": {
-     "ru": "Цель, лунная база: возвышенность у вала Шеклтона, высота 1310м, располагается недалеко от полюса, рядом присутсвтуют холодные ловушки со льдом",
-     "en": null
+     "ru": "Цель, лунная база: возвышенность у вала Шеклтона, высота 1310 м, располагается недалеко от полюса, рядом присутствуют холодные ловушки со льдом",
+     "en": "Target, Moon base: high ground on the Shackleton rim, 1,310 m high, close to the pole, with ice-bearing cold traps nearby."
     },
     "summary": {
      "ru": "Вал кратера Шеклтон у южного полюса Луны: почти постоянное освещение рядом с вечно затенёнными холодными ловушками.",
-     "en": null
+     "en": "The rim of Shackleton crater at the lunar south pole: near-constant sunlight next to permanently shadowed cold traps."
     },
     "similar": [],
     "differs": [],
@@ -1279,7 +1313,7 @@
    "bare_class": null,
    "access": null,
    "class_sources": [
-    "Bramson et al., 2015, GRL"
+    "Лёд: Bramson et al., 2015, GRL (SHARAD, избыточный лёд в Аркадии)"
    ],
    "review_status": "draft",
    "name": {
@@ -1288,12 +1322,12 @@
    },
    "dossier": {
     "intro": {
-     "ru": "Цель, Марс: равнина средних широт со льдом в нескольких метрах под поверхностью с перепадом высот в 23м, кандидат для пилотируемой базы.",
-     "en": null
+     "ru": "Цель, Марс: равнина средних широт со льдом в нескольких метрах под поверхностью с перепадом высот в 23 м, кандидат для пилотируемой базы.",
+     "en": "Target, Mars: a mid-latitude plain with ice a few metres below the surface and 23 m of local relief, a candidate for a crewed base."
     },
     "summary": {
      "ru": "Равнина средних широт Марса со льдом на глубине нескольких метров, кандидат для пилотируемой базы.",
-     "en": null
+     "en": "A mid-latitude plain on Mars with ice a few metres deep, a candidate for a crewed base."
     },
     "similar": [],
     "differs": [],
@@ -1322,7 +1356,7 @@
    "bare_class": null,
    "access": null,
    "class_sources": [
-    "Goudge et al., 2015, JGR Planets"
+    "Goudge et al., 2015, JGR Planets (смектиты дельты)"
    ],
    "review_status": "draft",
    "name": {
@@ -1332,11 +1366,11 @@
    "dossier": {
     "intro": {
      "ru": "Цель, Марс: дно кратера Езеро у места посадки Perseverance, рядом дельта с глинами; дно ровное, перепад высот 126 м.",
-     "en": null
+     "en": "Target, Mars: the floor of Jezero crater at the Perseverance landing site, next to a clay-bearing delta; flat floor with 126 m of local relief."
     },
     "summary": {
      "ru": "Кратер с древней дельтой, район работы Perseverance; центр круга на месте посадки, на базальтовом дне.",
-     "en": null
+     "en": "A crater with an ancient delta where Perseverance works; the circle is centred on the landing site, on the basaltic floor."
     },
     "similar": [],
     "differs": [],
