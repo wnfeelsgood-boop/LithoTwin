@@ -47,7 +47,7 @@ function rowHtml(data, pair, sc, selectedId) {
       </button>
       ${
         selected
-          ? `<a class="rank-row__open" href="#/site/${encodeURIComponent(sc.site_id)}?pair=${pair.index}">${esc(ui('openDossier'))} →</a>`
+          ? `<a class="rank-row__open btn-open" href="#/site/${encodeURIComponent(sc.site_id)}?pair=${pair.index}">${esc(ui('openDossier'))} →</a>`
           : ''
       }
     </li>`;
@@ -62,6 +62,7 @@ export function rankingHtml(data, pair, filter, selectedId) {
         <h2 class="ranking__title">${esc(ui('rankingTitle'))}</h2>
         <span class="muted mono">${rows.length} / ${all.length}</span>
       </header>
+      <p class="click-hint"><span aria-hidden="true">👆</span> ${esc(ui('clickHint'))}</p>
       ${filterBarHtml(filter)}
       ${
         rows.length

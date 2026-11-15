@@ -1,8 +1,8 @@
 // World screen (design: design_globe.png): left = target + task + target numbers + method check,
 // centre = 3D globe, right = ranking. The ranking never depends on the globe.
-import { ui } from '../i18n.js';
+import { ui, label } from '../i18n.js';
 import { esc } from '../format.js';
-import { targetTaskPickerHtml, pairForTarget } from '../components/pairPicker.js';
+import { targetTaskPickerHtml, pairForTarget, shortTargetName } from '../components/pairPicker.js';
 import { targetNumbersHtml } from '../components/featureTable.js';
 import { photoFigureHtml } from '../components/photos.js';
 import { rankingHtml, methodCheckHtml, visibleScores } from './ranking.js';
@@ -29,7 +29,11 @@ export function renderWorld(root, data, route) {
         ${methodCheckHtml(data, pair)}
       </aside>
       <section class="world__centre" ${state.globeFailed ? 'hidden' : ''}>
-        <h1 class="visually-hidden">${esc(ui('worldHeading'))}</h1>
+        <h1 class="mission-banner mission-banner--${esc(target.body)}">
+          <span class="sphere sphere--${esc(target.body)} sphere--sm" aria-hidden="true"></span>
+          <span><span class="mission-banner__goal">${esc(ui(`mission_${target.body}`))}</span>
+          <span class="mission-banner__where">${esc(ui('missionWhere', { task: label(data.labels, 'task', pair.task), target: shortTargetName(target) }))}</span></span>
+        </h1>
         <div class="globe" id="globe-mount" aria-label="Globe"></div>
         <p class="legend mono">${esc(ui('legend'))}</p>
         <p class="globe-hint muted">${esc(ui('globeHint'))}</p>
@@ -62,6 +66,10 @@ function bindControls(root, data, route, pair) {
     const btn = e.target.closest('[data-select]');
     if (btn) selectSite(root, data, route, btn.dataset.select, { fromList: true });
   });
+  right.addEventListener('dblclick', (e) => {
+    const btn = e.target.closest('[data-select]');
+    if (btn) navigate({ view: 'site', siteId: btn.dataset.select, pair: pair.index });
+  });
   right.addEventListener('keydown', (e) => {
     const btn = e.target.closest('[data-select]');
     if (btn && e.key === 'Enter') {
@@ -79,16 +87,24 @@ export function selectSite(root, data, route, siteId, { fromList = false } = {})
     return;
   }
   state.selectedId = siteId;
+  // Update the rows in place (no re-render), so a double-click lands on the same element.
   const mount = root.querySelector('#ranking-mount');
   if (mount) {
-    const scrollList = mount.querySelector('.rank-list');
-    const keep = scrollList ? scrollList.scrollTop : 0;
-    mount.innerHTML = rankingHtml(data, pair, route.filter, siteId);
-    const list = mount.querySelector('.rank-list');
-    if (list) list.scrollTop = keep;
-    const row = mount.querySelector(`[data-site="${CSS.escape(siteId)}"]`);
-    row?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-    if (fromList) row?.querySelector('[data-select]')?.focus({ preventScroll: true });
+    mount.querySelectorAll('.rank-row').forEach((li) => {
+      const on = li.dataset.site === siteId;
+      li.classList.toggle('is-selected', on);
+      li.querySelector('[data-select]')?.setAttribute('aria-pressed', String(on));
+      li.querySelector('.rank-row__open')?.remove();
+      if (on) {
+        const a = document.createElement('a');
+        a.className = 'rank-row__open btn-open';
+        a.href = `#/site/${encodeURIComponent(siteId)}?pair=${pair.index}`;
+        a.textContent = `${ui('openDossier')} →`;
+        li.appendChild(a);
+      }
+    });
+    // Scroll only when the selection came from the globe: scrolling under the pointer would break double-click.
+    if (!fromList) mount.querySelector(`[data-site="${CSS.escape(siteId)}"]`)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
   globeModule?.focusSite?.(siteId);
 }
@@ -118,6 +134,7 @@ async function mountGlobe(root, data, route, pair) {
         if (state.selectedId === id) navigate({ view: 'site', siteId: id, pair: pair.index });
         else selectSite(root, data, route, id);
       },
+      onOpen: (id) => navigate({ view: 'site', siteId: id, pair: pair.index }),
     });
   } catch (err) {
     console.warn('Globe unavailable, showing the ranking only.', err);

@@ -54,6 +54,37 @@ function introHtml(text) {
   return `<span class="accent-ice">${esc(m[1])}:</span> ${esc(m[2])}`;
 }
 
+/** Where this site stands for each mission: the Moon base, and its best Mars task. The current mission is highlighted. */
+function missionFitHtml(data, site, activePair) {
+  if (site.kind !== 'site') return '';
+  const bodyOf = (p) => data.siteById.get(p.targetId)?.body;
+  const best = (body) => {
+    let out = null;
+    for (const p of data.pairs.filter((x) => bodyOf(x) === body)) {
+      const sc = data.scoreOf(site.id, p);
+      if (sc && (!out || sc.rank < out.sc.rank)) out = { p, sc };
+    }
+    return out;
+  };
+  const chip = (body) => {
+    const b = best(body);
+    if (!b) return '';
+    const total = data.scoresFor(b.p).length;
+    const on = bodyOf(activePair) === body;
+    const where = body === 'mars' ? ` · ${ui('missionFitBest', { pair: pairLabel(data, b.p) })}` : '';
+    return `<a class="mission-chip mission-chip--${body}${on ? ' is-on' : ''}" href="#/site/${encodeURIComponent(site.id)}?pair=${b.p.index}">
+      <span class="sphere sphere--${body} sphere--xs" aria-hidden="true"></span>
+      <span><strong>${esc(ui(`missionShort_${body}`))}</strong>
+      <span class="mono">${esc(ui('missionFitRank', { rank: b.sc.rank, total }))}</span><span class="muted">${esc(where)}</span></span>
+    </a>`;
+  };
+  return `
+    <div class="mission-fit" aria-label="${esc(ui('missionFit'))}">
+      <span class="step-label">${esc(ui('missionFit'))}</span>
+      <div class="mission-fit__chips">${chip('moon')}${chip('mars')}</div>
+    </div>`;
+}
+
 function headerHtml(data, site, pair) {
   const d = site.dossier || {};
   const intro = d.intro;
@@ -68,6 +99,7 @@ function headerHtml(data, site, pair) {
         ${status && !status.includes('status_') ? `<span class="badge badge--draft">${esc(status)}</span>` : ''}
       </div>
       <h1 class="dossier__name">${esc(t(site.name))}</h1>
+      ${missionFitHtml(data, site, pair)}
       ${
         t(intro) ? `<p class="dossier__intro">${introHtml(t(intro))}${langTag(intro)}</p>` : ''
       }

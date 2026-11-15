@@ -3,7 +3,7 @@
 // so changing pair or filter does not create a new WebGL context.
 import Globe from 'globe.gl';
 import { feature } from 'topojson-client';
-import { t, label } from '../i18n.js';
+import { t, ui, label } from '../i18n.js';
 import { num, esc } from '../format.js';
 import { asset } from '../data.js';
 import { pentagonSvg, markerSize } from '../components/pentagon.js';
@@ -14,6 +14,7 @@ let resizeObs = null;
 let countries = null;
 let markerEls = new Map();
 let currentSelect = () => {};
+let currentOpen = () => {};
 let currentData = null;
 
 function webglAvailable() {
@@ -89,10 +90,16 @@ function markerElement(data, sc, selected) {
       <strong>${esc(t(site.name))}</strong>
       <span class="mono">${num(sc.similarity)}</span> ·
       <span class="suit-text--${sc.suitability}">${esc(label(data.labels, 'suitability', sc.suitability))}</span>
+      <em class="marker__hint marker__hint--select">${esc(ui('tipSelect'))}</em>
+      <em class="marker__hint marker__hint--open">${esc(ui('tipOpen'))}</em>
     </span>`;
   el.addEventListener('click', (e) => {
     e.stopPropagation();
     currentSelect(sc.site_id);
+  });
+  el.addEventListener('dblclick', (e) => {
+    e.stopPropagation();
+    currentOpen(sc.site_id);
   });
   return el;
 }
@@ -101,10 +108,11 @@ function markerElement(data, sc, selected) {
  * Draw the globe into `mount`.
  * opts: { scores (already filtered), selectedId, onSelect(id) }
  */
-export async function renderGlobe(mount, data, { scores, selectedId, onSelect }) {
+export async function renderGlobe(mount, data, { scores, selectedId, onSelect, onOpen = () => {} }) {
   if (!webglAvailable()) throw new Error('WebGL is not available');
   currentData = data;
   currentSelect = onSelect;
+  currentOpen = onOpen;
   if (!globe) createGlobe();
   mount.appendChild(host);
   fitToHost(mount);

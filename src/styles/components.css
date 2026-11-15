@@ -457,10 +457,7 @@
   background: var(--muted);
 }
 .rank-row__open {
-  display: block;
-  padding: 0 12px 10px 64px;
   font-size: 13px;
-  font-weight: 600;
 }
 .empty {
   padding: 16px;
@@ -1218,4 +1215,125 @@
   margin: 0;
   font-size: 12px;
   text-align: center;
+}
+
+/* ---------- Mission emphasis and click hints ---------- */
+.mission-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-2);
+  background: var(--panel);
+  font-size: 18px;
+  align-self: stretch;
+}
+.mission-banner--moon {
+  border-color: color-mix(in srgb, var(--moon) 45%, transparent);
+}
+.mission-banner--mars {
+  border-color: color-mix(in srgb, var(--mars) 70%, transparent);
+  background: color-mix(in srgb, var(--mars) 10%, var(--panel));
+}
+.mission-banner__goal {
+  display: block;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: clamp(18px, 1.8vw, 24px);
+}
+.mission-banner__where {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-2);
+}
+.click-hint {
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-2);
+  background: color-mix(in srgb, var(--ice) 8%, transparent);
+  border: 1px dashed color-mix(in srgb, var(--ice) 40%, transparent);
+}
+.rank-row {
+  position: relative;
+}
+/* Overlaid in the row's bottom-right corner so selecting a row never changes the list height. */
+.rank-row .btn-open {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  margin: 0;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+.btn-open {
+  display: inline-block;
+  margin: 0 12px 10px 64px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--ice);
+  color: #04121c !important;
+  font-weight: 600;
+}
+.btn-open:hover {
+  text-decoration: none;
+  filter: brightness(1.1);
+}
+.marker__hint {
+  display: none;
+  margin-top: 4px;
+  font-style: normal;
+  font-size: 11px;
+  color: var(--ice);
+}
+.marker:not(.is-selected) .marker__hint--select,
+.marker.is-selected .marker__hint--open {
+  display: block;
+}
+.mission-fit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mission-fit__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mission-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-2);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 14px;
+}
+.mission-chip strong {
+  margin-right: 8px;
+}
+.mission-chip:hover {
+  text-decoration: none;
+  border-color: var(--text-2);
+}
+.mission-chip--moon.is-on {
+  border-color: var(--moon);
+  box-shadow: 0 0 0 1px var(--moon) inset;
+}
+.mission-chip--mars.is-on {
+  border-color: var(--mars);
+  box-shadow: 0 0 0 1px var(--mars) inset;
+  background: color-mix(in srgb, var(--mars) 12%, var(--panel));
+}
+.sphere--xs {
+  width: 18px;
+  height: 18px;
 }

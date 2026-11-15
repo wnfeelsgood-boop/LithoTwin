@@ -141,6 +141,21 @@ const UI = {
   photos: { en: 'Images', ru: 'Снимки' },
   targetGlobeHint: { en: '{body}: the rings mark the mission site', ru: '{body}: кольца отмечают место миссии' },
   photoSource: { en: 'source', ru: 'источник' },
+  // Mission emphasis and click hints
+  mission_moon: { en: 'Mission: Moon base', ru: 'Миссия: лунная база' },
+  mission_mars: { en: 'Mission: Mars exploration', ru: 'Миссия: исследование Марса' },
+  missionShort_moon: { en: 'Moon base', ru: 'Лунная база' },
+  missionShort_mars: { en: 'Mars exploration', ru: 'Исследование Марса' },
+  missionWhere: { en: '{task} at {target}', ru: '{task}: {target}' },
+  missionFit: { en: 'Mission fit', ru: 'Под какую миссию' },
+  missionFitRank: { en: '#{rank} of {total}', ru: '{rank} место из {total}' },
+  missionFitBest: { en: 'best: {pair}', ru: 'лучше всего: {pair}' },
+  clickHint: {
+    en: 'Click a site to see it on the globe. Click it again, or double-click, to open the full dossier.',
+    ru: 'Нажмите на площадку, чтобы увидеть её на глобусе. Нажмите ещё раз или дважды, чтобы открыть подробное досье.',
+  },
+  tipSelect: { en: 'Click: show · double-click: dossier', ru: 'Клик: показать · двойной клик: досье' },
+  tipOpen: { en: 'Click again for the full dossier →', ru: 'Нажмите ещё раз, чтобы открыть досье →' },
   // Russia
   russiaHeading: { en: 'Where in Russia to rehearse the Moon and Mars', ru: 'Где в России репетировать Луну и Марс' },
   russiaSub: {
