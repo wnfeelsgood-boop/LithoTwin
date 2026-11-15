@@ -64,6 +64,8 @@ docs/           AI disclosure, data gaps, screenshots
 - **Moon relief:** LRO LOLA, LDEM_80S_80M (NASA PDS Geosciences Node).
 - **Mars relief:** MGS MOLA MEGDR 128 ppd, tiles megt88n180hb and megt44n000hb (NASA PDS Geosciences Node).
 - **Rock, ice, bare-ground and access classes, dossier texts:** team geologists, from the literature cited in each dossier.
+- **Target images:** MRO HiRISE (NASA/JPL-Caltech/UArizona) and LRO LROC NAC (NASA/GSFC/Arizona State University), public domain; credit and source per image in `public/data/photos.json`.
+- **Moon and Mars globe textures:** [Solar System Scope](https://www.solarsystemscope.com/textures/), CC BY 4.0, based on NASA imagery.
 - **Country outlines:** Natural Earth (public domain) via [world-atlas](https://github.com/topojson/world-atlas).
 
 Open-source libraries: [globe.gl](https://github.com/vasturiano/globe.gl) (MIT), [d3-geo](https://github.com/d3/d3-geo) (ISC), [topojson-client](https://github.com/topojson/topojson-client) (ISC), [Vite](https://vitejs.dev) (MIT), Inter, Space Grotesk and JetBrains Mono fonts (OFL-1.1).

@@ -139,6 +139,7 @@ const UI = {
   rule_drill_rock: { en: 'Rock worth drilling: {rock}', ru: 'Порода для бурения: {rock}' },
   rule_drill_none: { en: 'No ground ice, rock is not a priority drilling target', ru: 'Нет льда в грунте, порода не приоритетна для бурения' },
   photos: { en: 'Images', ru: 'Снимки' },
+  targetGlobeHint: { en: '{body}: the rings mark the mission site', ru: '{body}: кольца отмечают место миссии' },
   photoSource: { en: 'source', ru: 'источник' },
   // Russia
   russiaHeading: { en: 'Where in Russia to rehearse the Moon and Mars', ru: 'Где в России репетировать Луну и Марс' },

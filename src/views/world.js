@@ -20,6 +20,10 @@ export function renderWorld(root, data, route) {
     <main class="world${state.globeFailed ? ' no-globe' : ''}">
       <aside class="world__left">
         ${targetTaskPickerHtml(data, pair)}
+        <section class="target-globe panel" id="target-globe-panel">
+          <div class="target-globe__canvas" id="target-globe"></div>
+          <p class="target-globe__label muted">${esc(ui('targetGlobeHint', { body: ui(target.body) }))}</p>
+        </section>
         ${data.photosFor(target.id).slice(0, 1).map((p) => photoFigureHtml(p, { compact: true })).join('')}
         ${targetNumbersHtml(data, target)}
         ${methodCheckHtml(data, pair)}
@@ -37,6 +41,7 @@ export function renderWorld(root, data, route) {
 
   bindControls(root, data, route, pair);
   mountGlobe(root, data, route, pair);
+  mountTargetGlobe(root, target);
 }
 
 function bindControls(root, data, route, pair) {
@@ -86,6 +91,18 @@ export function selectSite(root, data, route, siteId, { fromList = false } = {})
     if (fromList) row?.querySelector('[data-select]')?.focus({ preventScroll: true });
   }
   globeModule?.focusSite?.(siteId);
+}
+
+async function mountTargetGlobe(root, target) {
+  const el = root.querySelector('#target-globe');
+  if (!el) return;
+  try {
+    const mod = await import('./targetGlobe.js');
+    await mod.renderTargetGlobe(el, target);
+  } catch (err) {
+    console.warn('Target globe unavailable.', err);
+    root.querySelector('#target-globe-panel')?.setAttribute('hidden', '');
+  }
 }
 
 async function mountGlobe(root, data, route, pair) {

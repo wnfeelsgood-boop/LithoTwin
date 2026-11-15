@@ -1194,3 +1194,28 @@
   color: var(--muted);
   font-size: 12px;
 }
+
+/* ---------- Target globe (Moon / Mars) ---------- */
+.target-globe {
+  padding: 8px 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: radial-gradient(circle at 50% 45%, #121b2a, var(--panel) 70%);
+}
+.target-globe__canvas {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 280px;
+  cursor: grab;
+}
+.target-globe__host {
+  position: absolute;
+  inset: 0;
+}
+.target-globe__label {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}

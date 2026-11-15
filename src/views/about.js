@@ -165,6 +165,8 @@ export function renderAbout(root, data) {
           <li><strong>Moon relief:</strong> LRO LOLA, LDEM_80S_80M (NASA PDS Geosciences Node).</li>
           <li><strong>Mars relief:</strong> MGS MOLA MEGDR 128 pixels per degree, tiles megt88n180hb and megt44n000hb (NASA PDS Geosciences Node).</li>
           <li><strong>Rock, ice, bare-ground and access classes, dossier texts:</strong> team geologists, from the literature cited in each dossier.</li>
+          <li><strong>Target images:</strong> MRO HiRISE (NASA/JPL-Caltech/UArizona) and LRO LROC NAC (NASA/GSFC/Arizona State University), public domain; credits under each image.</li>
+          <li><strong>Moon and Mars globe textures:</strong> Solar System Scope (solarsystemscope.com), CC BY 4.0, based on NASA imagery.</li>
           <li><strong>Country outlines:</strong> Natural Earth (public domain) via the <span class="mono">world-atlas</span> package.</li>
         </ul>
       </section>
