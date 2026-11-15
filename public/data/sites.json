@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "status": "draft",
- "exported_from": "Google Sheet, 2026-11-15 17:40 MSK",
+ "exported_from": "Google Sheet, 2026-11-15 19:00 MSK",
  "sites": [
   {
    "id": "e_haughton",
@@ -441,7 +441,10 @@
     "en": "Barringer Meteor Crater (USA)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы: ударный кратер, перепад высот 41 м, полигон подготовки астронавтов «Аполлона»; ударные брекчии, сухой климат, дорога до края кратера.",
+     "en": "For a Moon base: an impact crater with 41 m of local relief, a training ground for Apollo astronauts; impact breccias, a dry climate and a road to the crater rim."
+    },
     "summary": {
      "ru": "Простой ударный кратер диаметром 1,2 км в осадочных породах плато Колорадо.",
      "en": "A simple impact crater 1.2 km across in the sedimentary rocks of the Colorado Plateau."
@@ -500,7 +503,10 @@
     "en": "Mauna Kea (Hawaii, USA)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы: базальтовая тефра на высоте 3877 м, близкая к лунному реголиту; здесь NASA испытывала добычу кислорода из грунта.",
+     "en": "For a Moon base: basaltic tephra at 3,877 m, close to lunar regolith; NASA tested oxygen extraction from the ground here."
+    },
     "summary": {
      "ru": "Вершина щитового вулкана на Гавайях с тефровыми конусами выше 4000 м.",
      "en": "The summit of a Hawaiian shield volcano with tephra cones above 4,000 m."
@@ -559,7 +565,10 @@
     "en": "Timanfaya, Lanzarote (Spain)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы и исследования Марса: молодые базальтовые лавы и лавовые трубки, без льда и с голым грунтом; уклон P50 3,0°, P90 6,1°.",
+     "en": "For a Moon base and Mars exploration: young basalt lavas and lava tubes, no ice and bare ground; median slope 3.0°, slope P90 6.1°."
+    },
     "summary": {
      "ru": "Молодые базальтовые лавовые поля национального парка Тиманфайя.",
      "en": "Young basalt lava fields of Timanfaya National Park."
@@ -614,7 +623,10 @@
     "en": "Nördlinger Ries (Germany)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Для лунной базы: зювиты и ударные брекчии, полигон для подготовки экипажа «Аполлон-14»; дно ровное (уклон P50 0,3°, P90 0,5°), но почти всё занято пашней.",
+     "en": "For a Moon base: suevite and impact breccias where the Apollo 14 crew trained; a flat floor (median slope 0.3°, P90 0.5°), but almost all of it is farmland."
+    },
     "summary": {
      "ru": "Ударная структура диаметром около 24 км с зювитами, дно занято сельхозугодьями.",
      "en": "An impact structure about 24 km across with suevite; the floor is farmland."
@@ -669,7 +681,10 @@
     "en": "Amazon rainforest (negative control)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Отрицательный контроль: ровный рельеф (уклон P90 2°), перепад высот 47 м, но сплошной лес без обнажений.",
+     "en": "Negative control: flat relief (slope P90 2°) and 47 m of local relief, but continuous forest with no exposed rock."
+    },
     "summary": {
      "ru": "Влажный тропический лес, отрицательный контроль метода.",
      "en": "Tropical rainforest, a negative control for the method."
@@ -715,7 +730,10 @@
     "en": "Kansas farmland (negative control)"
    },
    "dossier": {
-    "intro": null,
+    "intro": {
+     "ru": "Отрицательный контроль: рельеф почти как в Аркадии, перепад высот 12 м, но это пашня без льда и породы.",
+     "en": "Negative control: relief almost like Arcadia's, 12 m of local relief, but it is farmland with no ice and no rock."
+    },
     "summary": {
      "ru": "Распаханная равнина, отрицательный контроль метода.",
      "en": "Ploughed plain, a negative control for the method."

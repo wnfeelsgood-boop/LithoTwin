@@ -1,8 +1,7 @@
-# Data gaps (data v3, 15 Nov 2026, 17:40 MSK)
+# Data gaps (data v4, 15 Nov 2026, 19:00 MSK)
 
 Blocks with missing data are hidden in the UI. Known gaps, from `npm test` warnings:
 
-- `dossier.intro` is still empty for 6 records: e_meteor, e_maunakea, e_lanzarote, e_ries, e_neg_amazon, e_neg_farmland.
 - Dossier sources (`source_1..3`) are empty for e_meteor, e_maunakea, e_lanzarote, e_ries and both negative controls; the dossier then lists only the sources of the rock/ice classes.
 - ru_tolbachik: centre on the lava plateau, awaiting an imagery check.
 - Rock similarity matrix and all record statuses are drafts.
