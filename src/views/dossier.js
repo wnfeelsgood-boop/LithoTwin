@@ -9,7 +9,7 @@ import { groupBadge } from './ranking.js';
 import { pairLabel, bodyDot, shortTargetName } from '../components/pairPicker.js';
 import { pentagonSvg } from '../components/pentagon.js';
 import { photoFigureHtml } from '../components/photos.js';
-import { rulesListHtml, worstRuleNames } from '../components/rulesList.js';
+import { rulesListHtml, worstRuleNames, shortReason } from '../components/rulesList.js';
 import { featureText, featureName, RELIEF_KEYS, capitalize } from '../components/featureTable.js';
 
 const DEM_NAME = { earth: 'Copernicus DEM', moon: 'LRO LOLA', mars: 'MGS MOLA' };
@@ -187,25 +187,57 @@ function compareTableHtml(data, site, target) {
 }
 
 const lc = (s) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : s);
-const joinList = (items) =>
-  items.length <= 1 ? items.join('') : `${items.slice(0, -1).join(', ')} ${ui('and')} ${items[items.length - 1]}`;
-
-/** Two-line verdict: what makes the site similar, what holds it back (points lost and suitability rules). */
-function verdictHtml(data, score, target) {
-  const rows = Object.entries(score.contrib).map(([k, v]) => ({ k, v, max: data.contribMax(score.task, k, score.site_id) }));
-  const name = (k) => lc(label(data.labels, 'feature', k));
-  const strong = rows.filter((r) => r.max > 0 && r.v / r.max >= 0.6).sort((a, b) => b.v - a.v).slice(0, 2);
-  const weak = rows.filter((r) => r.max - r.v >= 2).sort((a, b) => b.max - b.v - (a.max - a.v)).slice(0, 2);
-  const lines = [];
-  if (strong.length) lines.push(ui('verdictSimilar', { target: shortTargetName(target), list: joinList(strong.map((r) => name(r.k))) }));
-  if (weak.length) lines.push(ui('verdictHeld', { list: joinList(weak.map((r) => name(r.k))) }));
-  const worst = worstRuleNames(data, score);
-  if (worst) lines.push(ui('verdictRules', { list: worst }));
-  if (!lines.length) return '';
+/**
+ * Three-line summary, always in the same order:
+ * 1. Similar to <target>: the features that earned most of their points (site value, target value).
+ * 2. Not similar: the features that lost most points.
+ * 3. Suitability verdict and the rules that set it.
+ */
+function verdictHtml(data, site, score, target) {
+  const rows = Object.entries(score.contrib)
+    .map(([k, v]) => ({ k, v, max: data.contribMax(score.task, k, score.site_id) }))
+    .filter((r) => r.max > 0);
+  const item = (k) => {
+    const textual = k === 'material' || k === 'ice' || k === 'exposure';
+    const val = (s) => (textual ? lc(featureText(data, s, k)) : featureText(data, s, k));
+    const a = val(site);
+    const b = val(target);
+    const value = a !== b ? ui('verdictAtTarget', { site: a, target: b }) : textual ? ui('verdictSame', { site: a }) : a;
+    return `${lc(label(data.labels, 'feature', k))} ${value}`;
+  };
+  const byRatio = [...rows].sort((a, b) => b.v / b.max - a.v / a.max || b.max - a.max);
+  const strong = byRatio.filter((r) => r.v / r.max >= 0.6).slice(0, 2);
+  const weak = rows
+    .filter((r) => r.max - r.v >= 2 && !strong.includes(r))
+    .sort((a, b) => b.max - b.v - (a.max - a.v))
+    .slice(0, 2);
+  const decisive = Object.entries(score.suitability_rules || {})
+    .filter(([, v]) => v === score.suitability)
+    .map(([k]) => shortReason(data, site, k));
+  const lines = [
+    { mark: '≈', cls: 'sim', lead: ui('verdictSimilarLead', { target: shortTargetName(target) }), text: strong.length ? strong.map((r) => item(r.k)).join('; ') : ui('verdictNothing') },
+    { mark: '≠', cls: 'diff', lead: ui('verdictDiffersLead'), text: weak.length ? weak.map((r) => item(r.k)).join('; ') : ui('verdictNoDiff') },
+    {
+      mark: pentagonSvg({ suitability: score.suitability, size: 18 }),
+      cls: `suit suit-text--${score.suitability}`,
+      lead: capitalize(label(data.labels, 'suitability', score.suitability)),
+      text: score.suitability === 'pass' ? ui('verdictAllRules') : decisive.join('; '),
+      raw: true,
+    },
+  ];
   return `
     <section class="verdict panel">
       <span class="step-label">${esc(ui('verdict'))}</span>
-      ${lines.map((l) => `<p>${esc(l)}</p>`).join('')}
+      <ol class="verdict__list">
+        ${lines
+          .map(
+            (l) => `<li class="verdict__line">
+          <span class="verdict__mark verdict__mark--${l.cls.split(' ')[0]}" aria-hidden="true">${l.raw ? l.mark : esc(l.mark)}</span>
+          <p><strong class="verdict__lead ${l.cls.split(' ').slice(1).join(' ')}">${esc(l.lead)}:</strong> ${esc(l.text)}</p>
+        </li>`
+          )
+          .join('')}
+      </ol>
     </section>`;
 }
 
@@ -329,7 +361,7 @@ export function renderDossier(root, data, route) {
       <div class="dossier__top">
         <div class="dossier__lead">
           ${headerHtml(data, site, pair)}
-          ${score ? verdictHtml(data, score, target) : ''}
+          ${score ? verdictHtml(data, site, score, target) : ''}
         </div>
         ${score ? scoreCardHtml(data, site, pair, score) : ''}
       </div>

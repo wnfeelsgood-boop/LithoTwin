@@ -48,6 +48,25 @@ function reason(data, site, key, task) {
   return '';
 }
 
+/** Short reason for the dossier summary line, e.g. "< 40% bare ground" or "access: restricted". */
+export function shortReason(data, site, key) {
+  const feats = data.featuresBySite.get(site.id) || {};
+  const lower = (x) => (x ? x.charAt(0).toLowerCase() + x.slice(1) : '—');
+  if (key === 'bare_ground') return ui('short_bare_ground', { value: label(data.labels, 'bare_class', site.bare_class) || '—' });
+  if (key === 'access')
+    return site.access === 'closed' ? ui('short_access_closed') : site.access === 'restricted' ? ui('short_access_restricted') : lower(label(data.labels, 'access', site.access));
+  if (key === 'flat_area') {
+    const v = feats.flat_frac?.value;
+    return ui('short_flat_area', { value: v == null ? '—' : `${num(v * 100, 0)}%` });
+  }
+  if (key === 'slope_p90') {
+    const v = feats.slope_p90?.value;
+    return ui('short_slope_p90', { value: v == null ? '—' : `${num(v, 1)}°` });
+  }
+  if (key === 'drill_target') return ui('short_drill_target');
+  return lower(label(data.labels, 'suitability_rule', key));
+}
+
 export function rulesListHtml(data, site, score) {
   const entries = Object.entries(score.suitability_rules || {});
   if (!entries.length) return '';

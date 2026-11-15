@@ -207,15 +207,44 @@
 /* ---------- World screen ---------- */
 .world {
   display: grid;
-  grid-template-columns: minmax(250px, 300px) minmax(0, 1fr) minmax(320px, 400px);
+  grid-template-columns: minmax(250px, 300px) minmax(0, 1fr) minmax(360px, 460px);
   gap: 20px;
   padding: 20px max(16px, env(safe-area-inset-right, 0px)) 24px max(16px, env(safe-area-inset-left, 0px));
   max-width: 1600px;
   margin: 0 auto;
   min-height: calc(100vh - 64px);
 }
-.world.no-globe {
+.world.no-globe,
+.world.ranking-hidden {
   grid-template-columns: minmax(250px, 300px) minmax(0, 1fr);
+}
+.ranking__tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ranking__close {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  background: var(--panel-2);
+  color: var(--text-2);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.ranking__close:hover,
+.ranking__close:focus-visible {
+  color: var(--text);
+  border-color: var(--ice);
+}
+.show-ranking {
+  align-self: flex-end;
 }
 .world__left,
 .world__right {
@@ -467,7 +496,10 @@
 /* ---------- Responsive ---------- */
 @media (max-width: 1180px) {
   .world {
-    grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  }
+  .world.ranking-hidden {
+    grid-template-columns: minmax(0, 1fr);
   }
   .world__left {
     grid-column: 1 / -1;
@@ -1364,10 +1396,47 @@
   padding: 14px 18px;
   border-left: 3px solid var(--ice);
 }
-.verdict p {
-  margin: 6px 0 0;
+.verdict__list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.verdict__line {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+.verdict__line p {
+  margin: 0;
   font-size: 16px;
   line-height: 1.45;
+}
+.verdict__mark {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 700;
+}
+.verdict__mark--sim {
+  background: color-mix(in srgb, var(--pass) 16%, transparent);
+  color: var(--pass);
+}
+.verdict__mark--diff {
+  background: color-mix(in srgb, var(--fail) 16%, transparent);
+  color: var(--fail);
+}
+.verdict__lead {
+  font-weight: 600;
 }
 .images__head {
   display: flex;
