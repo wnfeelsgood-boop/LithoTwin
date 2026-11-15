@@ -11,12 +11,12 @@ function readFlag(key) {
 export const state = {
   selectedId: null, // site highlighted on the world screen
   globeFailed: false, // set when WebGL / globe.gl cannot start
-  rankingHidden: readFlag('lt-ranking-hidden'), // ranking panel closed with its × button
+  hintHidden: readFlag('lt-hint-hidden'), // click hint above the ranking closed with its × button
 
-  setRankingHidden(v) {
-    this.rankingHidden = v;
+  setHintHidden(v) {
+    this.hintHidden = v;
     try {
-      localStorage.setItem('lt-ranking-hidden', v ? '1' : '0');
+      localStorage.setItem('lt-hint-hidden', v ? '1' : '0');
     } catch {
       /* storage blocked: keep the choice for this visit only */
     }

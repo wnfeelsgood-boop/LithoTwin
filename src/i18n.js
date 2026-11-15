@@ -75,8 +75,7 @@ const UI = {
   exposure_medium: { en: 'Medium', ru: 'Средняя' },
   exposure_low: { en: 'Low', ru: 'Низкая' },
   rankingTitle: { en: 'Analog ranking', ru: 'Рейтинг аналогов' },
-  hideRanking: { en: 'Hide the ranking to see the globe larger', ru: 'Скрыть рейтинг, чтобы глобус стал больше' },
-  showRanking: { en: 'Show ranking', ru: 'Показать рейтинг' },
+  hideHint: { en: 'Hide this hint', ru: 'Скрыть подсказку' },
   targetNumbers: { en: 'Target in numbers · 3 km circle', ru: 'Цель в цифрах · круг 3 км' },
   globeHint: {
     en: 'Drag the globe to see Russia, Antarctica and Hawaii. Click a pentagon to select a site, click again to open its dossier.',

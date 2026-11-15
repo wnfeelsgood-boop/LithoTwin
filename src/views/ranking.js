@@ -53,19 +53,21 @@ function rowHtml(data, pair, sc, selectedId) {
     </li>`;
 }
 
-export function rankingHtml(data, pair, filter, selectedId, { closable = false } = {}) {
+export function rankingHtml(data, pair, filter, selectedId, { hideHint = false } = {}) {
   const all = data.scoresFor(pair);
   const rows = visibleScores(data, pair, filter);
   return `
     <section class="ranking" aria-label="${esc(ui('rankingTitle'))}">
       <header class="ranking__head">
         <h2 class="ranking__title">${esc(ui('rankingTitle'))}</h2>
-        <span class="ranking__tools">
-          <span class="muted mono">${rows.length} / ${all.length}</span>
-          ${closable ? `<button type="button" class="ranking__close" data-hide-ranking title="${esc(ui('hideRanking'))}" aria-label="${esc(ui('hideRanking'))}">×</button>` : ''}
-        </span>
+        <span class="muted mono">${rows.length} / ${all.length}</span>
       </header>
-      <p class="click-hint"><span aria-hidden="true">👆</span> ${esc(ui('clickHint'))}</p>
+      ${
+        hideHint
+          ? ''
+          : `<p class="click-hint"><span aria-hidden="true">👆</span> ${esc(ui('clickHint'))}
+        <button type="button" class="click-hint__close" data-hide-hint title="${esc(ui('hideHint'))}" aria-label="${esc(ui('hideHint'))}">×</button></p>`
+      }
       ${filterBarHtml(filter)}
       ${
         rows.length

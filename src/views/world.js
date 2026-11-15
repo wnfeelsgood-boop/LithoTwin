@@ -16,9 +16,8 @@ export function renderWorld(root, data, route) {
   const target = data.siteById.get(pair.targetId);
   if (state.selectedId && !data.scoreOf(state.selectedId, pair)) state.selectedId = null;
 
-  const hideRanking = state.rankingHidden && !state.globeFailed;
   root.innerHTML = `
-    <main class="world${state.globeFailed ? ' no-globe' : ''}${hideRanking ? ' ranking-hidden' : ''}">
+    <main class="world${state.globeFailed ? ' no-globe' : ''}">
       <aside class="world__left">
         ${targetTaskPickerHtml(data, pair)}
         <section class="target-globe panel" id="target-globe-panel">
@@ -30,7 +29,6 @@ export function renderWorld(root, data, route) {
         ${data.methodCheckFor(pair)?.pass ? `<a class="method-badge" href="#/about"><span aria-hidden="true">✓</span> ${esc(ui('methodChecked'))} →</a>` : methodCheckHtml(data, pair)}
       </aside>
       <section class="world__centre" ${state.globeFailed ? 'hidden' : ''}>
-        <button type="button" class="btn btn--small show-ranking" data-show-ranking ${hideRanking ? '' : 'hidden'}>☰ ${esc(ui('showRanking'))}</button>
         <h1 class="mission-banner mission-banner--${esc(target.body)}">
           <span class="sphere sphere--${esc(target.body)} sphere--sm" aria-hidden="true"></span>
           <span><span class="mission-banner__goal">${esc(ui(`mission_${target.body}`))}</span>
@@ -40,8 +38,8 @@ export function renderWorld(root, data, route) {
         <p class="legend mono">${esc(ui('legend'))}</p>
         <p class="globe-hint muted">${esc(ui('globeHint'))}</p>
       </section>
-      <aside class="world__right" id="ranking-mount" ${hideRanking ? 'hidden' : ''}>
-        ${rankingHtml(data, pair, route.filter, state.selectedId, { closable: !state.globeFailed })}
+      <aside class="world__right" id="ranking-mount">
+        ${rankingHtml(data, pair, route.filter, state.selectedId, { hideHint: state.hintHidden })}
       </aside>
     </main>`;
 
@@ -62,17 +60,12 @@ function bindControls(root, data, route, pair) {
   );
 
   const right = root.querySelector('#ranking-mount');
-  const showBtn = root.querySelector('[data-show-ranking]');
-  const setHidden = (hidden) => {
-    state.setRankingHidden(hidden);
-    root.querySelector('.world')?.classList.toggle('ranking-hidden', hidden);
-    right.hidden = hidden;
-    if (showBtn) showBtn.hidden = !hidden;
-    (hidden ? showBtn : right.querySelector('[data-hide-ranking]'))?.focus();
-  };
-  showBtn?.addEventListener('click', () => setHidden(false));
   right.addEventListener('click', (e) => {
-    if (e.target.closest('[data-hide-ranking]')) return setHidden(true);
+    if (e.target.closest('[data-hide-hint]')) {
+      state.setHintHidden(true);
+      e.target.closest('.click-hint')?.remove();
+      return;
+    }
     const f = e.target.closest('[data-filter]');
     if (f) return navigate({ filter: f.dataset.filter });
     const btn = e.target.closest('[data-select]');
@@ -153,10 +146,5 @@ async function mountGlobe(root, data, route, pair) {
     state.globeFailed = true;
     root.querySelector('.world__centre')?.setAttribute('hidden', '');
     root.querySelector('.world')?.classList.add('no-globe');
-    // Without the globe the ranking is the whole screen: never leave it hidden.
-    root.querySelector('.world')?.classList.remove('ranking-hidden');
-    const right = root.querySelector('#ranking-mount');
-    if (right) right.hidden = false;
-    root.querySelector('[data-hide-ranking]')?.remove();
   }
 }
