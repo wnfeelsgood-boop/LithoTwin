@@ -120,6 +120,12 @@ export function renderAbout(root, data) {
     <main class="page about">
       <h1 class="page-title">${esc(ui('method'))}</h1>
 
+      <section class="in30 panel">
+        <span class="step-label">${esc(ui('in30s'))}</span>
+        <ul>${['s30_1', 's30_2', 's30_3', 's30_4'].map((k) => `<li>${esc(ui(k))}</li>`).join('')}</ul>
+      </section>
+      <nav class="toc" aria-label="${esc(ui('contents'))}"><span class="step-label">${esc(ui('contents'))}</span><div class="toc__links"></div></nav>
+
       <section>
         <p class="lead">LithoTwin ranks places on Earth by how closely their relief, rock and ice match a planned landing or base site on the Moon or Mars. It is a decision aid for choosing where to rehearse a mission: similarity orders the list, and a separate traffic light says whether a team can actually work there.</p>
       </section>
@@ -132,10 +138,8 @@ export function renderAbout(root, data) {
           <li>Each feature gives a similarity from 0 to 1 (rules below); the base score is their weighted mean. If relief data covers only part of the circle, relief features get proportionally less weight, and “data coverage” shows how much of the total weight had data.</li>
           <li>Surface exposure (how much bare ground is visible: high, medium or low) adds up to ${num(w * 100, 0)} points: <span class="mono">S = ${num(1 - w, 1)} · S_base + ${num(w * 100, 0)} · exposure</span>.</li>
         </ul>
-        <h3 class="sub-title">Weights per task</h3>
-        ${weightsTable(data)}
-        <h3 class="sub-title">Tolerances</h3>
-        ${toleranceList(data)}
+        <details class="spoiler"><summary>Weights per task</summary>${weightsTable(data)}</details>
+        <details class="spoiler"><summary>Tolerances</summary>${toleranceList(data)}</details>
       </section>
 
       <section>
@@ -155,7 +159,7 @@ export function renderAbout(root, data) {
       <section>
         <h2 class="section-title">4. Rock similarity matrix</h2>
         <p>Expert judgement by the team geologists (draft): 1 = same class, 0 = nothing in common.</p>
-        ${matrixTable(data)}
+        <details class="spoiler"><summary>Show the 7 × 7 matrix</summary>${matrixTable(data)}</details>
       </section>
 
       <section>
@@ -183,8 +187,20 @@ export function renderAbout(root, data) {
 
       <section>
         <h2 class="section-title">7. Team and AI disclosure</h2>
-        <p>German Raikov (team lead), Nikolai Shveshkeev and Murat Arifullin (geology), Damir Kudiakov (code review).</p>
+        <p>German Rajkov (team lead), Nikolai Shveshkeev and Murat Arifullin (geology), Damir Kudyakov (code review), Andrey Sat. Full team: <a href="#/project">About project</a>.</p>
         <p>The code was written with Claude Code (Anthropic) under the team's direction and reviewed by a team member. Relief features, scores and the data package were produced with Claude from public elevation models using the scripts in <span class="mono">/tools</span>. Rock, ice and exposure classes and dossier texts were written or checked by the team geologists. Details: <a href="${REPO}/blob/main/docs/AI_DISCLOSURE.md" target="_blank" rel="noopener">AI disclosure</a> · <a href="${REPO}" target="_blank" rel="noopener">source code (MIT)</a>.</p>
       </section>
     </main>`;
+
+  // Contents: buttons that scroll to each section (plain #anchors would clash with the hash router).
+  const links = root.querySelector('.toc__links');
+  root.querySelectorAll('.about h2.section-title').forEach((h, i) => {
+    h.id = `method-${i + 1}`;
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'chip';
+    b.textContent = h.textContent.replace(/^\d+\.\s*/, '');
+    b.addEventListener('click', () => h.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    links.appendChild(b);
+  });
 }

@@ -19,6 +19,7 @@ import { renderWorld } from './views/world.js';
 import { renderDossier } from './views/dossier.js';
 import { renderRussia } from './views/russia.js';
 import { renderAbout } from './views/about.js';
+import { renderProject } from './views/project.js';
 
 const app = document.getElementById('app');
 let data = null;
@@ -39,7 +40,8 @@ function topBarHtml(route) {
         ${seg('world', 'world')}${seg('russia', 'russia')}
       </nav>
       <div class="topbar__right">
-        <a class="btn" href="#/about">${esc(ui('method'))}</a>
+        <a class="btn${route.view === 'about' ? ' is-on' : ''}" href="#/about">${esc(ui('method'))}</a>
+        <a class="btn${route.view === 'project' ? ' is-on' : ''}" href="#/project">${esc(ui('project'))}</a>
         <div class="lang segmented" role="group" aria-label="Language">
           <button type="button" data-lang="en" aria-pressed="${lang === 'en'}" class="${lang === 'en' ? 'is-on' : ''}">EN</button>
           <button type="button" data-lang="ru" aria-pressed="${lang === 'ru'}" class="${lang === 'ru' ? 'is-on' : ''}">RU</button>
@@ -65,6 +67,7 @@ function render() {
   if (route.view === 'world') renderWorld(view, data, route);
   else if (route.view === 'site') renderDossier(view, data, route);
   else if (route.view === 'russia') renderRussia(view, data, route);
+  else if (route.view === 'project') renderProject(view, data);
   else renderAbout(view, data, route);
 
   if (route.view !== 'world') window.scrollTo(0, 0);

@@ -1,8 +1,26 @@
 // Small shared UI state that does not belong in the URL.
 
+function readFlag(key) {
+  try {
+    return localStorage.getItem(key) === '1';
+  } catch {
+    return false;
+  }
+}
+
 export const state = {
   selectedId: null, // site highlighted on the world screen
   globeFailed: false, // set when WebGL / globe.gl cannot start
+  hintHidden: readFlag('lt-hint-hidden'), // click hint above the ranking closed with its × button
+
+  setHintHidden(v) {
+    this.hintHidden = v;
+    try {
+      localStorage.setItem('lt-hint-hidden', v ? '1' : '0');
+    } catch {
+      /* storage blocked: keep the choice for this visit only */
+    }
+  },
 
   /** Current pair from the route, falling back to pair 1. */
   pair(data, route) {

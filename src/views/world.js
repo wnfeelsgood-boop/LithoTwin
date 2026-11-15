@@ -26,7 +26,7 @@ export function renderWorld(root, data, route) {
         </section>
         ${data.photosFor(target.id).slice(0, 1).map((p) => photoFigureHtml(p, { compact: true })).join('')}
         ${targetNumbersHtml(data, target)}
-        ${methodCheckHtml(data, pair)}
+        ${data.methodCheckFor(pair)?.pass ? `<a class="method-badge" href="#/about"><span aria-hidden="true">✓</span> ${esc(ui('methodChecked'))} →</a>` : methodCheckHtml(data, pair)}
       </aside>
       <section class="world__centre" ${state.globeFailed ? 'hidden' : ''}>
         <h1 class="mission-banner mission-banner--${esc(target.body)}">
@@ -39,7 +39,7 @@ export function renderWorld(root, data, route) {
         <p class="globe-hint muted">${esc(ui('globeHint'))}</p>
       </section>
       <aside class="world__right" id="ranking-mount">
-        ${rankingHtml(data, pair, route.filter, state.selectedId)}
+        ${rankingHtml(data, pair, route.filter, state.selectedId, { hideHint: state.hintHidden })}
       </aside>
     </main>`;
 
@@ -61,6 +61,18 @@ function bindControls(root, data, route, pair) {
 
   const right = root.querySelector('#ranking-mount');
   right.addEventListener('click', (e) => {
+    const toggle = e.target.closest('[data-hint-toggle]');
+    if (toggle) {
+      const collapsed = !state.hintHidden;
+      state.setHintHidden(collapsed);
+      toggle.closest('.click-hint')?.classList.toggle('is-collapsed', collapsed);
+      toggle.setAttribute('aria-expanded', String(!collapsed));
+      const tip = ui(collapsed ? 'showHint' : 'hideHint');
+      toggle.title = tip;
+      toggle.setAttribute('aria-label', tip);
+      toggle.textContent = collapsed ? `👆 ${ui('hintLabel')}` : '×';
+      return;
+    }
     const f = e.target.closest('[data-filter]');
     if (f) return navigate({ filter: f.dataset.filter });
     const btn = e.target.closest('[data-select]');

@@ -57,8 +57,8 @@ const UI = {
   worldHeading: { en: 'Which place on Earth is most like your target?', ru: 'Какое место на Земле больше всего похоже на цель?' },
   pairLabel: { en: 'Target and task', ru: 'Цель и задача' },
   filterAll: { en: 'All', ru: 'Все' },
-  filterNoRed: { en: 'No red', ru: 'Без красных' },
-  filterGreen: { en: 'Green only', ru: 'Только зелёные' },
+  filterNoRed: { en: 'Hide unsuitable', ru: 'Без непригодных' },
+  filterGreen: { en: 'Suitable only', ru: 'Только пригодные' },
   filterHint: {
     en: 'Similarity ranks the list. Colour shows whether you can actually work there.',
     ru: 'Сходство задаёт порядок. Цвет показывает, можно ли там реально работать.',
@@ -75,6 +75,9 @@ const UI = {
   exposure_medium: { en: 'Medium', ru: 'Средняя' },
   exposure_low: { en: 'Low', ru: 'Низкая' },
   rankingTitle: { en: 'Analog ranking', ru: 'Рейтинг аналогов' },
+  hideHint: { en: 'Collapse this hint', ru: 'Свернуть подсказку' },
+  showHint: { en: 'Show the hint', ru: 'Развернуть подсказку' },
+  hintLabel: { en: 'How to use', ru: 'Подсказка' },
   targetNumbers: { en: 'Target in numbers · 3 km circle', ru: 'Цель в цифрах · круг 3 км' },
   globeHint: {
     en: 'Drag the globe to see Russia, Antarctica and Hawaii. Click a pentagon to select a site, click again to open its dossier.',
@@ -156,6 +159,68 @@ const UI = {
   },
   tipSelect: { en: 'Click: show · double-click: dossier', ru: 'Клик: показать · двойной клик: досье' },
   tipOpen: { en: 'Click again for the full dossier →', ru: 'Нажмите ещё раз, чтобы открыть досье →' },
+  // Dossier v2 (team feedback)
+  verdict: { en: 'In short', ru: 'Коротко' },
+  verdictSimilarLead: { en: 'Similar to {target}', ru: 'Похоже на «{target}»' },
+  verdictDiffersLead: { en: 'Not similar', ru: 'Не похоже' },
+  verdictNoDiff: { en: 'no major differences', ru: 'заметных отличий нет' },
+  verdictAllRules: { en: 'all rules pass', ru: 'все правила выполнены' },
+  verdictAtTarget: { en: '{site}, target {target}', ru: '{site}, у цели {target}' },
+  verdictSame: { en: '({site})', ru: '({site})' },
+  verdictNothing: { en: 'nothing stands out', ru: 'почти ничем' },
+  short_bare_ground: { en: '{value}', ru: 'голый грунт {value}' },
+  short_access_restricted: { en: 'restricted access', ru: 'ограниченный доступ' },
+  short_access_closed: { en: 'closed area', ru: 'доступ закрыт' },
+  short_flat_area: { en: 'flat share only {value}', ru: 'ровных участков всего {value}' },
+  short_slope_p90: { en: 'steep slopes, P90 {value}', ru: 'крутые склоны, P90 {value}' },
+  short_drill_target: { en: 'nothing to drill: no ice or target rock', ru: 'нечего бурить: нет льда или целевой породы' },
+  breakdownTitle: { en: 'Feature by feature: {score}', ru: 'Признак за признаком: {score}' },
+  pointsCol: { en: 'Points in the score', ru: 'Баллы в оценке' },
+  breakdownNote: {
+    en: 'Bar = points this feature added out of what it could add. Highlighted rows lose the most points.',
+    ru: 'Полоска = сколько баллов признак дал из возможных. Подсвечены строки, где теряется больше всего.',
+  },
+  imagesTitle: { en: 'What it looks like', ru: 'Как выглядит' },
+  viewImage: { en: 'Image', ru: 'Снимок' },
+  viewRelief: { en: 'Relief', ru: 'Рельеф' },
+  copyLink: { en: 'Copy link', ru: 'Скопировать ссылку' },
+  copied: { en: 'Link copied', ru: 'Ссылка скопирована' },
+  setsVerdict: { en: 'sets the overall verdict', ru: 'задаёт общий итог' },
+  rule_bare_reason: {
+    en: 'Here: {value}. Suitable from ≥ 70% bare ground, caveats at 40–70%.',
+    ru: 'Здесь: {value}. Пригодно от ≥ 70% голого грунта, с оговорками при 40–70%.',
+  },
+  rule_bare_reason_drill: {
+    en: 'Here: {value}. For drilling, little bare ground is only a caveat.',
+    ru: 'Здесь: {value}. Для бурения мало голого грунта — только оговорка.',
+  },
+  rule_access_reason: {
+    en: 'Here: {value}. Open = suitable, restricted (permits, protected area, remote) = caveats, closed = not suitable.',
+    ru: 'Здесь: {value}. Открыт = пригодно, ограничен (разрешения, заповедник, удалённость) = с оговорками, закрыт = непригодно.',
+  },
+  methodChecked: { en: 'Method checked on known analogs and negative controls', ru: 'Метод проверен на известных аналогах и негативах' },
+  // Project page
+  project: { en: 'About project', ru: 'О проекте' },
+  team: { en: 'Team', ru: 'Команда' },
+  // Method page summary
+  in30s: { en: 'In 30 seconds', ru: 'За 30 секунд' },
+  contents: { en: 'Contents', ru: 'Содержание' },
+  s30_1: {
+    en: 'Every site and target is measured the same way: a 3 km circle on a 500 m grid, from NASA LOLA/MOLA and Copernicus elevation data.',
+    ru: 'Все площадки и цели измерены одинаково: круг 3 км на сетке 500 м, по данным рельефа NASA LOLA/MOLA и Copernicus.',
+  },
+  s30_2: {
+    en: 'Similarity (0–100) combines five relief features with rock type and ground ice, weighted for each task.',
+    ru: 'Сходство (0–100) складывается из пяти признаков рельефа, породы и льда, с весами под каждую задачу.',
+  },
+  s30_3: {
+    en: 'Suitability is a separate traffic light from simple rules: bare ground, access, flat area, slopes, a drill target.',
+    ru: 'Пригодность — отдельный светофор по простым правилам: голый грунт, доступ, ровные участки, уклоны, цель для бурения.',
+  },
+  s30_4: {
+    en: 'Check: in all 5 target × task pairs the negative controls score below known analogs, also with weights shifted by ±20%.',
+    ru: 'Проверка: во всех 5 парах «цель × задача» негативы ниже известных аналогов, в том числе при сдвиге весов на ±20%.',
+  },
   // Russia
   russiaHeading: { en: 'Where in Russia to rehearse the Moon and Mars', ru: 'Где в России репетировать Луну и Марс' },
   russiaSub: {

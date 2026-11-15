@@ -252,7 +252,7 @@ Submission
 
 ## 9. AI disclosure (create `docs/AI_DISCLOSURE.md`, link from README and About)
 
-State plainly: code was written with Claude Code (Anthropic) under the team's direction and reviewed by a team member; relief features, scores and the data package were produced with Claude from public DEMs (Copernicus, LOLA, MOLA) using the scripts in `/tools`; rock/ice/exposure classes and dossier texts were written or checked by the team's geologists; design concept made with Claude. List the human roles: German Raikov (lead), Nikolai Shveshkeev and Murat Arifullin (geology), Damir Kudiakov (code review).
+State plainly: code was written with Claude Code (Anthropic) under the team's direction and reviewed by a team member; relief features, scores and the data package were produced with Claude from public DEMs (Copernicus, LOLA, MOLA) using the scripts in `/tools`; rock/ice/exposure classes and dossier texts were written or checked by the team's geologists; design concept made with Claude. List the human roles: German Rajkov (lead), Nikolai Shveshkeev and Murat Arifullin (geology), Damir Kudyakov (code review).
 
 ## 10. English UI copy (use as-is)
 

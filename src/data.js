@@ -34,6 +34,7 @@ export async function loadData() {
     loadJson('material_matrix.json'),
   ]);
   const photosFile = await loadOptionalJson('photos.json', { photos: [] });
+  const project = await loadOptionalJson('project.json', { about: null, team: [] });
   const photosBySite = new Map();
   for (const ph of photosFile.photos || []) {
     if (!photosBySite.has(ph.site_id)) photosBySite.set(ph.site_id, []);
@@ -70,6 +71,7 @@ export async function loadData() {
     siteById,
     featuresBySite,
     photosFor: (siteId) => photosBySite.get(siteId) || [],
+    project,
     missions,
     labels,
     materialMatrix,

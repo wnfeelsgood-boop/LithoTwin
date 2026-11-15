@@ -8,9 +8,8 @@ import { navigate } from '../router.js';
 import { groupBadge } from './ranking.js';
 import { pairLabel, bodyDot, shortTargetName } from '../components/pairPicker.js';
 import { pentagonSvg } from '../components/pentagon.js';
-import { contribBarsHtml } from '../components/contribBars.js';
-import { photosSectionHtml } from '../components/photos.js';
-import { rulesListHtml, worstRuleNames } from '../components/rulesList.js';
+import { photoFigureHtml } from '../components/photos.js';
+import { rulesListHtml, worstRuleNames, shortReason } from '../components/rulesList.js';
 import { featureText, featureName, RELIEF_KEYS, capitalize } from '../components/featureTable.js';
 
 const DEM_NAME = { earth: 'Copernicus DEM', moon: 'LRO LOLA', mars: 'MGS MOLA' };
@@ -187,6 +186,135 @@ function compareTableHtml(data, site, target) {
     </section>`;
 }
 
+const lc = (s) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : s);
+/**
+ * Three-line summary, always in the same order:
+ * 1. Similar to <target>: the features that earned most of their points (site value, target value).
+ * 2. Not similar: the features that lost most points.
+ * 3. Suitability verdict and the rules that set it.
+ */
+function verdictHtml(data, site, score, target) {
+  const rows = Object.entries(score.contrib)
+    .map(([k, v]) => ({ k, v, max: data.contribMax(score.task, k, score.site_id) }))
+    .filter((r) => r.max > 0);
+  const item = (k) => {
+    const textual = k === 'material' || k === 'ice' || k === 'exposure';
+    const val = (s) => (textual ? lc(featureText(data, s, k)) : featureText(data, s, k));
+    const a = val(site);
+    const b = val(target);
+    const value = a !== b ? ui('verdictAtTarget', { site: a, target: b }) : textual ? ui('verdictSame', { site: a }) : a;
+    return `${lc(label(data.labels, 'feature', k))} ${value}`;
+  };
+  const byRatio = [...rows].sort((a, b) => b.v / b.max - a.v / a.max || b.max - a.max);
+  const strong = byRatio.filter((r) => r.v / r.max >= 0.6).slice(0, 2);
+  const weak = rows
+    .filter((r) => r.max - r.v >= 2 && !strong.includes(r))
+    .sort((a, b) => b.max - b.v - (a.max - a.v))
+    .slice(0, 2);
+  const decisive = Object.entries(score.suitability_rules || {})
+    .filter(([, v]) => v === score.suitability)
+    .map(([k]) => shortReason(data, site, k));
+  const lines = [
+    { mark: '≈', cls: 'sim', lead: ui('verdictSimilarLead', { target: shortTargetName(target) }), text: strong.length ? strong.map((r) => item(r.k)).join('; ') : ui('verdictNothing') },
+    { mark: '≠', cls: 'diff', lead: ui('verdictDiffersLead'), text: weak.length ? weak.map((r) => item(r.k)).join('; ') : ui('verdictNoDiff') },
+    {
+      mark: pentagonSvg({ suitability: score.suitability, size: 18 }),
+      cls: `suit suit-text--${score.suitability}`,
+      lead: capitalize(label(data.labels, 'suitability', score.suitability)),
+      text: score.suitability === 'pass' ? ui('verdictAllRules') : decisive.join('; '),
+      raw: true,
+    },
+  ];
+  return `
+    <section class="verdict panel">
+      <span class="step-label">${esc(ui('verdict'))}</span>
+      <ol class="verdict__list">
+        ${lines
+          .map(
+            (l) => `<li class="verdict__line">
+          <span class="verdict__mark verdict__mark--${l.cls.split(' ')[0]}" aria-hidden="true">${l.raw ? l.mark : esc(l.mark)}</span>
+          <p><strong class="verdict__lead ${l.cls.split(' ').slice(1).join(' ')}">${esc(l.lead)}:</strong> ${esc(l.text)}</p>
+        </li>`
+          )
+          .join('')}
+      </ol>
+    </section>`;
+}
+
+/** One table instead of two: feature, this site, the target, and the points the feature added (bar). */
+function breakdownHtml(data, site, target, score) {
+  const keys = Object.keys(score.contrib).sort(
+    (a, b) => data.contribMax(score.task, b, site.id) - data.contribMax(score.task, a, site.id)
+  );
+  const losses = keys
+    .map((k) => ({ k, loss: data.contribMax(score.task, k, site.id) - score.contrib[k] }))
+    .filter((x) => x.loss >= 2)
+    .sort((a, b) => b.loss - a.loss)
+    .slice(0, 2)
+    .map((x) => x.k);
+  const valid = data.featuresBySite.get(site.id)?.slope_p50?.valid_fraction;
+  return `
+    <section class="breakdown">
+      <h2 class="section-title">${esc(ui('breakdownTitle', { score: num(score.similarity) }))}</h2>
+      <div class="table-wrap panel">
+        <table class="compare__table breakdown__table">
+          <thead><tr>
+            <th scope="col">${esc(ui('featureCol'))}</th>
+            <th scope="col">${esc(shortTargetName(site))}</th>
+            <th scope="col">${esc(shortTargetName(target))}</th>
+            <th scope="col">${esc(ui('pointsCol'))}</th>
+          </tr></thead>
+          <tbody>
+            ${keys
+              .map((k) => {
+                const max = data.contribMax(score.task, k, site.id);
+                const v = score.contrib[k];
+                const isText = k === 'material' || k === 'ice' || k === 'exposure';
+                const targetVal = k === 'exposure' ? '—' : featureText(data, target, k);
+                return `<tr class="${losses.includes(k) ? 'is-loss' : ''}">
+                  <th scope="row">${esc(capitalize(featureName(data, k)))}</th>
+                  <td class="${isText ? '' : 'mono'}">${esc(featureText(data, site, k))}</td>
+                  <td class="${isText ? '' : 'mono'} target-col">${esc(targetVal)}</td>
+                  <td class="points"><span class="points__bar"><i style="width:${max > 0 ? Math.min(100, (v / max) * 100) : 0}%"></i></span>
+                    <span class="mono points__num">${num(v)} / ${num(max, Number.isInteger(Math.round(max * 10) / 10) ? 0 : 1)}</span></td>
+                </tr>`;
+              })
+              .join('')}
+          </tbody>
+        </table>
+      </div>
+      <p class="note muted">${esc(ui('breakdownNote'))}</p>
+      ${valid != null && valid < 1 ? `<p class="note warn-text">${esc(ui('coversPart', { pct: pct(valid) }))}</p>` : ''}
+    </section>`;
+}
+
+/** Images and relief maps in one block with a switch; the image (the most readable element) comes first. */
+function imagesHtml(data, site, target) {
+  const showTarget = target && target.id !== site.id;
+  const ownPhotos = data.photosFor(site.id);
+  const tgtPhotos = showTarget ? data.photosFor(target.id) : [];
+  const hasImages = ownPhotos.length > 0 || tgtPhotos.length > 0;
+  const imageView = `<div class="photos__grid">${[...ownPhotos.slice(0, 1), ...tgtPhotos.slice(0, 1)]
+    .map((p) => photoFigureHtml(p))
+    .join('')}</div>`;
+  return `
+    <section class="images">
+      <div class="images__head">
+        <h2 class="section-title">${esc(ui('imagesTitle'))}</h2>
+        ${
+          hasImages
+            ? `<div class="segmented" role="tablist">
+                <button type="button" role="tab" class="is-on" aria-selected="true" data-view="image">${esc(ui('viewImage'))}</button>
+                <button type="button" role="tab" aria-selected="false" data-view="relief">${esc(ui('viewRelief'))}</button>
+              </div>`
+            : ''
+        }
+      </div>
+      ${hasImages ? `<div data-pane="image">${imageView}</div>` : ''}
+      <div data-pane="relief" ${hasImages ? 'hidden' : ''}>${mapsHtml(data, site, showTarget ? target : null)}</div>
+    </section>`;
+}
+
 function pairChipsHtml(data, site, activePair) {
   if (site.kind !== 'site') return '';
   return `
@@ -223,6 +351,7 @@ export function renderDossier(root, data, route) {
       <a href="#/?pair=${pair.index}${route.filter !== 'nored' ? `&f=${route.filter}` : ''}">← ${esc(ui('backToRanking'))}</a>
       <span>/</span><span class="muted">${esc(pairLabel(data, pair))}</span>
       <span>/</span><span>${esc(t(site.name))}</span>
+      <button type="button" class="btn btn--small crumbs__copy" data-copy>${esc(ui('copyLink'))}</button>
     </nav>`;
 
   root.innerHTML = `
@@ -230,24 +359,23 @@ export function renderDossier(root, data, route) {
       ${crumbs}
       ${pairChipsHtml(data, site, pair)}
       <div class="dossier__top">
-        ${headerHtml(data, site, pair)}
+        <div class="dossier__lead">
+          ${headerHtml(data, site, pair)}
+          ${score ? verdictHtml(data, site, score, target) : ''}
+        </div>
         ${score ? scoreCardHtml(data, site, pair, score) : ''}
       </div>
-      <div class="dossier__row">
-        ${mapsHtml(data, site, site.kind === 'site' ? target : null)}
-        ${score ? contribBarsHtml(data, score) : ''}
-      </div>
-      <div class="dossier__row">
-        ${compareTableHtml(data, site, site.kind === 'site' ? target : null)}
-        ${score ? rulesListHtml(data, site, score) : ''}
-      </div>
-      ${photosSectionHtml(data, site, site.kind === 'site' ? target : null)}
       <div class="dossier__cards">
-        ${textCard('what', 'whatItIs', [d.summary].filter(Boolean))}
         ${textCard('similar', 'howSimilar', d.similar || [])}
         ${textCard('differs', 'howDiffers', d.differs || [])}
         ${textCard('use', 'goodFor', d.use || [])}
+        ${textCard('what', 'whatItIs', [d.summary].filter(Boolean))}
       </div>
+      <div class="dossier__row">
+        ${imagesHtml(data, site, site.kind === 'site' ? target : null)}
+        ${score ? rulesListHtml(data, site, score) : compareTableHtml(data, site, null)}
+      </div>
+      ${score ? breakdownHtml(data, site, target, score) : ''}
       ${
         sources.length
           ? `<section class="sources"><h2 class="section-title">${esc(ui('sources'))}</h2><ol>${sources.map(sourceItem).join('')}</ol></section>`
@@ -258,4 +386,39 @@ export function renderDossier(root, data, route) {
   root.querySelectorAll('[data-pair]').forEach((b) =>
     b.addEventListener('click', () => navigate({ pair: Number(b.dataset.pair) }))
   );
+  root.querySelectorAll('[data-view]').forEach((b) =>
+    b.addEventListener('click', () => {
+      root.querySelectorAll('[data-view]').forEach((x) => {
+        const on = x === b;
+        x.classList.toggle('is-on', on);
+        x.setAttribute('aria-selected', String(on));
+      });
+      root.querySelectorAll('[data-pane]').forEach((pane) => {
+        pane.hidden = pane.dataset.pane !== b.dataset.view;
+      });
+    })
+  );
+  const copyBtn = root.querySelector('[data-copy]');
+  copyBtn?.addEventListener('click', async () => {
+    const done = () => {
+      copyBtn.textContent = `✓ ${ui('copied')}`;
+      setTimeout(() => (copyBtn.textContent = ui('copyLink')), 1800);
+    };
+    try {
+      await navigator.clipboard.writeText(location.href);
+      done();
+    } catch {
+      const input = document.createElement('input');
+      input.value = location.href;
+      document.body.appendChild(input);
+      input.select();
+      try {
+        document.execCommand('copy');
+        done();
+      } catch {
+        /* the URL stays in the address bar */
+      }
+      input.remove();
+    }
+  });
 }
