@@ -76,9 +76,10 @@ Dossier texts, class assignments and the rock matrix are hackathon drafts. The T
 
 ## Team
 
-- **German Raikov**: team lead
+- **German Rajkov**: team lead
 - **Nikolai Shveshkeev**, **Murat Arifullin**: geology
-- **Damir Kudiakov**: code review
+- **Damir Kudyakov**: code review
+- **Andrey Sat**
 
 ## AI disclosure
 

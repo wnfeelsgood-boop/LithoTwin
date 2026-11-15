@@ -14,6 +14,7 @@ export function parseHash(hash = location.hash) {
   let siteId = null;
   if (parts[0] === 'russia') view = 'russia';
   else if (parts[0] === 'about') view = 'about';
+  else if (parts[0] === 'project') view = 'project';
   else if (parts[0] === 'site' && parts[1]) {
     view = 'site';
     siteId = decodeURIComponent(parts[1]);
@@ -34,6 +35,7 @@ export function buildHash({ view = 'world', siteId = null, pair = null, filter =
   let path = '/';
   if (view === 'russia') path = '/russia';
   else if (view === 'about') path = '/about';
+  else if (view === 'project') path = '/project';
   else if (view === 'site' && siteId) path = `/site/${encodeURIComponent(siteId)}`;
 
   const params = new URLSearchParams();

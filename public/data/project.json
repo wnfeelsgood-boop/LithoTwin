@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "about": null,
+  "team": [
+    { "name": { "en": "German Rajkov", "ru": "Герман Райков" }, "role": { "en": "Team lead", "ru": "Капитан команды" } },
+    { "name": { "en": "Nikolai Shveshkeev", "ru": "Николай Швешкеев" }, "role": { "en": "Geology", "ru": "Геология" } },
+    { "name": { "en": "Murat Arifullin", "ru": "Мурат Арифуллин" }, "role": { "en": "Geology", "ru": "Геология" } },
+    { "name": { "en": "Damir Kudyakov", "ru": "Дамир Кудяков" }, "role": { "en": "Code review", "ru": "Ревью кода" } },
+    { "name": { "en": "Andrey Sat", "ru": "Андрей Сат" }, "role": null }
+  ]
+}

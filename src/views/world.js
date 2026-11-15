@@ -26,7 +26,7 @@ export function renderWorld(root, data, route) {
         </section>
         ${data.photosFor(target.id).slice(0, 1).map((p) => photoFigureHtml(p, { compact: true })).join('')}
         ${targetNumbersHtml(data, target)}
-        ${methodCheckHtml(data, pair)}
+        ${data.methodCheckFor(pair)?.pass ? `<a class="method-badge" href="#/about"><span aria-hidden="true">✓</span> ${esc(ui('methodChecked'))} →</a>` : methodCheckHtml(data, pair)}
       </aside>
       <section class="world__centre" ${state.globeFailed ? 'hidden' : ''}>
         <h1 class="mission-banner mission-banner--${esc(target.body)}">
