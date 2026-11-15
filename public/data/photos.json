@@ -2,6 +2,42 @@
   "schema_version": 1,
   "photos": [
     {
+      "site_id": "e_riotinto",
+      "file": "photos/e_riotinto_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 true-colour image of the Río Tinto valley, centred on the analysis circle.",
+        "ru": "Снимок Sentinel-2 в естественных цветах: долина Рио-Тинто, в центре круг анализа."
+      },
+      "credit": "Contains modified Copernicus Sentinel data, processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_atacama",
+      "file": "photos/e_atacama_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 true-colour image of the Atacama Desert near Yungay, centred on the analysis circle.",
+        "ru": "Снимок Sentinel-2 в естественных цветах: пустыня Атакама у Юнгая, в центре круг анализа."
+      },
+      "credit": "Contains modified Copernicus Sentinel data, processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_mcmurdo",
+      "file": "photos/e_mcmurdo_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 true-colour image of the Taylor Valley, McMurdo Dry Valleys, centred on the analysis circle.",
+        "ru": "Снимок Sentinel-2 в естественных цветах: долина Тейлор, Сухие долины Мак-Мёрдо, в центре круг анализа."
+      },
+      "credit": "Contains modified Copernicus Sentinel data, processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
       "site_id": "moon_shackleton",
       "file": "photos/moon_shackleton.jpg",
       "kind": "orbital",
