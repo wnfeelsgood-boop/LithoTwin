@@ -187,7 +187,7 @@ export function renderAbout(root, data) {
 
       <section>
         <h2 class="section-title">7. Team and AI disclosure</h2>
-        <p>German Rajkov (team lead), Nikolai Shveshkeev and Murat Arifullin (geology), Damir Kudyakov (code review), Andrey Sat. Full team: <a href="#/project">About project</a>.</p>
+        <p>German Rajkov (team lead), Nikolai Shveshkeev, Murat Arifullin and Andrey Sat (geology), Damir Kudyakov (code review). Full team: <a href="#/project">About project</a>.</p>
         <p>The code was written with Claude Code (Anthropic) under the team's direction and reviewed by a team member. Relief features, scores and the data package were produced with Claude from public elevation models using the scripts in <span class="mono">/tools</span>. Rock, ice and exposure classes and dossier texts were written or checked by the team geologists. Details: <a href="${REPO}/blob/main/docs/AI_DISCLOSURE.md" target="_blank" rel="noopener">AI disclosure</a> · <a href="${REPO}" target="_blank" rel="noopener">source code (MIT)</a>.</p>
       </section>
     </main>`;

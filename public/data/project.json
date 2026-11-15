@@ -1,11 +1,64 @@
 {
   "schema_version": 1,
-  "about": null,
+  "logo": "brand/lithotwin_logo.png",
+  "intro": {
+    "en": "In the near future, humanity faces the task of expanding its understanding of space, in particular studying planetary bodies in order to build permanent bases on the Moon and to gather information about Mars during crewed or rover missions.\n\nLithoTwin will help researchers prepare for these interplanetary tasks by analogy, with the help of our home “blue marble”. We studied 19 sites on Earth and compared them with the targets of exploration, the Moon and Mars. We used authoritative published sources, compared the ground materials at the sites of interest and at the targets, and added satellite images and relief models for clarity. To make it comfortable for you, our team built the product as an interactive website.",
+    "ru": "Перед человечеством в ближайшем будущем стоит задача расширения понимания космоса, в частности изучения планетарных тел с целью возведения постоянных баз на Луне и сбора информации о Марсе в ходе исследовательских миссий с участием экипажа или роверов.\n\nLithoTwin поможет исследователям подготовиться к успешному решению вышеописанных межпланетных задач с помощью нашего родного «голубого шара» путём аналогии. Мы изучили 19 площадок на Земле и сравнили их с объектами исследования — Луной и Марсом. В ходе работы мы использовали авторитетные литературные источники, сравнили материалы грунта на точках интереса и объектах исследования, добавили для наглядности спутниковые снимки и модели рельефа. Для Вашего комфортного пользовательского опыта наша команда реализовала продукт в виде интерактивного сайта."
+  },
   "team": [
-    { "name": { "en": "German Rajkov", "ru": "Герман Райков" }, "role": { "en": "Team lead", "ru": "Капитан команды" } },
-    { "name": { "en": "Nikolai Shveshkeev", "ru": "Николай Швешкеев" }, "role": { "en": "Geology", "ru": "Геология" } },
-    { "name": { "en": "Murat Arifullin", "ru": "Мурат Арифуллин" }, "role": { "en": "Geology", "ru": "Геология" } },
-    { "name": { "en": "Damir Kudyakov", "ru": "Дамир Кудяков" }, "role": { "en": "Code review", "ru": "Ревью кода" } },
-    { "name": { "en": "Andrey Sat", "ru": "Андрей Сат" }, "role": null }
-  ]
+    {
+      "name": {
+        "en": "German Rajkov",
+        "ru": "Герман Райков"
+      },
+      "role": {
+        "en": "Team lead",
+        "ru": "Капитан команды"
+      }
+    },
+    {
+      "name": {
+        "en": "Nikolai Shveshkeev",
+        "ru": "Николай Швешкеев"
+      },
+      "role": {
+        "en": "Geology",
+        "ru": "Геология"
+      }
+    },
+    {
+      "name": {
+        "en": "Murat Arifullin",
+        "ru": "Мурат Арифуллин"
+      },
+      "role": {
+        "en": "Geology",
+        "ru": "Геология"
+      }
+    },
+    {
+      "name": {
+        "en": "Damir Kudyakov",
+        "ru": "Дамир Кудяков"
+      },
+      "role": {
+        "en": "Code review",
+        "ru": "Ревью кода"
+      }
+    },
+    {
+      "name": {
+        "en": "Andrey Sat",
+        "ru": "Андрей Сат"
+      },
+      "role": {
+        "en": "Geology",
+        "ru": "Геология"
+      }
+    }
+  ],
+  "outro": {
+    "en": "We are a team of ambitious geologists from Kazan Federal University and programmers from Moscow State University. The NASA hackathon gave us a unique opportunity to pursue our ambition of studying and comparing the geology of planetary bodies.",
+    "ru": "Мы — команда амбициозных геологов Казанского федерального университета и программистов МГУ. Хакатон NASA предоставил нам уникальную возможность для реализации наших амбиций по изучению и сравнению геологии планетарных тел."
+  }
 }
