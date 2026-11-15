@@ -1,0 +1,193 @@
+{
+ "material_class": {
+  "anorthosite": {
+   "ru": "анортозит",
+   "en": "Anorthosite"
+  },
+  "basalt_volcanic": {
+   "ru": "базальты/вулканиты",
+   "en": "Basalt / volcanics"
+  },
+  "impact_breccia": {
+   "ru": "импактные брекчии",
+   "en": "Impact breccias"
+  },
+  "clastic_sediment": {
+   "ru": "обломочные осадки",
+   "en": "Clastic sediments"
+  },
+  "evaporite_salt": {
+   "ru": "эвапориты/сульфаты/соли",
+   "en": "Evaporites / sulfates / salts"
+  },
+  "clay_hydrothermal": {
+   "ru": "глины/гидротермальные",
+   "en": "Clays / hydrothermal"
+  },
+  "loose_regolith": {
+   "ru": "рыхлые отложения/реголит",
+   "en": "Loose deposits / regolith"
+  }
+ },
+ "ice_class": {
+  "0": {
+   "ru": "нет льда",
+   "en": "No ice"
+  },
+  "1": {
+   "ru": "сезонный",
+   "en": "Seasonal"
+  },
+  "2": {
+   "ru": "многолетняя мерзлота",
+   "en": "Permafrost"
+  },
+  "3": {
+   "ru": "льдистый грунт / холодная ловушка",
+   "en": "Ice-rich ground / cold trap"
+  }
+ },
+ "bare_class": {
+  "high": {
+   "ru": "≥ 70% голого грунта",
+   "en": "≥ 70% bare ground"
+  },
+  "medium": {
+   "ru": "40–70%",
+   "en": "40–70% bare ground"
+  },
+  "low": {
+   "ru": "< 40%",
+   "en": "< 40% bare ground"
+  }
+ },
+ "access": {
+  "open": {
+   "ru": "доступно",
+   "en": "Open access"
+  },
+  "restricted": {
+   "ru": "ограничено",
+   "en": "Restricted"
+  },
+  "closed": {
+   "ru": "закрыто",
+   "en": "Closed"
+  }
+ },
+ "group": {
+  "control": {
+   "ru": "известный аналог",
+   "en": "Known analog"
+  },
+  "negative": {
+   "ru": "отрицательный контроль",
+   "en": "Negative control"
+  },
+  "ru_candidate": {
+   "ru": "кандидат в России",
+   "en": "Russian candidate"
+  },
+  "target": {
+   "ru": "цель",
+   "en": "Target"
+  }
+ },
+ "task": {
+  "moon_base": {
+   "ru": "Лунная база",
+   "en": "Moon base"
+  },
+  "mars_rover_eva": {
+   "ru": "Ровер и выходы на Марсе",
+   "en": "Mars rover & EVA"
+  },
+  "mars_drill": {
+   "ru": "Бурение на Марсе",
+   "en": "Mars drilling"
+  }
+ },
+ "suitability": {
+  "pass": {
+   "ru": "пригодно",
+   "en": "Suitable",
+   "color": "green"
+  },
+  "warn": {
+   "ru": "с оговорками",
+   "en": "With caveats",
+   "color": "yellow"
+  },
+  "fail": {
+   "ru": "непригодно",
+   "en": "Not suitable",
+   "color": "red"
+  }
+ },
+ "suitability_rule": {
+  "bare_ground": {
+   "ru": "голый грунт",
+   "en": "Bare ground"
+  },
+  "access": {
+   "ru": "доступ",
+   "en": "Access"
+  },
+  "flat_area": {
+   "ru": "ровные участки",
+   "en": "Flat area"
+  },
+  "slope_p90": {
+   "ru": "уклоны для ровера",
+   "en": "Rover slopes"
+  },
+  "drill_target": {
+   "ru": "цель для бурения",
+   "en": "Drill target"
+  }
+ },
+ "feature": {
+  "slope_p50": {
+   "ru": "медианный уклон",
+   "en": "Median slope",
+   "unit": "°"
+  },
+  "slope_p90": {
+   "ru": "уклон P90",
+   "en": "Slope P90",
+   "unit": "°"
+  },
+  "flat_frac": {
+   "ru": "доля ровных (<8°)",
+   "en": "Flat share (<8°)",
+   "unit": "%"
+  },
+  "roughness_rms": {
+   "ru": "шероховатость",
+   "en": "Roughness",
+   "unit": "m"
+  },
+  "local_relief": {
+   "ru": "перепад высот",
+   "en": "Local relief",
+   "unit": "m"
+  },
+  "material": {
+   "ru": "порода",
+   "en": "Material"
+  },
+  "ice": {
+   "ru": "лёд",
+   "en": "Ice"
+  },
+  "exposure": {
+   "ru": "обнажённость",
+   "en": "Surface exposure"
+  },
+  "elev_median": {
+   "ru": "высота",
+   "en": "Elevation",
+   "unit": "m"
+  }
+ }
+}

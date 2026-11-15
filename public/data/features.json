@@ -1,0 +1,2470 @@
+{
+ "schema_version": 1,
+ "aoi_radius_m": 3000,
+ "features": [
+  {
+   "site_id": "e_haughton",
+   "feature": "slope_p50",
+   "value": 1.261,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 75.3775,
+    "lon": -89.6536
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_haughton",
+   "feature": "slope_p90",
+   "value": 2.445,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 75.3775,
+    "lon": -89.6536
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_haughton",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 75.3775,
+    "lon": -89.6536
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_haughton",
+   "feature": "roughness_rms",
+   "value": 13.554,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 75.3775,
+    "lon": -89.6536
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_haughton",
+   "feature": "local_relief",
+   "value": 59.068,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 75.3775,
+    "lon": -89.6536
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_haughton",
+   "feature": "elev_median",
+   "value": 158.347,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 75.3775,
+    "lon": -89.6536
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_haughton",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 75.3775,
+    "lon": -89.6536
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_atacama",
+   "feature": "slope_p50",
+   "value": 2.411,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -24.08,
+    "lon": -70.01
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_atacama",
+   "feature": "slope_p90",
+   "value": 8.026,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -24.08,
+    "lon": -70.01
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_atacama",
+   "feature": "flat_frac",
+   "value": 0.893,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -24.08,
+    "lon": -70.01
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_atacama",
+   "feature": "roughness_rms",
+   "value": 24.689,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -24.08,
+    "lon": -70.01
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_atacama",
+   "feature": "local_relief",
+   "value": 222.675,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -24.08,
+    "lon": -70.01
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_atacama",
+   "feature": "elev_median",
+   "value": 1054.849,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -24.08,
+    "lon": -70.01
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_atacama",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -24.08,
+    "lon": -70.01
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_riotinto",
+   "feature": "slope_p50",
+   "value": 3.929,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 37.5931,
+    "lon": -6.551
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_riotinto",
+   "feature": "slope_p90",
+   "value": 6.835,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 37.5931,
+    "lon": -6.551
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_riotinto",
+   "feature": "flat_frac",
+   "value": 0.973,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 37.5931,
+    "lon": -6.551
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_riotinto",
+   "feature": "roughness_rms",
+   "value": 34.587,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 37.5931,
+    "lon": -6.551
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_riotinto",
+   "feature": "local_relief",
+   "value": 186.616,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 37.5931,
+    "lon": -6.551
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_riotinto",
+   "feature": "elev_median",
+   "value": 218.208,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 37.5931,
+    "lon": -6.551
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_riotinto",
+   "feature": "exposure",
+   "value": 0.5,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 37.5931,
+    "lon": -6.551
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "feature": "slope_p50",
+   "value": 3.962,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -77.6264,
+    "lon": 163.0569
+   },
+   "valid_fraction": 0.286,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "feature": "slope_p90",
+   "value": 6.551,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -77.6264,
+    "lon": 163.0569
+   },
+   "valid_fraction": 0.286,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "feature": "flat_frac",
+   "value": 0.955,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -77.6264,
+    "lon": 163.0569
+   },
+   "valid_fraction": 0.286,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "feature": "roughness_rms",
+   "value": 84.621,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -77.6264,
+    "lon": 163.0569
+   },
+   "valid_fraction": 0.286,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "feature": "local_relief",
+   "value": 150.694,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -77.6264,
+    "lon": 163.0569
+   },
+   "valid_fraction": 0.286,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "feature": "elev_median",
+   "value": 179.27,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -77.6264,
+    "lon": 163.0569
+   },
+   "valid_fraction": 0.286,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -77.6264,
+    "lon": 163.0569
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_deathvalley",
+   "feature": "slope_p50",
+   "value": 0.013,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 36.25,
+    "lon": -116.825
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_deathvalley",
+   "feature": "slope_p90",
+   "value": 0.019,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 36.25,
+    "lon": -116.825
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_deathvalley",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 36.25,
+    "lon": -116.825
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_deathvalley",
+   "feature": "roughness_rms",
+   "value": 0.121,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 36.25,
+    "lon": -116.825
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_deathvalley",
+   "feature": "local_relief",
+   "value": 0.724,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 36.25,
+    "lon": -116.825
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_deathvalley",
+   "feature": "elev_median",
+   "value": -85.243,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 36.25,
+    "lon": -116.825
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_deathvalley",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 36.25,
+    "lon": -116.825
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_askja",
+   "feature": "slope_p50",
+   "value": 1.442,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 65.033,
+    "lon": -16.783
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_askja",
+   "feature": "slope_p90",
+   "value": 7.56,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 65.033,
+    "lon": -16.783
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_askja",
+   "feature": "flat_frac",
+   "value": 0.902,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 65.033,
+    "lon": -16.783
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_askja",
+   "feature": "roughness_rms",
+   "value": 27.005,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 65.033,
+    "lon": -16.783
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_askja",
+   "feature": "local_relief",
+   "value": 159.425,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 65.033,
+    "lon": -16.783
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_askja",
+   "feature": "elev_median",
+   "value": 1126.729,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 65.033,
+    "lon": -16.783
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_askja",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 65.033,
+    "lon": -16.783
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_meteor",
+   "feature": "slope_p50",
+   "value": 0.601,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 35.0275,
+    "lon": -111.0217
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_meteor",
+   "feature": "slope_p90",
+   "value": 2.17,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 35.0275,
+    "lon": -111.0217
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_meteor",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 35.0275,
+    "lon": -111.0217
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_meteor",
+   "feature": "roughness_rms",
+   "value": 11.226,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 35.0275,
+    "lon": -111.0217
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_meteor",
+   "feature": "local_relief",
+   "value": 41.417,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 35.0275,
+    "lon": -111.0217
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_meteor",
+   "feature": "elev_median",
+   "value": 1682.738,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 35.0275,
+    "lon": -111.0217
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_meteor",
+   "feature": "exposure",
+   "value": 0.5,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 35.0275,
+    "lon": -111.0217
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_maunakea",
+   "feature": "slope_p50",
+   "value": 7.488,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 19.8233,
+    "lon": -155.4692
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_maunakea",
+   "feature": "slope_p90",
+   "value": 10.458,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 19.8233,
+    "lon": -155.4692
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_maunakea",
+   "feature": "flat_frac",
+   "value": 0.652,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 19.8233,
+    "lon": -155.4692
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_maunakea",
+   "feature": "roughness_rms",
+   "value": 43.612,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 19.8233,
+    "lon": -155.4692
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_maunakea",
+   "feature": "local_relief",
+   "value": 363.72,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 19.8233,
+    "lon": -155.4692
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_maunakea",
+   "feature": "elev_median",
+   "value": 3876.644,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 19.8233,
+    "lon": -155.4692
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_maunakea",
+   "feature": "exposure",
+   "value": 0.5,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 19.8233,
+    "lon": -155.4692
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_lanzarote",
+   "feature": "slope_p50",
+   "value": 3.006,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 29.03,
+    "lon": -13.75
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_lanzarote",
+   "feature": "slope_p90",
+   "value": 6.146,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 29.03,
+    "lon": -13.75
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_lanzarote",
+   "feature": "flat_frac",
+   "value": 0.973,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 29.03,
+    "lon": -13.75
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_lanzarote",
+   "feature": "roughness_rms",
+   "value": 22.637,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 29.03,
+    "lon": -13.75
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_lanzarote",
+   "feature": "local_relief",
+   "value": 247.064,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 29.03,
+    "lon": -13.75
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_lanzarote",
+   "feature": "elev_median",
+   "value": 208.553,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 29.03,
+    "lon": -13.75
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_lanzarote",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 29.03,
+    "lon": -13.75
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_ries",
+   "feature": "slope_p50",
+   "value": 0.277,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.88,
+    "lon": 10.57
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_ries",
+   "feature": "slope_p90",
+   "value": 0.518,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.88,
+    "lon": 10.57
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_ries",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.88,
+    "lon": 10.57
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_ries",
+   "feature": "roughness_rms",
+   "value": 2.771,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.88,
+    "lon": 10.57
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_ries",
+   "feature": "local_relief",
+   "value": 9.333,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.88,
+    "lon": 10.57
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_ries",
+   "feature": "elev_median",
+   "value": 419.55,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.88,
+    "lon": 10.57
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_ries",
+   "feature": "exposure",
+   "value": 0.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.88,
+    "lon": 10.57
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "feature": "slope_p50",
+   "value": 1.274,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -3,
+    "lon": -60
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "feature": "slope_p90",
+   "value": 1.959,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -3,
+    "lon": -60
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -3,
+    "lon": -60
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "feature": "roughness_rms",
+   "value": 11.414,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -3,
+    "lon": -60
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "feature": "local_relief",
+   "value": 44.809,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -3,
+    "lon": -60
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "feature": "elev_median",
+   "value": 57.023,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -3,
+    "lon": -60
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "feature": "exposure",
+   "value": 0.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -3,
+    "lon": -60
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "feature": "slope_p50",
+   "value": 0.188,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 38.5,
+    "lon": -98.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "feature": "slope_p90",
+   "value": 0.279,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 38.5,
+    "lon": -98.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 38.5,
+    "lon": -98.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "feature": "roughness_rms",
+   "value": 1.172,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 38.5,
+    "lon": -98.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "feature": "local_relief",
+   "value": 12.057,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 38.5,
+    "lon": -98.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "feature": "elev_median",
+   "value": 543.078,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 38.5,
+    "lon": -98.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "feature": "exposure",
+   "value": 0.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 38.5,
+    "lon": -98.5
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "ru_batagaika",
+   "feature": "slope_p50",
+   "value": 3.296,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.58,
+    "lon": 134.7707
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_batagaika",
+   "feature": "slope_p90",
+   "value": 8.867,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.58,
+    "lon": 134.7707
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_batagaika",
+   "feature": "flat_frac",
+   "value": 0.893,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.58,
+    "lon": 134.7707
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_batagaika",
+   "feature": "roughness_rms",
+   "value": 27.122,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.58,
+    "lon": 134.7707
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_batagaika",
+   "feature": "local_relief",
+   "value": 224.621,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.58,
+    "lon": 134.7707
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_batagaika",
+   "feature": "elev_median",
+   "value": 275.471,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.58,
+    "lon": 134.7707
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_batagaika",
+   "feature": "exposure",
+   "value": 0.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.58,
+    "lon": 134.7707
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "ru_chara",
+   "feature": "slope_p50",
+   "value": 0.944,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 56.83,
+    "lon": 118.13
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_chara",
+   "feature": "slope_p90",
+   "value": 1.492,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 56.83,
+    "lon": 118.13
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_chara",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 56.83,
+    "lon": 118.13
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_chara",
+   "feature": "roughness_rms",
+   "value": 6.974,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 56.83,
+    "lon": 118.13
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_chara",
+   "feature": "local_relief",
+   "value": 49.28,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 56.83,
+    "lon": 118.13
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_chara",
+   "feature": "elev_median",
+   "value": 765.397,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 56.83,
+    "lon": 118.13
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_chara",
+   "feature": "exposure",
+   "value": 0.5,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 56.83,
+    "lon": 118.13
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "ru_uzon",
+   "feature": "slope_p50",
+   "value": 1.743,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 54.5,
+    "lon": 159.97
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_uzon",
+   "feature": "slope_p90",
+   "value": 17.661,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 54.5,
+    "lon": 159.97
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_uzon",
+   "feature": "flat_frac",
+   "value": 0.714,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 54.5,
+    "lon": 159.97
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_uzon",
+   "feature": "roughness_rms",
+   "value": 53.776,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 54.5,
+    "lon": 159.97
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_uzon",
+   "feature": "local_relief",
+   "value": 328.117,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 54.5,
+    "lon": 159.97
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_uzon",
+   "feature": "elev_median",
+   "value": 672.299,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 54.5,
+    "lon": 159.97
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_uzon",
+   "feature": "exposure",
+   "value": 0.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 54.5,
+    "lon": 159.97
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "feature": "slope_p50",
+   "value": 5.598,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 55.74,
+    "lon": 160.24
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "feature": "slope_p90",
+   "value": 7.182,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 55.74,
+    "lon": 160.24
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "feature": "flat_frac",
+   "value": 0.973,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 55.74,
+    "lon": 160.24
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "feature": "roughness_rms",
+   "value": 13.771,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 55.74,
+    "lon": 160.24
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "feature": "local_relief",
+   "value": 431.82,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 55.74,
+    "lon": 160.24
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "feature": "elev_median",
+   "value": 966.319,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 55.74,
+    "lon": 160.24
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 55.74,
+    "lon": 160.24
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "feature": "slope_p50",
+   "value": 1.78,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.5276,
+    "lon": 171.9155
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "feature": "slope_p90",
+   "value": 7.988,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.5276,
+    "lon": 171.9155
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "feature": "flat_frac",
+   "value": 0.893,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.5276,
+    "lon": 171.9155
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "feature": "roughness_rms",
+   "value": 20.437,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.5276,
+    "lon": 171.9155
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "feature": "local_relief",
+   "value": 243.431,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.5276,
+    "lon": 171.9155
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "feature": "elev_median",
+   "value": 539.33,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.5276,
+    "lon": 171.9155
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "feature": "exposure",
+   "value": 0.5,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 67.5276,
+    "lon": 171.9155
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "feature": "slope_p50",
+   "value": 0.019,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.2056,
+    "lon": 46.8941
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "feature": "slope_p90",
+   "value": 0.083,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.2056,
+    "lon": 46.8941
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.2056,
+    "lon": 46.8941
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "feature": "roughness_rms",
+   "value": 0.329,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.2056,
+    "lon": 46.8941
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "feature": "local_relief",
+   "value": 1.691,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.2056,
+    "lon": 46.8941
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "feature": "elev_median",
+   "value": -23.208,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.2056,
+    "lon": 46.8941
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "feature": "exposure",
+   "value": 0.5,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 48.2056,
+    "lon": 46.8941
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "ru_sarykum",
+   "feature": "slope_p50",
+   "value": 2.842,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 43.0076,
+    "lon": 47.2296
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_sarykum",
+   "feature": "slope_p90",
+   "value": 8.874,
+   "unit": "deg",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 43.0076,
+    "lon": 47.2296
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_sarykum",
+   "feature": "flat_frac",
+   "value": 0.875,
+   "unit": "fraction",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 43.0076,
+    "lon": 47.2296
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_sarykum",
+   "feature": "roughness_rms",
+   "value": 26.603,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 43.0076,
+    "lon": 47.2296
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_sarykum",
+   "feature": "local_relief",
+   "value": 212.342,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 43.0076,
+    "lon": 47.2296
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_sarykum",
+   "feature": "elev_median",
+   "value": 117.385,
+   "unit": "m",
+   "source": "Copernicus GLO-90",
+   "native_resolution_m": 90,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 43.0076,
+    "lon": 47.2296
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "ru_sarykum",
+   "feature": "exposure",
+   "value": 0.0,
+   "unit": "fraction",
+   "source": "expert estimate (team geologists, satellite imagery)",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 43.0076,
+    "lon": 47.2296
+   },
+   "valid_fraction": 1.0,
+   "status": "qualitative"
+  },
+  {
+   "site_id": "moon_shackleton",
+   "feature": "slope_p50",
+   "value": 7.324,
+   "unit": "deg",
+   "source": "LOLA LDEM_80S_80M",
+   "native_resolution_m": 80,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -89.524,
+    "lon": 203.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "moon_shackleton",
+   "feature": "slope_p90",
+   "value": 10.563,
+   "unit": "deg",
+   "source": "LOLA LDEM_80S_80M",
+   "native_resolution_m": 80,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -89.524,
+    "lon": 203.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "moon_shackleton",
+   "feature": "flat_frac",
+   "value": 0.643,
+   "unit": "fraction",
+   "source": "LOLA LDEM_80S_80M",
+   "native_resolution_m": 80,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -89.524,
+    "lon": 203.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "moon_shackleton",
+   "feature": "roughness_rms",
+   "value": 57.572,
+   "unit": "m",
+   "source": "LOLA LDEM_80S_80M",
+   "native_resolution_m": 80,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -89.524,
+    "lon": 203.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "moon_shackleton",
+   "feature": "local_relief",
+   "value": 492.65,
+   "unit": "m",
+   "source": "LOLA LDEM_80S_80M",
+   "native_resolution_m": 80,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -89.524,
+    "lon": 203.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "moon_shackleton",
+   "feature": "elev_median",
+   "value": 1310.06,
+   "unit": "m",
+   "source": "LOLA LDEM_80S_80M",
+   "native_resolution_m": 80,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -89.524,
+    "lon": 203.5
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "moon_shackleton",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "target: bare surface",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": -89.524,
+    "lon": 203.5
+   },
+   "valid_fraction": 1.0,
+   "status": "not_applicable"
+  },
+  {
+   "site_id": "mars_arcadia",
+   "feature": "slope_p50",
+   "value": 0.363,
+   "unit": "deg",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 45.0,
+    "lon": 190.0
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_arcadia",
+   "feature": "slope_p90",
+   "value": 0.565,
+   "unit": "deg",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 45.0,
+    "lon": 190.0
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_arcadia",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 45.0,
+    "lon": 190.0
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_arcadia",
+   "feature": "roughness_rms",
+   "value": 2.844,
+   "unit": "m",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 45.0,
+    "lon": 190.0
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_arcadia",
+   "feature": "local_relief",
+   "value": 22.965,
+   "unit": "m",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 45.0,
+    "lon": 190.0
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_arcadia",
+   "feature": "elev_median",
+   "value": -4026.802,
+   "unit": "m",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 45.0,
+    "lon": 190.0
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_arcadia",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "target: bare surface",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 45.0,
+    "lon": 190.0
+   },
+   "valid_fraction": 1.0,
+   "status": "not_applicable"
+  },
+  {
+   "site_id": "mars_jezero",
+   "feature": "slope_p50",
+   "value": 1.134,
+   "unit": "deg",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 18.4447,
+    "lon": 77.4508
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_jezero",
+   "feature": "slope_p90",
+   "value": 3.058,
+   "unit": "deg",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 18.4447,
+    "lon": 77.4508
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_jezero",
+   "feature": "flat_frac",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 18.4447,
+    "lon": 77.4508
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_jezero",
+   "feature": "roughness_rms",
+   "value": 8.83,
+   "unit": "m",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 18.4447,
+    "lon": 77.4508
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_jezero",
+   "feature": "local_relief",
+   "value": 126.29,
+   "unit": "m",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 18.4447,
+    "lon": 77.4508
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_jezero",
+   "feature": "elev_median",
+   "value": -2567.763,
+   "unit": "m",
+   "source": "MOLA MEGDR 128ppd",
+   "native_resolution_m": 463,
+   "analysis_resolution_m": 500,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 18.4447,
+    "lon": 77.4508
+   },
+   "valid_fraction": 1.0,
+   "status": "direct"
+  },
+  {
+   "site_id": "mars_jezero",
+   "feature": "exposure",
+   "value": 1.0,
+   "unit": "fraction",
+   "source": "target: bare surface",
+   "native_resolution_m": null,
+   "analysis_resolution_m": null,
+   "aoi_radius_m": 3000,
+   "center": {
+    "lat": 18.4447,
+    "lon": 77.4508
+   },
+   "valid_fraction": 1.0,
+   "status": "not_applicable"
+  }
+ ]
+}

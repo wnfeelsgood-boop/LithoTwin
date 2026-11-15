@@ -1,0 +1,187 @@
+{
+ "schema_version": 1,
+ "tasks": [
+  {
+   "id": "moon_base",
+   "targets": [
+    "moon_shackleton"
+   ]
+  },
+  {
+   "id": "mars_rover_eva",
+   "targets": [
+    "mars_arcadia",
+    "mars_jezero"
+   ]
+  },
+  {
+   "id": "mars_drill",
+   "targets": [
+    "mars_arcadia",
+    "mars_jezero"
+   ]
+  }
+ ],
+ "pairs": [
+  [
+   "moon_shackleton",
+   "moon_base"
+  ],
+  [
+   "mars_arcadia",
+   "mars_rover_eva"
+  ],
+  [
+   "mars_jezero",
+   "mars_rover_eva"
+  ],
+  [
+   "mars_arcadia",
+   "mars_drill"
+  ],
+  [
+   "mars_jezero",
+   "mars_drill"
+  ]
+ ],
+ "weights": {
+  "moon_base": {
+   "slope_p50": 0.15,
+   "slope_p90": 0.1,
+   "flat_frac": 0.15,
+   "roughness_rms": 0.15,
+   "local_relief": 0.1,
+   "material": 0.2,
+   "ice": 0.15
+  },
+  "mars_rover_eva": {
+   "slope_p50": 0.2,
+   "slope_p90": 0.15,
+   "flat_frac": 0.15,
+   "roughness_rms": 0.2,
+   "local_relief": 0.05,
+   "material": 0.2,
+   "ice": 0.05
+  },
+  "mars_drill": {
+   "slope_p50": 0.05,
+   "slope_p90": 0.05,
+   "flat_frac": 0.05,
+   "roughness_rms": 0.05,
+   "local_relief": 0.05,
+   "material": 0.4,
+   "ice": 0.35
+  }
+ },
+ "exposure": {
+  "weight": 0.2,
+  "values": {
+   "high": 1.0,
+   "medium": 0.5,
+   "low": 0.0
+  },
+  "note": "S = (1-w)*S_base + w*100*exposure"
+ },
+ "tolerance": {
+  "slope_p50": {
+   "type": "linear",
+   "tau": 10
+  },
+  "slope_p90": {
+   "type": "linear",
+   "tau": 15
+  },
+  "flat_frac": {
+   "type": "linear",
+   "tau": 0.3
+  },
+  "roughness_rms": {
+   "type": "log",
+   "base": 3,
+   "floor": 0.1
+  },
+  "local_relief": {
+   "type": "log",
+   "base": 3,
+   "floor": 0.1
+  }
+ },
+ "ice_scale": 3,
+ "suitability": {
+  "order": [
+   "pass",
+   "warn",
+   "fail"
+  ],
+  "combine": "worst",
+  "rules": {
+   "bare_ground": {
+    "all": {
+     "high": "pass",
+     "medium": "warn",
+     "low": "fail"
+    },
+    "mars_drill": {
+     "high": "pass",
+     "medium": "warn",
+     "low": "warn"
+    }
+   },
+   "access": {
+    "open": "pass",
+    "restricted": "warn",
+    "closed": "fail"
+   },
+   "flat_area": {
+    "task": "moon_base",
+    "feature": "flat_frac",
+    "pass_if_ge": 0.3,
+    "warn_if_ge": 0.1
+   },
+   "slope_p90": {
+    "task": "mars_rover_eva",
+    "feature": "slope_p90",
+    "pass_if_le": 20,
+    "warn_if_le": 30
+   },
+   "drill_target": {
+    "task": "mars_drill",
+    "pass_if": "ice_class>=2 or material in [clay_hydrothermal, evaporite_salt, basalt_volcanic, loose_regolith]",
+    "else": "warn"
+   }
+  }
+ },
+ "validation": {
+  "known_analogs": {
+   "moon_shackleton": [
+    "e_haughton",
+    "e_maunakea",
+    "e_meteor",
+    "e_ries",
+    "e_askja",
+    "e_lanzarote",
+    "e_mcmurdo"
+   ],
+   "mars_arcadia": [
+    "e_mcmurdo",
+    "e_haughton"
+   ],
+   "mars_jezero": [
+    "e_atacama",
+    "e_riotinto",
+    "e_deathvalley",
+    "e_askja",
+    "e_lanzarote"
+   ]
+  },
+  "negatives": [
+   "e_neg_amazon",
+   "e_neg_farmland"
+  ],
+  "criterion": "best negative < median of known analogs",
+  "sensitivity": {
+   "runs": 50,
+   "weight_jitter": 0.2
+  }
+ }
+}

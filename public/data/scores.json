@@ -1,0 +1,2809 @@
+{
+ "schema_version": 1,
+ "status": "draft",
+ "aoi_radius_km": 3,
+ "method_check": [
+  {
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "analog_median": 46.0,
+   "best_negative": 11.6,
+   "pass": true,
+   "robust_runs": 50,
+   "runs": 50
+  },
+  {
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "analog_median": 72.7,
+   "best_negative": 55.2,
+   "pass": true,
+   "robust_runs": 50,
+   "runs": 50
+  },
+  {
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "analog_median": 61.4,
+   "best_negative": 58.6,
+   "pass": true,
+   "robust_runs": 41,
+   "runs": 50
+  },
+  {
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "analog_median": 75.5,
+   "best_negative": 42.8,
+   "pass": true,
+   "robust_runs": 50,
+   "runs": 50
+  },
+  {
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "analog_median": 62.9,
+   "best_negative": 49.3,
+   "pass": true,
+   "robust_runs": 50,
+   "runs": 50
+  }
+ ],
+ "scores": [
+  {
+   "site_id": "e_haughton",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 46.0,
+   "completeness": 1.0,
+   "rank": 5,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    4,
+    7
+   ],
+   "contrib": {
+    "slope_p50": 4.7,
+    "slope_p90": 3.7,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 8.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_atacama",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 39.7,
+   "completeness": 1.0,
+   "rank": 10,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    7,
+    10
+   ],
+   "contrib": {
+    "slope_p50": 6.1,
+    "slope_p90": 6.6,
+    "flat_frac": 2.0,
+    "roughness_rms": 2.8,
+    "local_relief": 2.2,
+    "material": 0.0,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_riotinto",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 32.9,
+   "completeness": 1.0,
+   "rank": 11,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    11,
+    12
+   ],
+   "contrib": {
+    "slope_p50": 7.9,
+    "slope_p90": 6.0,
+    "flat_frac": 0.0,
+    "roughness_rms": 6.4,
+    "local_relief": 0.9,
+    "material": 1.6,
+    "ice": 0.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 61.4,
+   "completeness": 0.54,
+   "rank": 2,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    2,
+    2
+   ],
+   "contrib": {
+    "slope_p50": 4.3,
+    "slope_p90": 3.1,
+    "flat_frac": 0.0,
+    "roughness_rms": 4.2,
+    "local_relief": 0.0,
+    "material": 14.9,
+    "ice": 14.9,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_deathvalley",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 25.6,
+   "completeness": 1.0,
+   "rank": 15,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    13,
+    15
+   ],
+   "contrib": {
+    "slope_p50": 3.2,
+    "slope_p90": 2.4,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 0.0,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_askja",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 47.1,
+   "completeness": 1.0,
+   "rank": 4,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    4,
+    5
+   ],
+   "contrib": {
+    "slope_p50": 4.9,
+    "slope_p90": 6.4,
+    "flat_frac": 1.6,
+    "roughness_rms": 3.7,
+    "local_relief": 0.0,
+    "material": 6.4,
+    "ice": 4.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_meteor",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 27.1,
+   "completeness": 1.0,
+   "rank": 14,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    13,
+    15
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.5,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 0.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_maunakea",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 66.5,
+   "completeness": 1.0,
+   "rank": 1,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    1,
+    1
+   ],
+   "contrib": {
+    "slope_p50": 11.8,
+    "slope_p90": 7.9,
+    "flat_frac": 11.6,
+    "roughness_rms": 9.0,
+    "local_relief": 5.8,
+    "material": 6.4,
+    "ice": 4.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_lanzarote",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 43.6,
+   "completeness": 1.0,
+   "rank": 6,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    6,
+    9
+   ],
+   "contrib": {
+    "slope_p50": 6.8,
+    "slope_p90": 5.6,
+    "flat_frac": 0.0,
+    "roughness_rms": 1.8,
+    "local_relief": 3.0,
+    "material": 6.4,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_ries",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 15.8,
+   "completeness": 1.0,
+   "rank": 17,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    17,
+    17
+   ],
+   "contrib": {
+    "slope_p50": 3.5,
+    "slope_p90": 2.6,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 9.8,
+   "completeness": 1.0,
+   "rank": 19,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    19,
+    19
+   ],
+   "contrib": {
+    "slope_p50": 4.7,
+    "slope_p90": 3.4,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 1.6,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 11.6,
+   "completeness": 1.0,
+   "rank": 18,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    18,
+    18
+   ],
+   "contrib": {
+    "slope_p50": 3.4,
+    "slope_p90": 2.5,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 1.6,
+    "ice": 4.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_batagaika",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 42.3,
+   "completeness": 1.0,
+   "rank": 7,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    4,
+    10
+   ],
+   "contrib": {
+    "slope_p50": 7.2,
+    "slope_p90": 7.1,
+    "flat_frac": 2.0,
+    "roughness_rms": 3.8,
+    "local_relief": 2.3,
+    "material": 8.0,
+    "ice": 12.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_chara",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 29.5,
+   "completeness": 1.0,
+   "rank": 13,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    12,
+    13
+   ],
+   "contrib": {
+    "slope_p50": 4.3,
+    "slope_p90": 3.2,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 8.0,
+    "ice": 4.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_uzon",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 40.6,
+   "completeness": 1.0,
+   "rank": 9,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    5,
+    10
+   ],
+   "contrib": {
+    "slope_p50": 5.3,
+    "slope_p90": 4.2,
+    "flat_frac": 9.2,
+    "roughness_rms": 11.3,
+    "local_relief": 5.0,
+    "material": 1.6,
+    "ice": 4.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 57.6,
+   "completeness": 1.0,
+   "rank": 3,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    3,
+    3
+   ],
+   "contrib": {
+    "slope_p50": 9.9,
+    "slope_p90": 6.2,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 7.0,
+    "material": 6.4,
+    "ice": 8.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 41.9,
+   "completeness": 1.0,
+   "rank": 8,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    7,
+    9
+   ],
+   "contrib": {
+    "slope_p50": 5.3,
+    "slope_p90": 6.6,
+    "flat_frac": 2.0,
+    "roughness_rms": 0.7,
+    "local_relief": 2.9,
+    "material": 6.4,
+    "ice": 8.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 19.6,
+   "completeness": 1.0,
+   "rank": 16,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    16,
+    16
+   ],
+   "contrib": {
+    "slope_p50": 3.2,
+    "slope_p90": 2.4,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 0.0,
+    "ice": 4.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_sarykum",
+   "target_id": "moon_shackleton",
+   "task": "moon_base",
+   "similarity": 29.9,
+   "completeness": 1.0,
+   "rank": 12,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "flat_area": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    11,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 6.6,
+    "slope_p90": 7.1,
+    "flat_frac": 2.7,
+    "roughness_rms": 3.6,
+    "local_relief": 1.9,
+    "material": 8.0,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_haughton",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 68.3,
+   "completeness": 1.0,
+   "rank": 3,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    2,
+    4
+   ],
+   "contrib": {
+    "slope_p50": 14.6,
+    "slope_p90": 10.5,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.6,
+    "material": 8.0,
+    "ice": 2.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_atacama",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 49.7,
+   "completeness": 1.0,
+   "rank": 13,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    11,
+    15
+   ],
+   "contrib": {
+    "slope_p50": 12.7,
+    "slope_p90": 6.0,
+    "flat_frac": 7.7,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 3.2,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_riotinto",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 43.0,
+   "completeness": 1.0,
+   "rank": 16,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    15,
+    17
+   ],
+   "contrib": {
+    "slope_p50": 10.3,
+    "slope_p90": 7.0,
+    "flat_frac": 10.9,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 4.8,
+    "ice": 0.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 77.2,
+   "completeness": 0.46,
+   "rank": 1,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    1,
+    1
+   ],
+   "contrib": {
+    "slope_p50": 6.3,
+    "slope_p90": 4.4,
+    "flat_frac": 6.3,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 34.4,
+    "ice": 5.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_deathvalley",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 62.2,
+   "completeness": 1.0,
+   "rank": 5,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    4,
+    6
+   ],
+   "contrib": {
+    "slope_p50": 15.4,
+    "slope_p90": 11.6,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 3.2,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_askja",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 59.7,
+   "completeness": 1.0,
+   "rank": 7,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    5,
+    9
+   ],
+   "contrib": {
+    "slope_p50": 14.3,
+    "slope_p90": 6.4,
+    "flat_frac": 8.1,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 1.3,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_meteor",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 58.2,
+   "completeness": 1.0,
+   "rank": 8,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    6,
+    9
+   ],
+   "contrib": {
+    "slope_p50": 15.6,
+    "slope_p90": 10.7,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 1.9,
+    "material": 8.0,
+    "ice": 0.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_maunakea",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 29.6,
+   "completeness": 1.0,
+   "rank": 18,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    18,
+    18
+   ],
+   "contrib": {
+    "slope_p50": 4.6,
+    "slope_p90": 4.1,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 1.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_lanzarote",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 59.8,
+   "completeness": 1.0,
+   "rank": 6,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    5,
+    9
+   ],
+   "contrib": {
+    "slope_p50": 11.8,
+    "slope_p90": 7.5,
+    "flat_frac": 10.9,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_ries",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 64.2,
+   "completeness": 1.0,
+   "rank": 4,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    3,
+    8
+   ],
+   "contrib": {
+    "slope_p50": 15.9,
+    "slope_p90": 12.0,
+    "flat_frac": 12.0,
+    "roughness_rms": 15.6,
+    "local_relief": 0.7,
+    "material": 8.0,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 48.6,
+   "completeness": 1.0,
+   "rank": 14,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    12,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 14.5,
+    "slope_p90": 10.9,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 1.6,
+    "material": 9.6,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 55.2,
+   "completeness": 1.0,
+   "rank": 10,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    8,
+    12
+   ],
+   "contrib": {
+    "slope_p50": 15.7,
+    "slope_p90": 11.8,
+    "flat_frac": 12.0,
+    "roughness_rms": 3.1,
+    "local_relief": 1.7,
+    "material": 9.6,
+    "ice": 1.3,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_batagaika",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 44.4,
+   "completeness": 1.0,
+   "rank": 15,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    14,
+    16
+   ],
+   "contrib": {
+    "slope_p50": 11.3,
+    "slope_p90": 5.4,
+    "flat_frac": 7.7,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 16.0,
+    "ice": 4.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_chara",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 69.8,
+   "completeness": 1.0,
+   "rank": 2,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    2,
+    3
+   ],
+   "contrib": {
+    "slope_p50": 15.1,
+    "slope_p90": 11.3,
+    "flat_frac": 12.0,
+    "roughness_rms": 2.9,
+    "local_relief": 1.2,
+    "material": 16.0,
+    "ice": 1.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_uzon",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 20.5,
+   "completeness": 1.0,
+   "rank": 19,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    19,
+    19
+   ],
+   "contrib": {
+    "slope_p50": 13.8,
+    "slope_p90": 0.0,
+    "flat_frac": 0.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 4.8,
+    "ice": 1.3,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 57.5,
+   "completeness": 1.0,
+   "rank": 9,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    7,
+    10
+   ],
+   "contrib": {
+    "slope_p50": 7.6,
+    "slope_p90": 6.7,
+    "flat_frac": 10.9,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 2.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 49.8,
+   "completeness": 1.0,
+   "rank": 12,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    12,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 13.7,
+    "slope_p90": 6.1,
+    "flat_frac": 7.7,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 2.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 53.6,
+   "completeness": 1.0,
+   "rank": 11,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    10,
+    11
+   ],
+   "contrib": {
+    "slope_p50": 15.4,
+    "slope_p90": 11.6,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 3.2,
+    "ice": 1.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_sarykum",
+   "target_id": "mars_arcadia",
+   "task": "mars_rover_eva",
+   "similarity": 40.4,
+   "completeness": 1.0,
+   "rank": 17,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    16,
+    17
+   ],
+   "contrib": {
+    "slope_p50": 12.0,
+    "slope_p90": 5.4,
+    "flat_frac": 7.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 16.0,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_haughton",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 79.6,
+   "completeness": 1.0,
+   "rank": 1,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    1,
+    2
+   ],
+   "contrib": {
+    "slope_p50": 15.8,
+    "slope_p90": 11.5,
+    "flat_frac": 12.0,
+    "roughness_rms": 9.8,
+    "local_relief": 1.2,
+    "material": 8.0,
+    "ice": 1.3,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_atacama",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 58.3,
+   "completeness": 1.0,
+   "rank": 11,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    10,
+    11
+   ],
+   "contrib": {
+    "slope_p50": 14.0,
+    "slope_p90": 8.0,
+    "flat_frac": 7.7,
+    "roughness_rms": 1.0,
+    "local_relief": 1.9,
+    "material": 1.6,
+    "ice": 4.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_riotinto",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 54.4,
+   "completeness": 1.0,
+   "rank": 12,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    11,
+    12
+   ],
+   "contrib": {
+    "slope_p50": 11.5,
+    "slope_p90": 9.0,
+    "flat_frac": 10.9,
+    "roughness_rms": 0.0,
+    "local_relief": 2.6,
+    "material": 6.4,
+    "ice": 4.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 64.6,
+   "completeness": 0.46,
+   "rank": 7,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    7,
+    8
+   ],
+   "contrib": {
+    "slope_p50": 7.1,
+    "slope_p90": 5.7,
+    "flat_frac": 6.3,
+    "roughness_rms": 0.0,
+    "local_relief": 2.1,
+    "material": 20.7,
+    "ice": 2.9,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_deathvalley",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 61.4,
+   "completeness": 1.0,
+   "rank": 9,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    8,
+    10
+   ],
+   "contrib": {
+    "slope_p50": 14.2,
+    "slope_p90": 9.6,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 1.6,
+    "ice": 4.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_askja",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 73.8,
+   "completeness": 1.0,
+   "rank": 5,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    3,
+    6
+   ],
+   "contrib": {
+    "slope_p50": 15.5,
+    "slope_p90": 8.4,
+    "flat_frac": 8.1,
+    "roughness_rms": 0.0,
+    "local_relief": 3.2,
+    "material": 16.0,
+    "ice": 2.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_meteor",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 72.9,
+   "completeness": 1.0,
+   "rank": 6,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    4,
+    6
+   ],
+   "contrib": {
+    "slope_p50": 15.1,
+    "slope_p90": 11.3,
+    "flat_frac": 12.0,
+    "roughness_rms": 12.5,
+    "local_relief": 0.0,
+    "material": 8.0,
+    "ice": 4.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_maunakea",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 40.7,
+   "completeness": 1.0,
+   "rank": 17,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    15,
+    18
+   ],
+   "contrib": {
+    "slope_p50": 5.8,
+    "slope_p90": 6.1,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.1,
+    "material": 16.0,
+    "ice": 2.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_lanzarote",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 77.3,
+   "completeness": 1.0,
+   "rank": 2,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    1,
+    3
+   ],
+   "contrib": {
+    "slope_p50": 13.0,
+    "slope_p90": 9.5,
+    "flat_frac": 10.9,
+    "roughness_rms": 2.3,
+    "local_relief": 1.6,
+    "material": 16.0,
+    "ice": 4.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_ries",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 48.6,
+   "completeness": 1.0,
+   "rank": 14,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    13,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 14.6,
+    "slope_p90": 10.0,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 8.0,
+    "ice": 4.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 58.6,
+   "completeness": 1.0,
+   "rank": 10,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    9,
+    12
+   ],
+   "contrib": {
+    "slope_p50": 15.8,
+    "slope_p90": 11.1,
+    "flat_frac": 12.0,
+    "roughness_rms": 12.3,
+    "local_relief": 0.2,
+    "material": 3.2,
+    "ice": 4.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 42.1,
+   "completeness": 1.0,
+   "rank": 16,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    15,
+    17
+   ],
+   "contrib": {
+    "slope_p50": 14.5,
+    "slope_p90": 9.8,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 3.2,
+    "ice": 2.7,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_batagaika",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 39.1,
+   "completeness": 1.0,
+   "rank": 18,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    17,
+    18
+   ],
+   "contrib": {
+    "slope_p50": 12.5,
+    "slope_p90": 7.4,
+    "flat_frac": 7.7,
+    "roughness_rms": 0.0,
+    "local_relief": 1.9,
+    "material": 9.6,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_chara",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 73.8,
+   "completeness": 1.0,
+   "rank": 4,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    3,
+    5
+   ],
+   "contrib": {
+    "slope_p50": 15.7,
+    "slope_p90": 10.7,
+    "flat_frac": 12.0,
+    "roughness_rms": 12.6,
+    "local_relief": 0.6,
+    "material": 9.6,
+    "ice": 2.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_uzon",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 25.5,
+   "completeness": 1.0,
+   "rank": 19,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    19,
+    19
+   ],
+   "contrib": {
+    "slope_p50": 15.0,
+    "slope_p90": 0.3,
+    "flat_frac": 0.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.5,
+    "material": 6.4,
+    "ice": 2.7,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 75.3,
+   "completeness": 1.0,
+   "rank": 3,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    2,
+    5
+   ],
+   "contrib": {
+    "slope_p50": 8.9,
+    "slope_p90": 8.7,
+    "flat_frac": 10.9,
+    "roughness_rms": 9.5,
+    "local_relief": 0.0,
+    "material": 16.0,
+    "ice": 1.3,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 63.5,
+   "completeness": 1.0,
+   "rank": 8,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    7,
+    9
+   ],
+   "contrib": {
+    "slope_p50": 15.0,
+    "slope_p90": 8.1,
+    "flat_frac": 7.7,
+    "roughness_rms": 3.8,
+    "local_relief": 1.6,
+    "material": 16.0,
+    "ice": 1.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 50.1,
+   "completeness": 1.0,
+   "rank": 13,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    13,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 14.2,
+    "slope_p90": 9.6,
+    "flat_frac": 12.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 1.6,
+    "ice": 2.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_sarykum",
+   "target_id": "mars_jezero",
+   "task": "mars_rover_eva",
+   "similarity": 43.3,
+   "completeness": 1.0,
+   "rank": 15,
+   "suitability": "fail",
+   "suitability_rules": {
+    "bare_ground": "fail",
+    "access": "pass",
+    "slope_p90": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    15,
+    16
+   ],
+   "contrib": {
+    "slope_p50": 13.3,
+    "slope_p90": 7.3,
+    "flat_frac": 7.0,
+    "roughness_rms": 0.0,
+    "local_relief": 2.1,
+    "material": 9.6,
+    "ice": 4.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_haughton",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 66.4,
+   "completeness": 1.0,
+   "rank": 3,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    2,
+    5
+   ],
+   "contrib": {
+    "slope_p50": 3.6,
+    "slope_p90": 3.5,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.6,
+    "material": 16.0,
+    "ice": 18.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_atacama",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 34.2,
+   "completeness": 1.0,
+   "rank": 15,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    14,
+    17
+   ],
+   "contrib": {
+    "slope_p50": 3.2,
+    "slope_p90": 2.0,
+    "flat_frac": 2.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 6.4,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_riotinto",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 28.1,
+   "completeness": 1.0,
+   "rank": 18,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    18,
+    18
+   ],
+   "contrib": {
+    "slope_p50": 2.6,
+    "slope_p90": 2.3,
+    "flat_frac": 3.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 0.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 84.6,
+   "completeness": 0.82,
+   "rank": 1,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    1,
+    1
+   ],
+   "contrib": {
+    "slope_p50": 0.9,
+    "slope_p90": 0.8,
+    "flat_frac": 1.2,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 39.0,
+    "ice": 22.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_deathvalley",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 38.1,
+   "completeness": 1.0,
+   "rank": 13,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    9,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.9,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 6.4,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_askja",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 56.9,
+   "completeness": 1.0,
+   "rank": 6,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    6,
+    7
+   ],
+   "contrib": {
+    "slope_p50": 3.6,
+    "slope_p90": 2.1,
+    "flat_frac": 2.7,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 19.2,
+    "ice": 9.3,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_meteor",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 39.3,
+   "completeness": 1.0,
+   "rank": 11,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    10,
+    13
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.6,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 1.9,
+    "material": 16.0,
+    "ice": 0.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_maunakea",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 41.0,
+   "completeness": 1.0,
+   "rank": 10,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    9,
+    12
+   ],
+   "contrib": {
+    "slope_p50": 1.1,
+    "slope_p90": 1.4,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 19.2,
+    "ice": 9.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_lanzarote",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 48.3,
+   "completeness": 1.0,
+   "rank": 8,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    8,
+    9
+   ],
+   "contrib": {
+    "slope_p50": 2.9,
+    "slope_p90": 2.5,
+    "flat_frac": 3.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 19.2,
+    "ice": 0.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_ries",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 32.6,
+   "completeness": 1.0,
+   "rank": 16,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    15,
+    17
+   ],
+   "contrib": {
+    "slope_p50": 4.0,
+    "slope_p90": 4.0,
+    "flat_frac": 4.0,
+    "roughness_rms": 3.9,
+    "local_relief": 0.7,
+    "material": 16.0,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 32.0,
+   "completeness": 1.0,
+   "rank": 17,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    15,
+    17
+   ],
+   "contrib": {
+    "slope_p50": 3.6,
+    "slope_p90": 3.6,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 1.6,
+    "material": 19.2,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 42.8,
+   "completeness": 1.0,
+   "rank": 9,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    8,
+    11
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.9,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.8,
+    "local_relief": 1.7,
+    "material": 19.2,
+    "ice": 9.3,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_batagaika",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 67.2,
+   "completeness": 1.0,
+   "rank": 2,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    2,
+    5
+   ],
+   "contrib": {
+    "slope_p50": 2.8,
+    "slope_p90": 1.8,
+    "flat_frac": 2.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 32.0,
+    "ice": 28.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_chara",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 64.8,
+   "completeness": 1.0,
+   "rank": 5,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    2,
+    5
+   ],
+   "contrib": {
+    "slope_p50": 3.8,
+    "slope_p90": 3.8,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.7,
+    "local_relief": 1.2,
+    "material": 32.0,
+    "ice": 9.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_uzon",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 22.6,
+   "completeness": 1.0,
+   "rank": 19,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    19,
+    19
+   ],
+   "contrib": {
+    "slope_p50": 3.4,
+    "slope_p90": 0.0,
+    "flat_frac": 0.2,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 9.6,
+    "ice": 9.3,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 65.6,
+   "completeness": 1.0,
+   "rank": 4,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    3,
+    5
+   ],
+   "contrib": {
+    "slope_p50": 1.9,
+    "slope_p90": 2.2,
+    "flat_frac": 3.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 19.2,
+    "ice": 18.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 55.9,
+   "completeness": 1.0,
+   "rank": 7,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    6,
+    7
+   ],
+   "contrib": {
+    "slope_p50": 3.4,
+    "slope_p90": 2.0,
+    "flat_frac": 2.6,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 19.2,
+    "ice": 18.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 37.5,
+   "completeness": 1.0,
+   "rank": 14,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    11,
+    15
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.9,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 6.4,
+    "ice": 9.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_sarykum",
+   "target_id": "mars_arcadia",
+   "task": "mars_drill",
+   "similarity": 39.1,
+   "completeness": 1.0,
+   "rank": 12,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    9,
+    15
+   ],
+   "contrib": {
+    "slope_p50": 3.0,
+    "slope_p90": 1.8,
+    "flat_frac": 2.3,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 32.0,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_haughton",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 60.8,
+   "completeness": 1.0,
+   "rank": 11,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    5,
+    13
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.8,
+    "flat_frac": 4.0,
+    "roughness_rms": 2.4,
+    "local_relief": 1.2,
+    "material": 16.0,
+    "ice": 9.3,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_atacama",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 62.1,
+   "completeness": 1.0,
+   "rank": 9,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    5,
+    12
+   ],
+   "contrib": {
+    "slope_p50": 3.5,
+    "slope_p90": 2.7,
+    "flat_frac": 2.6,
+    "roughness_rms": 0.3,
+    "local_relief": 1.9,
+    "material": 3.2,
+    "ice": 28.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_riotinto",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 62.9,
+   "completeness": 1.0,
+   "rank": 7,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    5,
+    12
+   ],
+   "contrib": {
+    "slope_p50": 2.9,
+    "slope_p90": 3.0,
+    "flat_frac": 3.6,
+    "roughness_rms": 0.0,
+    "local_relief": 2.6,
+    "material": 12.8,
+    "ice": 28.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_mcmurdo",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 59.2,
+   "completeness": 0.82,
+   "rank": 12,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    8,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 1.0,
+    "slope_p90": 1.1,
+    "flat_frac": 1.2,
+    "roughness_rms": 0.0,
+    "local_relief": 1.2,
+    "material": 23.4,
+    "ice": 11.4,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_deathvalley",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 61.9,
+   "completeness": 1.0,
+   "rank": 10,
+   "suitability": "pass",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    5,
+    13
+   ],
+   "contrib": {
+    "slope_p50": 3.6,
+    "slope_p90": 3.2,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 3.2,
+    "ice": 28.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_askja",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 83.2,
+   "completeness": 1.0,
+   "rank": 2,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    2,
+    2
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 2.8,
+    "flat_frac": 2.7,
+    "roughness_rms": 0.0,
+    "local_relief": 3.2,
+    "material": 32.0,
+    "ice": 18.7,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_meteor",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 68.7,
+   "completeness": 1.0,
+   "rank": 4,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    3,
+    6
+   ],
+   "contrib": {
+    "slope_p50": 3.8,
+    "slope_p90": 3.8,
+    "flat_frac": 4.0,
+    "roughness_rms": 3.1,
+    "local_relief": 0.0,
+    "material": 16.0,
+    "ice": 28.0,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_maunakea",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 64.3,
+   "completeness": 1.0,
+   "rank": 5,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    4,
+    11
+   ],
+   "contrib": {
+    "slope_p50": 1.5,
+    "slope_p90": 2.0,
+    "flat_frac": 0.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.1,
+    "material": 32.0,
+    "ice": 18.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "e_lanzarote",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 92.2,
+   "completeness": 1.0,
+   "rank": 1,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    1,
+    1
+   ],
+   "contrib": {
+    "slope_p50": 3.3,
+    "slope_p90": 3.2,
+    "flat_frac": 3.6,
+    "roughness_rms": 0.6,
+    "local_relief": 1.6,
+    "material": 32.0,
+    "ice": 28.0,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "e_ries",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 55.0,
+   "completeness": 1.0,
+   "rank": 14,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    12,
+    14
+   ],
+   "contrib": {
+    "slope_p50": 3.7,
+    "slope_p90": 3.3,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 16.0,
+    "ice": 28.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_amazon",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 49.3,
+   "completeness": 1.0,
+   "rank": 15,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    15,
+    15
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.7,
+    "flat_frac": 4.0,
+    "roughness_rms": 3.1,
+    "local_relief": 0.2,
+    "material": 6.4,
+    "ice": 28.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "e_neg_farmland",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 35.9,
+   "completeness": 1.0,
+   "rank": 18,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "warn"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    17,
+    18
+   ],
+   "contrib": {
+    "slope_p50": 3.6,
+    "slope_p90": 3.3,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 6.4,
+    "ice": 18.7,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_batagaika",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 29.3,
+   "completeness": 1.0,
+   "rank": 19,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    19,
+    19
+   ],
+   "contrib": {
+    "slope_p50": 3.1,
+    "slope_p90": 2.5,
+    "flat_frac": 2.6,
+    "roughness_rms": 0.0,
+    "local_relief": 1.9,
+    "material": 19.2,
+    "ice": 0.0,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_chara",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 63.1,
+   "completeness": 1.0,
+   "rank": 6,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    5,
+    11
+   ],
+   "contrib": {
+    "slope_p50": 3.9,
+    "slope_p90": 3.6,
+    "flat_frac": 4.0,
+    "roughness_rms": 3.1,
+    "local_relief": 0.6,
+    "material": 19.2,
+    "ice": 18.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_uzon",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 36.0,
+   "completeness": 1.0,
+   "rank": 17,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    17,
+    18
+   ],
+   "contrib": {
+    "slope_p50": 3.8,
+    "slope_p90": 0.1,
+    "flat_frac": 0.2,
+    "roughness_rms": 0.0,
+    "local_relief": 0.5,
+    "material": 12.8,
+    "ice": 18.7,
+    "exposure": 0.0
+   }
+  },
+  {
+   "site_id": "ru_tolbachik",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 72.5,
+   "completeness": 1.0,
+   "rank": 3,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "pass",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    3,
+    4
+   ],
+   "contrib": {
+    "slope_p50": 2.2,
+    "slope_p90": 2.9,
+    "flat_frac": 3.6,
+    "roughness_rms": 2.4,
+    "local_relief": 0.0,
+    "material": 32.0,
+    "ice": 9.3,
+    "exposure": 20.0
+   }
+  },
+  {
+   "site_id": "ru_elgygytgyn",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 62.9,
+   "completeness": 1.0,
+   "rank": 8,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "warn",
+    "drill_target": "pass"
+   },
+   "rank_stability": "low",
+   "rank_range": [
+    4,
+    11
+   ],
+   "contrib": {
+    "slope_p50": 3.7,
+    "slope_p90": 2.7,
+    "flat_frac": 2.6,
+    "roughness_rms": 0.9,
+    "local_relief": 1.6,
+    "material": 32.0,
+    "ice": 9.3,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_baskunchak",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 42.6,
+   "completeness": 1.0,
+   "rank": 16,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "high",
+   "rank_range": [
+    16,
+    16
+   ],
+   "contrib": {
+    "slope_p50": 3.6,
+    "slope_p90": 3.2,
+    "flat_frac": 4.0,
+    "roughness_rms": 0.0,
+    "local_relief": 0.0,
+    "material": 3.2,
+    "ice": 18.7,
+    "exposure": 10.0
+   }
+  },
+  {
+   "site_id": "ru_sarykum",
+   "target_id": "mars_jezero",
+   "task": "mars_drill",
+   "similarity": 57.4,
+   "completeness": 1.0,
+   "rank": 13,
+   "suitability": "warn",
+   "suitability_rules": {
+    "bare_ground": "warn",
+    "access": "pass",
+    "drill_target": "pass"
+   },
+   "rank_stability": "medium",
+   "rank_range": [
+    10,
+    13
+   ],
+   "contrib": {
+    "slope_p50": 3.3,
+    "slope_p90": 2.4,
+    "flat_frac": 2.3,
+    "roughness_rms": 0.0,
+    "local_relief": 2.1,
+    "material": 19.2,
+    "ice": 28.0,
+    "exposure": 0.0
+   }
+  }
+ ]
+}
