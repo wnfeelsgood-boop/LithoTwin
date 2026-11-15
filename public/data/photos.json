@@ -2,6 +2,84 @@
   "schema_version": 1,
   "photos": [
     {
+      "site_id": "e_lanzarote",
+      "file": "photos/e_lanzarote_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Timanfaya lava fields, Lanzarote, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: лавовые поля Тиманфайя, Лансароте, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_maunakea",
+      "file": "photos/e_maunakea_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of the summit of Mauna Kea with cinder cones, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: вершина Мауна-Кеа со шлаковыми конусами, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_meteor",
+      "file": "photos/e_meteor_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Barringer Meteor Crater, 2026-11-12.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кратер Бэрринджер, 2026-11-12."
+      },
+      "date": "2026-11-12",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_deathvalley",
+      "file": "photos/e_deathvalley_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Badwater salt flat, Death Valley, 2026-11-08.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: солончак Бэдуотер, Долина Смерти, 2026-11-08."
+      },
+      "date": "2026-11-08",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_askja",
+      "file": "photos/e_askja_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of Askja caldera and Lake Öskjuvatn, 2026-08-25.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: кальдера Аскья и озеро Эскьюватн, 2026-08-25."
+      },
+      "date": "2026-08-25",
+      "credit": "Contains modified Copernicus Sentinel data (2026), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
+      "site_id": "e_ries",
+      "file": "photos/e_ries_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of the Nördlinger Ries basin, 2025-03-06.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: котловина Рис, 2025-03-06."
+      },
+      "date": "2025-03-06",
+      "credit": "Contains modified Copernicus Sentinel data (2025), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
       "site_id": "e_riotinto",
       "file": "photos/e_riotinto_sat.jpg",
       "kind": "satellite",
