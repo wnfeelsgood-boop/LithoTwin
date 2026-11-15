@@ -140,6 +140,21 @@ const UI = {
   rule_drill_ice: { en: 'Ground ice: {ice}', ru: 'Лёд в грунте: {ice}' },
   rule_drill_rock: { en: 'Rock worth drilling: {rock}', ru: 'Порода для бурения: {rock}' },
   rule_drill_none: { en: 'No ground ice, rock is not a priority drilling target', ru: 'Нет льда в грунте, порода не приоритетна для бурения' },
+  // Russia
+  russiaHeading: { en: 'Where in Russia to rehearse the Moon and Mars', ru: 'Где в России репетировать Луну и Марс' },
+  russiaSub: {
+    en: '{n} sites from Dagestan to Chukotka. The number on the pentagon is the place in the world ranking out of {total}.',
+    ru: '{n} площадок от Дагестана до Чукотки. Цифра на пентагоне = место в мировом рейтинге из {total}.',
+  },
+  russiaTop3: { en: 'Russia in world top-3: {n} of {total} tasks', ru: 'Россия в топ-3 мира: {n} из {total} задач' },
+  bestRussian: { en: 'Best Russian candidate per task', ru: 'Лучший российский кандидат по задачам' },
+  inWorld: { en: '#{rank} in the world', ru: '{rank} место в мире' },
+  holdsBackTitle: { en: 'What holds Russian sites back', ru: 'Что мешает российским площадкам' },
+  holdsBack: {
+    en: 'Sites are unique but small: taiga around Batagaika and Uzon, steppe around Sarykum. Many get yellow or red for bare ground even when rock and ice match.',
+    ru: 'Объекты уникальны, но малы: вокруг Батагайки и Узона тайга, у Сарыкума степь. Поэтому многие площадки получают жёлтый или красный по голому грунту, хотя по породе и льду похожи на цель.',
+  },
+  russiaLegend: { en: 'Size = similarity · Colour = suitability · Number = world rank', ru: 'Размер = сходство · Цвет = пригодность · Цифра = место в мире' },
   loading: { en: 'Loading data…', ru: 'Загружаем данные…' },
   loadError: { en: 'Could not load the data package.', ru: 'Не удалось загрузить данные.' },
   footer: {

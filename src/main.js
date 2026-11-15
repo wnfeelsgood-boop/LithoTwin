@@ -17,6 +17,7 @@ import { parseHash, onRouteChange, navigate } from './router.js';
 import { pentagonSvg } from './components/pentagon.js';
 import { renderWorld } from './views/world.js';
 import { renderDossier } from './views/dossier.js';
+import { renderRussia } from './views/russia.js';
 import { renderPlaceholder } from './views/placeholder.js';
 
 const app = document.getElementById('app');
@@ -63,6 +64,7 @@ function render() {
 
   if (route.view === 'world') renderWorld(view, data, route);
   else if (route.view === 'site') renderDossier(view, data, route);
+  else if (route.view === 'russia') renderRussia(view, data, route);
   else renderPlaceholder(view, data, route);
 
   if (route.view !== 'world') window.scrollTo(0, 0);
