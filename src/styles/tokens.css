@@ -1,0 +1,31 @@
+/* Design tokens: dark space UI, single theme (CLAUDE.md §5). */
+:root {
+  color-scheme: dark;
+
+  --bg: #070a10;
+  --panel: #0f141d;
+  --panel-2: #1a2230;
+  --border: #1e2836;
+  --border-2: #263244;
+
+  --text: #e6ebf2;
+  --text-2: #b7c2d3;
+  --muted: #93a0b4;
+
+  --accent: #f2a93b; /* rock, main numbers */
+  --ice: #5cc8ff; /* ice, links, Russia border */
+  --pass: #3dd68c;
+  --warn: #f2c14e;
+  --fail: #f26d6d;
+  --mars: #b07a52;
+  --moon: #c9ced6;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+
+  --font-head: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+}
