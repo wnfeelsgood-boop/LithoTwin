@@ -2,6 +2,19 @@
   "schema_version": 1,
   "photos": [
     {
+      "site_id": "e_neg_amazon",
+      "file": "photos/e_neg_amazon_sat.jpg",
+      "kind": "satellite",
+      "caption": {
+        "en": "Sentinel-2 L2A true-colour image of undisturbed rainforest near the LBA K34 tower, north of Manaus, 2025-08-24. Thin lines are research tracks.",
+        "ru": "Снимок Sentinel-2 L2A в естественных цветах: нетронутый тропический лес у башни K34 (проект LBA), к северу от Манауса, 2025-08-24. Тонкие линии — исследовательские просеки."
+      },
+      "date": "2025-08-24",
+      "credit": "Contains modified Copernicus Sentinel data (2025), processed by Sentinel Hub",
+      "license": "Copernicus free and open data",
+      "source_url": "https://browser.dataspace.copernicus.eu/"
+    },
+    {
       "site_id": "e_haughton",
       "file": "photos/e_haughton_sat.jpg",
       "kind": "satellite",
